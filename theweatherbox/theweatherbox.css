@@ -10,7 +10,7 @@ body {
 }
 
 #name {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 700;
     margin-bottom: 0.3em;
 }
@@ -20,7 +20,7 @@ body {
 
 #jobtitle {
     color: #999999;
-    font-size: 0.9em;
+    font-size: 0.5em;
     font-weight: 400;
     margin-top: 0;
 }
@@ -41,7 +41,7 @@ a:visited {
 /*navigation*/
 #navigation {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 0px;
 }
 /*
@@ -64,6 +64,117 @@ a:visited {
     color: #777777;
 }
 
+#projecttitle {
+    font-weight: 300;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+div#basicinfo {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #777777;
+    font-size: 0.9em;
+}
+#basicinfo p {
+    margin-bottom: -10px; 
+    text-align: right;
+}
+#projectflow div {
+    margin-bottom: 30px;
+}
+#projectflow p {
+    color: 666666;
+    line-height: 1.5em;
+}
+
+.video {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.flexflow {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#projectflow a:link {
+    text-decoration: underline dotted #777777;
+    color: #777777;
+}
+#projectflow a:visited {
+    text-decoration: underline dotted #777777;
+    color: #777777;
+}
+h3.subtitles {
+    font-size: 1.3em;
+    color: #cccccc;
+    padding-top: 20px;
+}
+.contentblocks {
+    border: 1px solid lightgoldenrodyellow;
+}
+.images {
+    max-width: 100%;
+}
+#projectflow p.captions {
+    text-align: center;
+    font-size: 0.8em;
+    color: #cccccc;
+}
+.contentblocks#concept {
+    width: 65%;
+}
+.contentblocks#precedentpics {
+    width: 25%;
+}
+.contentblocks#moodboard {
+    width: 55%;
+}
+.contentblocks#narrative {
+    width: 40%;
+}
+.contentblocks#process3 {
+    width: 25%;
+}
+.contentblocks#precedentpics {
+    text-align: justify;
+}
+.contentblocks#electronics {
+    width: 100%;
+}
+.contentblocks#led {
+    width: 27%;
+}
+.contentblocks#wiring {
+    width: 25%;
+}
+.contentblocks#schematics{
+    width: 46%;
+}
+.contentblocks#casing1 {
+    width: 60%;
+}
+.contentblocks#casing23 {
+    width: 35%;
+}
+.contentblocks.exhibitionpics {
+    width: 48%;
+}
+.contentblocks.exhibitionpics .images{
+    padding-bottom: 15px;
+}
+
+
 @media screen and (max-width: 768px) {
     #name {
         text-align: center;
@@ -76,4 +187,25 @@ a:visited {
         position: relative;
         top: 20px;
     }
+    #projectflow .flexflow div.contentblocks {
+        width: 100%
+    }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contentblocks#concept {
+        width: 70%;
+    }
+    .contentblocks#precedentpics {
+        width: 25%;
+    }
+    .contentblocks#moodboard {
+        width: 100%;
+    }
+    .contentblocks#narrative {
+        width: 100%;
+    }
+
+}
+
+
