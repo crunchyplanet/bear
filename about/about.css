@@ -22,7 +22,6 @@ body {
     font-weight: 400;
     margin-top: 0;
 }
-
 #containerexample {
     background-color: rgb(136, 155, 144);
     padding: 10px;
@@ -35,22 +34,11 @@ a:link {
 a:visited {
     text-decoration: none;
 }
-
-
-/*navigation*/
 #navigation {
     position: absolute;
     top: 20px;
     right: 0px;
 }
-/*
-#navigation a:link {  
-    color: #cccccc;
-}
-#navigation a:visited {
-    color: #cccccc;
-}
-*/
 #navigation a:hover {
     color: #777777;
 }  
@@ -63,49 +51,12 @@ a:visited {
     color: #777777;
 }
 
-/*grid*/
-#grid {
+#bio {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.5em;
     text-align: justify;
-}
 
-.box {
-    width: 45%;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 2em;
-    position: relative;
-}
-
-.indexpics {
-    width: 100%;
-    transition: opacity 0.2s ease-in-out;
-}
-
-.mask {
-    width: 100%;
-    height: 0;
-    padding-top: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-}
-
-#r1-1 .mask {
-    background: rgb(28, 6, 153); 
-}
-#r1-2 .mask {
-    background: rgb(255, 238, 222); 
-}
-#r2-1 .mask {
-    background: rgb(255, 0, 85);   
-}
-
-.mask:hover {
-    opacity: 0.5;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -124,8 +75,12 @@ a:visited {
         margin-left: 0;
         margin-right: 3em;
     }
-    /*one box per row on mobile screen*/
-   .box {
-    width: 100%;
-   }
+    #bio {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #bio {
+        width: 65%;
+    }
 }

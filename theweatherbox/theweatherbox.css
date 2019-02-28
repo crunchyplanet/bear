@@ -71,14 +71,14 @@ a:visited {
 }
 
 div#basicinfo {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 90px;
+    margin-bottom: 100px;
     color: #777777;
     font-size: 0.9em;
 }
 #basicinfo p {
     margin-bottom: -10px; 
-    text-align: right;
+    text-align: center;
 }
 #projectflow div {
     margin-bottom: 30px;
@@ -120,9 +120,7 @@ h3.subtitles {
     color: #cccccc;
     padding-top: 20px;
 }
-.contentblocks {
-    border: 1px solid lightgoldenrodyellow;
-}
+
 .images {
     max-width: 100%;
 }
@@ -190,6 +188,33 @@ h3.subtitles {
     #projectflow .flexflow div.contentblocks {
         width: 100%
     }
+}
+
+#bottomnavigation {
+    margin-top: 25px;
+    position: relative;
+    color: #cccccc;
+}
+#bottomnavigation a:link{
+    color: #cccccc
+}
+#bottomnavigation a:visited{
+    color: #cccccc
+}
+#bottomnavigation a:hover{
+    color: #777777;
+}
+#back {
+    position: absolute;
+    left: 0;
+}
+#arrows {
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+#next {
+    margin-left: 20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
