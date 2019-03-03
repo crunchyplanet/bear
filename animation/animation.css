@@ -1,0 +1,149 @@
+body {
+    max-width: 75%;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-family: "Montserrat", sans-serif;
+    margin: 5em auto;
+}
+
+#header {
+    position: relative;
+}
+
+#name {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+#name a {
+    color: #000000;
+}
+
+#jobtitle {
+    color: #999999;
+    font-size: 0.5em;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+#containerexample {
+    background-color: rgb(136, 155, 144);
+    padding: 10px;
+    visibility: hidden;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+#navigation {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+}
+#navigation a:hover {
+    color: #777777;
+}  
+.tabs a{
+    margin-left: 3em;
+    color: #cccccc;
+    font-size: 0.9em;
+}
+#activetab.tabs a{
+    color: #777777;
+}
+#projecttitle {
+    font-weight: 300;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+#projectflow div {
+    margin-bottom: 30px;
+}
+#projectflow p {
+    color: 666666;
+    line-height: 1.5em;
+}
+
+h3.subtitles {
+    font-size: 1.3em;
+    color: #cccccc;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.video {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.spacer {
+    height: 40px;
+}
+
+#bottomnavigation {
+    margin-top: 75px;
+    padding-bottom: 80px;
+    position: relative;
+    color: #cccccc;
+}
+
+#bottomnavigation a:link{
+    color: #cccccc
+}
+#bottomnavigation a:visited{
+    color: #cccccc
+}
+#bottomnavigation a:hover{
+    color: #777777;
+}
+#bottomnavigation a.nalink:hover {
+    color: #cccccc
+}
+#back {
+    position: absolute;
+    left: 0;
+}
+#arrows {
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+#next {
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #name {
+        text-align: center;
+    }
+    #jobtitle {
+        text-align: center;
+    }
+    #navigation {
+        display: none;
+        position: relative;
+        top: 20px;
+    }
+    #projectflow .flexflow div.contentblocks {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}

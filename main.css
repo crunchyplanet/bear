@@ -36,6 +36,15 @@ a:visited {
     text-decoration: none;
 }
 
+.box a:link {
+    color: #777777;
+}
+.box a:visited {
+    color: #777777;
+}
+.box a:hover {
+    color: #444444;
+}
 
 /*navigation*/
 #navigation {
@@ -43,13 +52,13 @@ a:visited {
     top: 20px;
     right: 0px;
 }
-/*
+/* 
 #navigation a:link {  
     color: #cccccc;
 }
 #navigation a:visited {
     color: #cccccc;
-}
+} 
 */
 #navigation a:hover {
     color: #777777;
@@ -94,13 +103,16 @@ a:visited {
 }
 
 #r1-1 .mask {
-    background: rgb(28, 6, 153); 
+    background: rgb(47, 102, 255); 
 }
 #r1-2 .mask {
-    background: rgb(255, 238, 222); 
+    background: rgb(140, 151, 255); 
 }
 #r2-1 .mask {
     background: rgb(255, 0, 85);   
+}
+#r2-2 .mask {
+    background: rgb(56, 56, 53); 
 }
 
 .mask:hover {
