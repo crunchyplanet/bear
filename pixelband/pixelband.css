@@ -76,3 +76,113 @@ div#basicinfo {
     color: 666666;
     line-height: 1.5em;
 }
+.flexflow {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+h3.subtitles {
+    font-size: 1.3em;
+    color: #cccccc;
+    padding-top: 20px;
+}
+
+.flexflow h3 {
+    width: 100%;
+}
+
+.images {
+    max-width: 100%;
+}
+#projectflow p.captions {
+    text-align: center;
+    font-size: 0.8em;
+    color: #cccccc;
+}
+.contentblocks#user {
+    width: 100%;
+}
+.contentblocks#persona {
+    width: 48%;
+}
+.contentblocks#schedule {
+    width: 48%;
+}
+.contentblocks#products {
+    width: 44%;
+}
+.contentblocks#sketches {
+    width: 54%;
+}
+.contentblocks#wiring {
+    width: 45%;
+}
+.contentblocks#prototype {
+    width: 50%;
+}
+.contentblocks#testgif {
+    width: 60%;
+}
+.contentblocks#test {
+    width: 38%;
+}
+
+
+#bottomnavigation {
+    margin-top: 55px;
+    padding-bottom: 80px;
+    position: relative;
+    color: #cccccc;
+}
+
+#bottomnavigation a:link{
+    color: #cccccc
+}
+#bottomnavigation a:visited{
+    color: #cccccc
+}
+#bottomnavigation a:hover{
+    color: #777777;
+}
+#back {
+    position: absolute;
+    left: 0;
+}
+#arrows {
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+#next {
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #name {
+        text-align: center;
+    }
+    #jobtitle {
+        text-align: center;
+    }
+    #navigation {
+        display: none;
+        position: relative;
+        top: 20px;
+    }
+    #projectflow .flexflow div.contentblocks {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contentblocks#persona {
+        width: 100%;
+    }
+    .contentblocks#schedule {
+        width: 100%;
+    }
+ 
+
+}

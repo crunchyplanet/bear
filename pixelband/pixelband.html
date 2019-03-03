@@ -12,7 +12,7 @@
 
 <body>
     <div id="header">
-        <h1 id="name"><a href="index.html">JINGHAN LUO</a></h1>
+        <h1 id="name"><a href="../index.html">JINGHAN LUO</a></h1>
         <h2 id="jobtitle">Interaction Designer</h2>
         <div id="navigation">
             <span class="tabs"><a href="../index.html">WORK</a></span>
@@ -30,5 +30,90 @@
         </div>
         <div id="projectflow">
             <div id="projectbrief">
-                <p></p>
+                <p>Pixel band is a tool designed for hand therapy patients. Hand exercises are repetitive processes
+                    which could sometimes be boring and tedious. Pixel band, which consists of a physical device and a
+                    computer program, brings delight and playfulness into the experience by synchronizing the exercise
+                    with the reveal of a funny meme.</p>
             </div>
+
+            <div class="flexflow">
+                <h3 class="subtitles">Understanding the User</h3>
+                <div class="contentblocks" id="user">
+                    <p>The target user group of this product is people who work long hours at their computers using
+                        mouse and keyboard. I developed a persona for a software engineer who is going through hand
+                        therapy and needs to do resistance exercise every day.</p>
+                </div>
+                <div class="contentblocks" id="persona">
+                    <img class="images" src="assets/persona.png">
+                </div>
+                <div class="contentblocks" id="schedule">
+                    <img class="images" src="assets/schedule.png">
+                </div>
+                <h3 class="subtitles">Developing the Product</h3>
+                <div class="contentblocks" id="ideas">
+
+                </div>
+                <div class="contentblocks" id="products">
+                    <img class="images" src="assets/products.jpg">
+                    <p class="captions">Product Research</p>
+                </div>
+                <div class="contentblocks" id="sketches">
+                    <img class="images" src="assets/sketches.png">
+                    <p class="captions">Form Exploration</p>
+                </div>
+                <div class="contentblocks" id="storyboard">
+                    <img class="images" src="assets/storyboard.png">
+                    <p class="captions">Storyboard</p>
+                </div>
+                <div class="contentblocks" id="prototyping">
+                    <p>After analysing the hand movement during the exercises. I decided to prototype a hand band that
+                        covers across the metacarpophalangeal joints (the part where fingers start) and embed a flex
+                        sensor in the band to mearsure the movement. I took the approximate numbers from the flex sensor
+                        when the fingers are flexed and stretched out when someone is wearing the band and so the
+                        program
+                        would know when the user has reached various positions.
+                    </p>
+                </div>
+                <div class="contentblocks" id="wiring">
+                    <img class="images" src="assets/wiring.jpg">
+                    <p class="captions">Connecting a flex sensor embeded in the hand band to the Arduino</p>
+                </div>
+                <div class="contentblocks" id="prototype">
+                    <img class="images" src="assets/prototype.jpg">
+                    <p class="captions">Enclosing the electronics</p>
+                </div>
+                <div class="contentblocks" id="code">
+                    <p>I wrote a Processing program that pixelate a meme image to the extreme at the beginning and
+                        increase the resolution gradually as the flex sensor data from the band comes in. There are
+                        instructions on the screen telling the user what to do. Each time the user streches their
+                        fingers, the block size on the screen reduces for three seconds, while the user hold their
+                        finger position. Then the instruction tells the user to relax their fingers until the "stretch"
+                        instruction shows up again. After repeating 10 times, which is the suggested amount for the
+                        exercise, the resolution reaches its full and the text on the meme becomes legible.
+                    </p>
+                </div>
+                <div class="contentblocks" id="screens">
+                    <img class="images" src="assets/screens.png">
+                    <p class="captions">Progression</p>
+                </div>
+                <div class="contentblocks" id="testgif">
+                    <img class="images" src="assets/test.gif">
+                    <p class="captions">User Test</p>
+                </div>
+                <div class="contentblocks" id="test">
+                    <p>I tested the prototype with a user and got feedback on how to further improve the user
+                        experience.</p>
+                    <p>For example, there could be one image for each stretch to keep the user engaged.
+                        The program could also have a feedback and achievement system to encourage the user to make it a
+                        habit.</p>
+                </div>
+            </div>
+        </div>
+        <div id="bottomnavigation">
+            <span id="back"><a href="../index.html">&lt; WORK</a></span>
+            <span id="arrows">
+                <span id="prev"><a href="../theweatherbox/theweatherbox.html">&lt;&lt;</a></span>
+                <span id="next"><a>&gt;&gt;</a></span>
+            </span>
+        </div>
+    </div>
