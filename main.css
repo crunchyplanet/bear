@@ -103,21 +103,32 @@ a:visited {
 }
 
 #r1-1 .mask {
-    background: rgb(47, 102, 255); 
+    background: rgb(255, 146, 45); 
 }
 #r1-2 .mask {
-    background: rgb(140, 151, 255); 
+    background: rgb(47, 50, 255); 
 }
 #r2-1 .mask {
-    background: rgb(255, 0, 85);   
+    background: rgb(82, 0, 177); 
 }
 #r2-2 .mask {
-    background: rgb(56, 56, 53); 
+    background: rgba(255, 31, 31, 0.904);   
+}
+#r3-1 .mask {
+    background: rgb(139, 197, 231); 
 }
 
 .mask:hover {
     opacity: 0.5;
     cursor: pointer;
+}
+
+/*footer*/
+#footer {
+    margin-top: 120px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #999999;
 }
 
 @media screen and (max-width: 768px) {

@@ -100,14 +100,38 @@ h3.subtitles {
     font-size: 0.8em;
     color: #cccccc;
 }
-.contentblocks#example {
-    width: 100%;
+
+.contentblocks#brainstormpic {
+    width: 50%;
+}
+.contentblocks#brainstorm {
+    width: 45%;
+}
+.contentblocks#brainstormpic2 {
+    width: 50%;
+}
+.contentblocks#brainstorm2 {
+    width: 45%;
+}
+.contentblocks.ui {
+    width: 30%;
+}
+.ui .images {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.ui#last2 {
+    margin-left: 10%;
+}
+.ui#last1 {
+    margin-right: 10%;
+}
+.contentblocks.desktop {
+    width: 45%;
 }
 
 
-
 #bottomnavigation {
-    margin-top: 55px;
+    margin-top: 200px;
     padding-bottom: 80px;
     position: relative;
     color: #cccccc;
@@ -154,6 +178,17 @@ h3.subtitles {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
+    .contentblocks#brainstormpic {
+        width: 100%;
+    }
+    .contentblocks#brainstorm {
+        width: 100%;
+    }
+    .contentblocks#brainstormpic2 {
+        width: 100%;
+    }
+    .contentblocks#brainstorm2 {
+        width: 100%;
+    }
 
 }
