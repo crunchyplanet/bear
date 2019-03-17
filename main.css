@@ -151,4 +151,8 @@ a:visited {
    .box {
     width: 100%;
    }
+
+   #r3-2 {
+       display: none;
+   }
 }

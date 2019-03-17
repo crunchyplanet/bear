@@ -1,0 +1,67 @@
+#menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  #header {
+    margin-top: -60px;
+  }
+  #containerexample {
+    padding: 0;
+  }
+
+/*Style for the first level menu bar*/
+  #menu{
+    display: block;
+    position: relative;
+    top: -4em;
+    margin:0;
+    color:#aaa;
+    text-align: center;
+  }
+  
+  label{
+    font-size: 3em;
+    position:relative;
+    display:block;
+    transition:color 0.3s;
+    cursor:pointer;
+    text-align: center;
+  }
+  
+
+  
+  label:hover,
+  input:checked ~ label{color: #777}
+  
+  
+  /*hide the inputs*/
+  input{display:none}
+  
+  /*show the second levele menu of the selected voice*/
+  input:checked ~ .submenu{
+    max-height:300px;
+    transition:max-height 0.5s ease-in;
+  }
+  
+  /*style for the second level menu*/
+  .submenu{
+    max-height:0;
+    padding:0;
+    overflow:hidden;
+    transition:max-height 0.5s ease-out;
+    min-width:100%;
+  }
+  
+ .submenu p a{
+    display:block;
+    color:#aaa;
+    text-decoration:none;
+    transition:background .3s;
+  }
+  
+.submenu p a:hover{
+    color:#777;
+  }
+}
