@@ -20,7 +20,7 @@ body {
 
 #jobtitle {
     color: #999999;
-    font-size: 0.5em;
+    font-size: 0.7em;
     font-weight: 400;
     margin-top: 0;
 }
@@ -49,14 +49,21 @@ a:visited {
     margin-left: 3em;
     color: #cccccc;
     font-size: 0.9em;
+    letter-spacing: 0.1em;
 }
 #activetab.tabs a{
     color: #777777;
 }
+#project {
+    font-family: canada-type-gibson, sans-serif;
+}
+
 #projecttitle {
-    font-weight: 300;
-    font-size: 2.5em;
+    font-weight: 500;
+    font-size: 3em;
     text-align: center;
+    line-height: 1.5em;
+    font-family: active, sans-serif;
 }
 
 div#basicinfo {
@@ -64,17 +71,27 @@ div#basicinfo {
     margin-bottom: 100px;
     color: #777777;
     font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
 }
 #basicinfo p {
     margin-bottom: -10px; 
     text-align: center;
+
 }
+#projectflow {
+    margin: 0 auto;
+}
+
 #projectflow div {
     margin-bottom: 30px;
 }
 #projectflow p {
-    color: 666666;
+    color: #333333;
     line-height: 1.5em;
+    font-size: 1.3em;
+    font-weight: 300;
+    font-style: normal;
 }
 .flexflow {
     flex-wrap: wrap;
@@ -84,12 +101,13 @@ div#basicinfo {
 }
 h3.subtitles {
     font-size: 1.3em;
+    letter-spacing: 0.1em;
     color: #cccccc;
-    padding-top: 20px;
-}
-
-.flexflow h3 {
-    width: 100%;
+    padding-top: 50px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
 }
 
 .images {
@@ -100,7 +118,14 @@ h3.subtitles {
     font-size: 0.8em;
     color: #cccccc;
 }
-
+#projectbrief, #problemstatement, #persona, #platforms, #questions, #brainstorm2 {
+    width: 65%;
+    margin: 0 auto;
+}
+#uidesign p{
+    width: 65%;
+    margin: 0 auto;   
+}
 .contentblocks#brainstormpic {
     width: 50%;
 }
@@ -135,6 +160,7 @@ h3.subtitles {
     padding-bottom: 80px;
     position: relative;
     color: #cccccc;
+    letter-spacing: 0.1em;
 }
 
 #bottomnavigation a:link{
@@ -172,12 +198,29 @@ h3.subtitles {
         position: relative;
         top: 20px;
     }
+    h3.subtitles {
+        width: 100%;
+    }
     #projectflow .flexflow div.contentblocks {
         width: 100%
+    }
+    #projectflow .flexflow div.contentblocks p{
+        width: 100%
+    }
+    .ui .images{
+        width: 75%;
+        margin-left: 12%;  
+    }
+    .ui#last2, .ui#last1 {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    h3.subtitles {
+        width: 100%;
+    }
     .contentblocks#brainstormpic {
         width: 100%;
     }
@@ -189,6 +232,12 @@ h3.subtitles {
     }
     .contentblocks#brainstorm2 {
         width: 100%;
+    }
+    #projectbrief, #problemstatement, #persona, #platforms, #questions, #brainstorm2 {
+        width: 100%;
+    }
+    #uidesign p{
+        width: 100%;   
     }
 
 }
