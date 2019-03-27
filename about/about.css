@@ -46,17 +46,41 @@ a:visited {
     margin-left: 3em;
     color: #cccccc;
     font-size: 0.9em;
+    letter-spacing: 0.1em;
 }
 #activetab.tabs a{
     color: #777777;
 }
 
 #bio {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     line-height: 1.5em;
     text-align: justify;
+    font-family: canada-type-gibson, sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+}
 
+#hi {
+    font-family: active, sans-serif;
+    font-size: 2em;
+}
+
+.blanks {
+    opacity: 0;
+    animation: appear 0.5s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+
+.blanks:hover {
+    animation-play-state: running;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @media screen and (max-width: 768px) {
