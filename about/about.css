@@ -83,6 +83,17 @@ a:visited {
     to {opacity: 1;}
 }
 
+#note {
+    width: 40%;
+    margin: 50px auto;
+    text-align: center;
+    font-family: canada-type-gibson, sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #999999;
+}
+
+
 @media screen and (max-width: 768px) {
     #name {
         text-align: center;
