@@ -1,0 +1,176 @@
+body {
+    max-width: 75%;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-family: canada-type-gibson, sans-serif;
+    margin: 5em auto;
+}
+/*top*/
+#header {
+    position: relative;
+}
+#name {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 0.4em;
+}
+#name a {
+    color: #000000;
+}
+#jobtitle {
+    color: #999999;
+    font-size: 0.7em;
+    font-weight: 400;
+    margin-top: 0;
+}
+#containerexample {
+    background-color: rgb(136, 155, 144);
+    padding: 10px;
+    visibility: hidden;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+#navigation {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+}
+#navigation a:hover {
+    color: #777777;
+}  
+.tabs a{
+    margin-left: 3em;
+    color: #cccccc;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+#activetab.tabs a{
+    color: #777777;
+}
+/*project*/
+#project {
+    font-family: canada-type-gibson, sans-serif;
+}
+#projecttitle {
+    font-weight: 500;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1.5em;
+    font-family: active, sans-serif;
+}
+div#basicinfo {
+    margin-top: 90px;
+    margin-bottom: 100px;
+    color: #777777;
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+#basicinfo p {
+    margin-bottom: -10px; 
+    text-align: center;
+}
+#projectflow a:link {
+    text-decoration: underline dotted #777777;
+    color: #777777;
+}
+#projectflow a:visited {
+    text-decoration: underline dotted #777777;
+    color: #777777;
+}
+#projectflow div {
+    margin-bottom: 30px;
+}
+#projectflow p {
+    color: #333333;
+    line-height: 1.5em;
+    font-size: 1.3em;
+    font-weight: 300;
+    font-style: normal;
+}
+.flexflow {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+h3.subtitles {
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    color: #cccccc;
+    padding-top: 50px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+}
+.images {
+    max-width: 100%;
+}
+#projectflow p.captions {
+    text-align: center;
+    font-size: 0.8em;
+    color: #cccccc;
+}
+/*bottom*/
+#bottomnavigation {
+    margin-top: 200px;
+    padding-bottom: 80px;
+    position: relative;
+    color: #cccccc;
+    letter-spacing: 0.1em;
+}
+#bottomnavigation a:link{
+    color: #cccccc
+}
+#bottomnavigation a:visited{
+    color: #cccccc
+}
+#bottomnavigation a:hover{
+    color: #777777;
+}
+#bottomnavigation a.nalink:hover {
+    color: #cccccc
+}
+#back {
+    position: absolute;
+    left: 0;
+}
+#arrows {
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+#next {
+    margin-left: 20px;
+}
+/*mobile*/
+@media screen and (max-width: 768px) {
+    #name {
+        text-align: center;
+    }
+    #jobtitle {
+        text-align: center;
+    }
+    #navigation {
+        display: none;
+        position: relative;
+        top: 20px;
+    }
+    h3.subtitles {
+        width: 100%;
+    }
+    #projectflow .flexflow div.contentblocks {
+        width: 100%
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h3.subtitles {
+        width: 100%;
+    }
+}
+
