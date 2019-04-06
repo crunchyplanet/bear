@@ -41,15 +41,30 @@ a:visited {
 }
 #navigation a:hover {
     color: #777777;
-}  
+}
 .tabs a{
-    margin-left: 3em;
     color: #cccccc;
     font-size: 1em;
     letter-spacing: 0.1em;
 }
 #activetab.tabs a{
     color: #777777;
+}
+#workdropdown {
+    float: left;
+    overflow: hidden;
+}
+#workselections {
+    height: 0;
+}
+#workdropdown:hover #workselections {
+    height: 180px;
+    transition:height 0.2s ease-in-out;
+}
+#workselections p:hover {
+    width: fit-content;
+    background: #cccccc;
+
 }
 /*project*/
 #project {

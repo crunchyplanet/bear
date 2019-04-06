@@ -1,4 +1,4 @@
-#projectbrief, #problemstatement, #persona, #platforms, #questions, #brainstorm2 {
+#projectbrief, #problemstatement1, #problemstatement2, #persona, #platforms, #questions, #brainstorm2 {
     width: 65%;
     margin: 0 auto;
 }
@@ -10,12 +10,6 @@
     width: 50%;
 }
 .contentblocks#brainstorm {
-    width: 45%;
-}
-.contentblocks#brainstormpic2 {
-    width: 50%;
-}
-.contentblocks#brainstorm2 {
     width: 45%;
 }
 .contentblocks.ui {
@@ -63,7 +57,7 @@
     .contentblocks#brainstorm2 {
         width: 100%;
     }
-    #projectbrief, #problemstatement, #persona, #platforms, #questions, #brainstorm2 {
+    #projectbrief, #problemstatement1, #problemstatement2, #persona, #platforms, #questions, #brainstorm2 {
         width: 100%;
     }
     #uidesign p{
