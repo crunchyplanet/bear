@@ -159,14 +159,13 @@ a:visited {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#r4-1 .indexpics{
-    height: 50px;
+#r4-1{
+    height: 0px;
 }
 
 
 /*footer*/
 #footer {
-    margin-top: 120px;
     text-align: center;
     font-size: 0.9em;
     color: #999999;
@@ -195,7 +194,7 @@ a:visited {
    .projectname {
     display: block;
     }
-   #r3-2 {
+   #r3-2, #r4-1{
        display: none;
    }
 }
