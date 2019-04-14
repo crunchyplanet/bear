@@ -63,7 +63,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    #projectbrief, #concept, #narrative, #electronics p, #writingcode, #casing, {
+    #projectbrief, #concept, #narrative, #electronics p, #writingcode, #casing {
         width: 100%
     }
     .contentblocks#concept {

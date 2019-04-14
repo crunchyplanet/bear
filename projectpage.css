@@ -58,7 +58,7 @@ a:visited {
     height: 0;
 }
 #workdropdown:hover #workselections {
-    height: 180px;
+    height: 200px;
     transition:height 0.2s ease-in-out;
 }
 #workselections p:hover {
@@ -71,10 +71,16 @@ a:visited {
     font-family: canada-type-gibson, sans-serif;
 }
 #projecttitle {
-    font-weight: 500;
     font-size: 3em;
+    font-weight: 400;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 0.8em;
+    font-family: active, sans-serif;
+}
+#projectsubtitle {
+    font-size: 1.6em;
+    font-weight: 400;
+    text-align: center;
     font-family: active, sans-serif;
 }
 div#basicinfo {
@@ -133,7 +139,7 @@ h3.subtitles {
 }
 /*bottom*/
 #bottomnavigation {
-    margin-top: 200px;
+    margin-top: 150px;
     padding-bottom: 80px;
     position: relative;
     color: #cccccc;

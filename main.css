@@ -118,19 +118,22 @@ a:visited {
 }
 
 #r1-1 .mask {
-    background: rgb(255, 146, 45); 
+    background: rgb(35, 81, 151); 
 }
 #r1-2 .mask {
-    background: rgb(11, 9, 95); 
+    background: rgb(255, 146, 45); 
 }
 #r2-1 .mask {
-    background: rgb(24, 133, 66); 
+    background: rgb(11, 9, 95); 
 }
 #r2-2 .mask {
-    background: rgba(255, 31, 31, 0.904);   
+    background: rgb(24, 133, 66); 
 }
 #r3-1 .mask {
-    background: rgb(212, 84, 144); 
+    background: rgba(255, 31, 31, 0.904);   
+}
+#r3-2 .mask {
+    background: rgb(88, 23, 104); 
 }
 
 .box:hover .mask{
@@ -143,25 +146,18 @@ a:visited {
 }
 
 .more {
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 15%;
     width: 100%;
-    height: 0;
-    padding-top: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
+
 }
 .moretext {
     color: #777777;
     font-size: 1.5em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
 }
-#r4-1{
-    height: 0px;
-}
+
 
 
 /*footer*/
@@ -194,7 +190,4 @@ a:visited {
    .projectname {
     display: block;
     }
-   #r3-2, #r4-1{
-       display: none;
-   }
 }

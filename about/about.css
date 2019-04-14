@@ -1,20 +1,23 @@
 body {
     max-width: 75%;
     -webkit-font-smoothing: subpixel-antialiased;
-    font-family: "Montserrat", sans-serif;
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 300;
     margin: 5em auto;
+    background-color: #111111;
 }
 /*header*/
 #header {
     position: relative;
 }
 #name {
+    font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 3em;
-    font-weight: 700;
-    margin-bottom: 0.3em;
+    font-weight: 400;
+    margin-bottom: 0.4em;
 }
 #name a {
-    color: #000000;
+    color: #ffffff;
 }
 #jobtitle {
     color: #999999;
@@ -40,16 +43,16 @@ a:visited {
     right: 0px;
 }
 #navigation a:hover {
-    color: #777777;
+    color: #aaaaaa;
 }  
 .tabs a{
     margin-left: 3em;
-    color: #cccccc;
+    color: #666666;
     font-size: 0.9em;
     letter-spacing: 0.1em;
 }
 #activetab.tabs a{
-    color: #777777;
+    color: #aaaaaa;
 }
 
 #bio {
@@ -57,7 +60,7 @@ a:visited {
     margin: 0 auto;
     line-height: 1.5em;
     text-align: justify;
-    font-family: canada-type-gibson, sans-serif;
+    color: #cccccc;
     font-size: 1.2em;
     font-weight: 300;
 }
