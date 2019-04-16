@@ -137,6 +137,33 @@ h3.subtitles {
     font-size: 0.9em;
     color: #cccccc;
 }
+
+#footnotes {
+    margin: 5em auto 1em auto;
+}
+#footnotes p{
+    font-size: 0.9em;
+    color: #999;
+}
+hr {
+    border: 1px dashed #aaa;
+    margin-top: 1em;
+    width: 100%;
+}
+#lessons {
+    font-family: 'Merriweather', serif;
+    margin: 120px auto;
+    width: 20%;
+    font-size: 1.1em;
+    text-align: center;
+    color: #777;
+}
+#lessonslist {
+    margin: 30px auto;
+    width: 70%;
+    text-align: justify;
+    color: #777;
+}
 /*bottom*/
 #bottomnavigation {
     margin-top: 150px;

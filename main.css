@@ -117,22 +117,22 @@ a:visited {
     font-size: 0.5em;
 }
 
-#r1-1 .mask {
+#enroute .mask {
     background: rgb(35, 81, 151); 
 }
-#r1-2 .mask {
+#knowie .mask {
     background: rgb(255, 146, 45); 
 }
-#r2-1 .mask {
+#weatherbox .mask {
     background: rgb(11, 9, 95); 
 }
-#r2-2 .mask {
+#pixelband .mask {
     background: rgb(24, 133, 66); 
 }
-#r3-1 .mask {
+#dxm .mask {
     background: rgba(255, 31, 31, 0.904);   
 }
-#r3-2 .mask {
+#animation .mask {
     background: rgb(88, 23, 104); 
 }
 
