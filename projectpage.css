@@ -9,7 +9,7 @@ body {
     position: relative;
 }
 #name {
-    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: neon-stream, sans-serif;
     font-size: 2.2em;
     font-weight: 400;
     margin-bottom: 0.4em;
@@ -19,7 +19,7 @@ body {
 }
 #jobtitle {
     color: #999999;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 400;
     margin-top: 0;
 }

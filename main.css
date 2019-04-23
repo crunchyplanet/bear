@@ -10,7 +10,7 @@ body {
     position: relative;
 }
 #name {
-    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: neon-stream, sans-serif;
     font-size: 3em;
     font-weight: 400;
     margin-bottom: 0.4em;
@@ -154,7 +154,7 @@ a:visited {
 }
 .moretext {
     color: #777777;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
 }
 
