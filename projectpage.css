@@ -136,6 +136,10 @@ h3.subtitles {
     margin-right: auto;
     margin-bottom: 1.5em;
 }
+.ctext {
+    width: 65%;
+    margin: 0 auto;
+}
 .images {
     max-width: 100%;
 }
