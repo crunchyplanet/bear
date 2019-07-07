@@ -50,9 +50,14 @@
         <h2>space</h2>
     </div>
 
-
+    <div id="filters">
+        <span class="filter active">All</span>
+        <span class="filter">UX Design</span>
+        <span class="filter">Graphic/Motion Design</span>
+        <span class="filter">Animation</span>
+    </div>
     <div id="grid">
-        <div class="box" id="enroute">
+        <div class="box ux" id="enroute">
             <a href="enroute/enroute.html">
                 <img class="indexpics" src="indexpics/indexpics-enroute.jpg">
                 <div class="mask">
@@ -66,7 +71,21 @@
                 <p>En Route</p>
             </a>
         </div>
-        <div class="box" id="knowie">
+        <div class="box gm" id="kitchen">
+            <a href="kitchen/kitchen.html">
+                <img class="indexpics" src="indexpics/indexpics-kitchen.jpg">
+                <div class="mask">
+                    <div class="masktext">
+                        <p>Brisk Kitchen</p>
+                        <p class="category">Motion Graphics</p>
+                    </div>
+                </div>
+            </a>
+            <a class="projectname" href="kitchen/kitchen.html">
+                <p>Brisk Kitchen</p>
+            </a>
+        </div>
+        <div class="box ux" id="knowie">
             <a href="knowie/knowie.html">
                 <img class="indexpics" src="indexpics/indexpics-knowie.jpg">
                 <div class="mask">
@@ -80,7 +99,7 @@
                 <p>Knowie</p>
             </a>
         </div>
-        <div class="box" id="weatherbox">
+        <div class="box ux" id="weatherbox">
             <a href="theweatherbox/theweatherbox.html">
                 <img class="indexpics" id="indexpics-weatherbox" src="indexpics/indexpics-weatherbox.jpg">
                 <div class="mask">
@@ -94,7 +113,8 @@
                 <p>The Weather Box</p>
             </a>
         </div>
-        <div class="box" id="pixelband">
+
+        <!-- <div class="box" id="pixelband">
             <a href="pixelband/pixelband.html">
                 <img class="indexpics" src="indexpics/indexpics-pixelband.jpg">
                 <div class="mask">
@@ -107,8 +127,9 @@
             <a class="projectname" href="pixelband/pixelband.html">
                 <p>Wearable Therapy - Pixel Band</p>
             </a>
-        </div>
-        <div class="box" id="dxm">
+        </div> -->
+
+        <!-- <div class="box ux" id="dxm">
             <a href="dxm/dxm.html">
                 <img class="indexpics" src="indexpics/indexpics-dxm.jpg">
                 <div class="mask">
@@ -121,18 +142,34 @@
             <a class="projectname" href="dxm/dxm.html">
                 <p>UX Design Internship at Baidu</p>
             </a>
-        </div>
-        <div class="box" id="animation">
-            <a href="animation/animation.html">
-                <img class="indexpics" src="indexpics/indexpics-animation.png">
+        </div> -->
+
+        <div class="box animation" id="puzzle">
+            <a href="jigsawpuzzle/jigsawpuzzle.html">
+                <img class="indexpics" src="indexpics/indexpics-puzzle.png">
                 <div class="mask">
                     <div class="masktext">
-                        <p>Animation</p>
+                        <p>Jigsaw Puzzle</p>
+                        <p class="category">Animation</p>
                     </div>
                 </div>
             </a>
-            <a class="projectname" href="animation/animation.html">
-                <p>Animation</p>
+            <a class="projectname" href="jigsawpuzzle/jigsawpuzzle.html">
+                <p>Jigsaw Puzzle</p>
+            </a>
+        </div>
+        <div class="box animation" id="journey">
+            <a href="journey/journey.html">
+                <img class="indexpics" src="indexpics/indexpics-journey.png">
+                <div class="mask">
+                    <div class="masktext">
+                        <p>Journey around<br>the Globe</p>
+                        <p class="category">Animation</p>
+                    </div>
+                </div>
+            </a>
+            <a class="projectname" href="journey/journey.html">
+                <p>Journey around the Globe</p>
             </a>
         </div>
 
@@ -145,8 +182,9 @@
     </div>
 
     <div id="footer">
-        <p>&copy;2019 Designed and coded by Jinghan Luo</p>
+        <p>&copy;2019 Designed and built by Jinghan Luo</p>
     </div>
+    <script src="filter.js"></script>
 </body>
 
 </html>

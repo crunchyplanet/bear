@@ -85,6 +85,25 @@ a:visited {
     color: #777777;
 }
 
+/*filters*/
+#filters {
+    color: #cccccc;
+    margin-bottom: 80px;
+    line-height: 2em;
+}
+.filter {
+    margin-left: 1.5em;
+    cursor: pointer;
+}
+.filter:hover {
+    color: #777777;
+}
+.active.filter {
+    color: #777777;
+    background: #b9dddd;
+    padding: 0.2em 0.7em;
+}
+
 /*grid*/
 #grid {
     text-align: justify;
@@ -142,8 +161,14 @@ a:visited {
 #dxm .mask {
     background: rgba(255, 31, 31, 0.904);   
 }
-#animation .mask {
-    background: rgb(88, 23, 104); 
+#puzzle .mask {
+    background: rgb(178, 204, 233); 
+}
+#journey .mask {
+    background: rgb(104, 23, 77); 
+}
+#kitchen .mask {
+    background: rgb(177, 39, 39); 
 }
 
 .box:hover .mask{
@@ -166,10 +191,6 @@ a:visited {
     font-size: 1.2em;
     text-align: center;
     color: #ffffff;
-}
-
-.box#pixelband {
-    display: none;
 }
 
 /*footer*/

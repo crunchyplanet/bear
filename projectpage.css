@@ -57,22 +57,45 @@ a:visited {
 #activetab.tabs a{
     color: #777777;
 }
+
 #workdropdown {
     float: left;
     overflow: hidden;
+    margin-right: 20px;
 }
-#workselections {
+#workdropdown .tabs {
+    text-align: right;
+    display: inline-block;
+    margin-right: 50px;
+}
+#worklist {
     height: 0;
+    position: relative;
+    top: 30px;
+    left: 35px;
+    z-index: 1;
+    background: rgb(245, 248, 250);
+    /* border: solid rgb(237, 247, 250); */
 }
-#workdropdown:hover #workselections {
-    height: 200px;
+#workdropdown:hover #worklist {
+    height: 210px;
     transition:height 0.2s ease-in-out;
 }
-#workselections p:hover {
+#worklist .column p {
     width: fit-content;
-    background: #cccccc;
-
+    margin: 20px auto;
 }
+#worklist .column p:hover {
+    /* background: #cccccc; */
+}
+.column {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    vertical-align: top;
+    /* text-align: center; */
+}
+
 /*project*/
 #project {
     font-family: canada-type-gibson, sans-serif;
@@ -207,6 +230,9 @@ hr {
 #next {
     margin-left: 20px;
 }
+#top {
+    margin-left: 20px;
+}
 /*mobile*/
 @media screen and (max-width: 768px) {
     #name {
@@ -220,6 +246,9 @@ hr {
         position: relative;
         top: 20px;
     }
+    #workdropdown #worklist {
+        display: none;
+    }
     h3.subtitles {
         width: 100%;
     }
@@ -230,6 +259,9 @@ hr {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     h3.subtitles {
         width: 100%;
+    }
+    #workdropdown #worklist {
+        display: none;
     }
 }
 
