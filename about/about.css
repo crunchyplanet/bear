@@ -70,6 +70,12 @@ a:visited {
     grid-gap: 20px;
 }
 
+/* #bio p, #bio img, #linkedin{
+    opacity: 0;
+} */
+#hi {
+    opacity: 0;
+}
 
 #bio {
     width: 70%;
@@ -96,23 +102,6 @@ a:visited {
 #nature {
     height: 255px;
     margin: auto;
-}
-
-/* show on hover and stay after hover
-.blanks {
-    opacity: 0;
-    animation: appear 0.5s;
-    animation-play-state: paused;
-    animation-fill-mode: forwards;
-}
-.blanks:hover {
-    animation-play-state: running;
-} 
-*/
-
-@keyframes appear {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
 
 #note {

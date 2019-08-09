@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/fgx1ngo.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -60,6 +63,14 @@
             <p>Individual Project</p>
             <p>Product Design | UX/UI</p>
         </div>
+        <div id="sidebar">
+            <a class="sideitems" href="#projectbrief">Overview</a>
+            <a class="sideitems" href="#ps">Problem Statement</a>
+            <a class="sideitems" href="#research">Research</a>
+            <a class="sideitems" href="#ideation">Ideation</a>
+            <a class="sideitems" href="#prototyping">Prototyping</a>
+            <a class="sideitems" href="#branding">Branding</a>
+        </div>
         <div id="projectflow">
             <div class="flexflow">
                 <div class="contentblocks" id="projectbrief">
@@ -73,7 +84,7 @@
                 <div class="contentblocks">
                     <img class="images" src="assets/overviewshot.png">
                 </div>
-                <h3 class="subtitles">PROBLEM STATEMENT</h3>
+                <h3 class="subtitles" id="ps">PROBLEM STATEMENT</h3>
                 <div class="contentblocks" id="problemstatement1">
                     <p>The massiveness of online resources has made information acquisition really easy. There is a
                         variety of platforms that cater to our needs for knowledge, advice, and recommendations. The
@@ -94,7 +105,7 @@
                         efficient way? How might we reshape the experience of consulting the internet and make it feel
                         personal? </p>
                 </div>
-                <h3 class="subtitles">RESEARCH</h3>
+                <h3 class="subtitles" id="research">RESEARCH</h3>
                 <div class="contentblocks" id="persona">
                     <p>I started by creating a persona for the user group and identifying the frustrations and needs of
                         the user.</p>
@@ -112,7 +123,7 @@
                 <div class="contentblocks" id="platformspic">
                     <img class="images" src="assets/research.jpg">
                 </div>
-                <h3 class="subtitles">IDEATION</h3>
+                <h3 class="subtitles" id="ideation">IDEATION</h3>
                 <div class="contentblocks" id="brainstorm">
                     <p>Through brainstorming, I defined the important and features of the platform I'm designing. The
                         platform could be accessed from both a mobile app when you're on the go and from a destop device
@@ -155,7 +166,7 @@
                 <div class="contentblocks" id="brainstormpic2">
                     <img class="images" src="assets/brainstorm2.jpg">
                 </div>
-                <h3 class="subtitles">PROTOTYPING</h3>
+                <h3 class="subtitles" id="prototyping">PROTOTYPING</h3>
                 <div class="contentblocks" id="wireframe">
                 </div>
                 <div class="contentblocks" id="uidesign">
@@ -249,7 +260,7 @@
                 <div class="contentblocks desktop">
                     <img class="images" src="assets/desktop2.jpg">
                 </div>
-                <h3 class="subtitles">BRAND IDENTITY</h3>
+                <h3 class="subtitles" id="branding">BRANDING</h3>
                 <div class="contentblocks">
                     <img class="images" src="assets/branddev.jpg">
                 </div>
@@ -277,7 +288,7 @@
             <span id="top"><a href="#header">&#8673; Back to top</a></span>
         </span>
     </div>
-
+    <script src="sidebar.js"></script>
 </body>
 
 </html>

@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/fgx1ngo.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -62,6 +65,12 @@
             <p>Individual Project</p>
             <p>Product Design | UX/UI</p>
         </div>
+        <div id="sidebar">
+            <a class="sideitems" id="side1" href="#projectbrief">Overview</a>
+            <a class="sideitems" id="side2" href="#research">Research & Ideation</a>
+            <a class="sideitems" id="side3" href="#prototype">Sketch & Prototype</a>
+            <a class="sideitems" id="side4" href="#animation">Animation & Motion Design</a>
+        </div>
         <div id="projectflow">
             <div class="contentblocks ctext" id="projectbrief">
                 <p>En Route is a tool that makes travel planning and route tracking easy and enjoyable. With
@@ -78,7 +87,7 @@
                     webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
             </div>
             <div class="flexflow">
-                <h3 class="subtitles">RESEARCH &amp; IDEATION</h3>
+                <h3 class="subtitles" id="research">RESEARCH &amp; IDEATION</h3>
                 <div class="contentblocks ctext" id="user">
                     <p>The target user is travelers who have certain needs and preferences in their trips. They have
                         different priorities in mind depending on the destination, time and people. And they want to
@@ -100,11 +109,16 @@
                     <img class="images" src="assets/journeymap.jpg">
                 </div>
 
-                <h3 class="subtitles">SKETCH &amp; PROTOTYPE</h3>
+                <h3 class="subtitles" id="prototype">SKETCH &amp; PROTOTYPE</h3>
+
                 <div class="contentblocks ctext" id="idea">
                     <p>I decided to build a tool that facilitates people to make highly customizable plans according to
                         their preferences and back it up with smart algorithms and a strong knowledge base. While people
-                        are traveling, it will become an informed guide for the traveler to refer to.</p>
+                        are traveling, it would serve as an informed guide for the traveler to refer to.</p>
+                    <div class="contentblocks" id="infoarch">
+                        <img class="images" src="assets/infoarch.png">
+                        <p class="captions">Information Structure</p>
+                    </div>
                     <p>In the planning phase, the traveler's needs are broken down to different parameters, and the user
                         could be as specific as they wish about their preferences. A suggested route will be generated
                         based on their input. Each spot on the route is changeble individually so the user could explore
@@ -126,7 +140,7 @@
                     <img class="images" src="assets/mobileselect.jpg">
 
                 </div>
-                <h3 class="subtitles">ANIMATION &amp; MOTION DESIGN</h3>
+                <h3 class="subtitles" id="animation">ANIMATION &amp; MOTION DESIGN</h3>
                 <div class="contentblocks ctext" id="animation">
                     <p>I created some animation to fill in the transition between the user's input and the
                         system-generated route to give the user a better idea of what's been taken into consideration. I
@@ -144,16 +158,14 @@
                 </div>
                 <!--<h3> class="subtitles">ITERATIONS</h3>-->
                 <div class="contentblocks" id="footnotes">
-                    <p>Mock-up source material on homepage by <a
-                            href="https://www.anthonyboyd.graphics/mockups/modern-iphone-x-and-macbook-pro-mockup-vol-3">Anthony
-                            Boyd</a>.</p>
+                    <p>Thank you for reading!</p>
                 </div>
                 <hr id="division">
                 <div class="contentblocks" id="lessons">
                     <p>Lessons Learned<p>
                 </div>
                 <div class="contentblocks" id="lessonslist">
-                    <p>1. Different touchpoints could be used to cater to the needs of the user in
+                    <p>1. Different touchpoints(devices) could be used to cater to the needs of the user in
                         different phases
                         of their
                         experience. Using the web platform for information-heavy scenarios and mobile version for
@@ -176,7 +188,7 @@
             <span id="top"><a href="#header">&#8673; Back to top</a></span>
         </span>
     </div>
-
+    <script src="sidebar.js"></script>
 </body>
 
 </html>
