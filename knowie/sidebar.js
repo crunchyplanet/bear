@@ -68,14 +68,14 @@ $(document).ready(function () {
             $(side[4]).addClass('activesec');
             $(side[4]).text('- Prototyping');
         }
-        if (tops[5] + 300 < bottom_of_window && tops[5] + 1200 > bottom_of_window) {
+        if (tops[5] + 300 < bottom_of_window && tops[5] + 1500 > bottom_of_window) {
             $('.sideitems').show();
             removeActive();
 
             $(side[5]).addClass('activesec');
             $(side[5]).text('- Branding');
         }
-        if (tops[5] + 1200 < bottom_of_window) {
+        if (tops[5] + 1500 < bottom_of_window) {
             removeActive();
 
             $('.sideitems').hide();
