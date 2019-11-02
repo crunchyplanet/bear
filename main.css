@@ -10,7 +10,7 @@ body {
     position: relative;
 }
 #logo {
-    width: 56px;
+    width: 60px;
     display: inline-block;
 }
 #headtext {
@@ -18,10 +18,11 @@ body {
     margin-left: 20px;
 }
 #name {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em;
     font-weight: 400;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.2em;
 }
 #name a {
     color: #000000;
@@ -32,7 +33,7 @@ body {
     font-size: 1em;
     font-weight: 300;
     margin-top: 0;
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 #containerexample {
@@ -46,16 +47,6 @@ a:link {
 }
 a:visited {
     text-decoration: none;
-}
-
-.box a:link {
-    color: #777777;
-}
-.box a:visited {
-    color: #777777;
-}
-.box a:hover {
-    color: #444444;
 }
 
 /*navigation*/
@@ -84,6 +75,39 @@ a:visited {
 #activetab.tabs a{
     color: #777777;
 }
+
+#intro {
+    width:75%;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5em;
+    color: #333333;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+}
+#intro a:link{
+    color: #000000;
+}
+#intro a:visited{
+    color: #000000;
+}
+#intro a:hover{
+    color: #a6dde8;
+}
+
+
+.box a:link {
+    color: #777777;
+}
+.box a:visited {
+    color: #777777;
+}
+.box a:hover {
+    color: #444444;
+}
+
+
 
 /*filters*/
 #filters {
@@ -200,7 +224,7 @@ a:visited {
     color: #999999;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     #logo {
         display: block;
         margin: 10px auto;
@@ -224,6 +248,10 @@ a:visited {
         margin-left: 0;
         margin-right: 3em;
     }
+    #intro {
+        width: 100%;
+    }
+
     /*one box per row on mobile screen*/
    .box {
     width: 100%;

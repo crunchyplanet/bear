@@ -4,65 +4,11 @@ body {
     font-family: canada-type-gibson, sans-serif;
     font-weight: 300;
     margin: 5em auto;
-    background-color: #111111;
+    background-color: #e7f3f7;
 }
-/*header*/
-#header {
-    position: relative;
-}
-#logo {
-    width: 56px;
-    display: inline-block;
-}
-#headtext {
-    display: inline-block;
-    margin-left: 20px;
-}
-#name {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
-    font-weight: 400;
-    margin-bottom: 0.4em;
-}
-#name a {
-    color: #ffffff;
-}
-#jobtitle {
-    color: #999999;
-    font-size: 1em;
-    font-weight: 300;
-    margin-top: 0;
-    margin-left: 5px;
-}
-#containerexample {
-    background-color: rgb(136, 155, 144);
-    padding: 10px;
-    visibility: hidden;
-}
+/*header part in main.css*/
 
-a:link {
-    text-decoration: none;
-}
-a:visited {
-    text-decoration: none;
-}
-#navigation {
-    position: absolute;
-    top: 50px;
-    right: 0px;
-}
-#navigation a:hover {
-    color: #aaaaaa;
-}  
-.tabs a{
-    margin-left: 3em;
-    color: #666666;
-    font-size: 1em;
-    letter-spacing: 0.1em;
-}
-#activetab.tabs a{
-    color: #aaaaaa;
-}
+
 #gridcontainer {
     display: grid;
     grid-template-columns: auto auto;
@@ -73,35 +19,27 @@ a:visited {
 /* #bio p, #bio img, #linkedin{
     opacity: 0;
 } */
-#hi {
-    opacity: 0;
-}
 
 #bio {
     width: 70%;
     margin: 0 auto;
     line-height: 1.5em;
     text-align: left;
-    color: #cccccc;
+    color: #333333;
     font-size: 1.2em;
     font-weight: 300;
 }
 
-#hi {
-    font-family: active, sans-serif;
-    font-size: 2em;
-}
-#para1 {
+#gridcontainer p {
     grid-column-start: 1;
     grid-column-end: 3;
 }
-#psych {
-    height: 300px;
-    margin: auto;
-}
+
 #nature {
     height: 255px;
     margin: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 #note {
@@ -162,10 +100,6 @@ a:visited {
         grid-template-columns: auto;
         grid-template-rows: repeat(auto, 7);
     }
-    #para1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     #bio {
@@ -176,9 +110,5 @@ a:visited {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;
-    }
-    #para1 {
-        grid-column-start: 1;
-        grid-column-end: 2;
     }
 }
