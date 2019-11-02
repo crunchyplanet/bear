@@ -1,0 +1,19 @@
+.masonry {
+    columns: 3;
+    column-gap: 0px;
+    visibility: hidden;
+}
+.m-item{
+    padding: 0;
+}
+.m-item img {
+    width: 100%;
+    display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+    .masonry {
+        columns: 1;
+    }
+}
