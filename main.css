@@ -84,7 +84,7 @@ a:visited {
     font-weight: 400;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 #intro a:link{
     color: #000000;
@@ -112,11 +112,17 @@ a:visited {
 /*filters*/
 #filters {
     color: #cccccc;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 80px;
     line-height: 2em;
+    text-align: center;
+    font-size: 1.1em;
 }
 .filter {
-    margin-left: 1.5em;
+    margin-left: 2em;
+    display: inline-block;
     cursor: pointer;
 }
 .filter:hover {
@@ -124,8 +130,8 @@ a:visited {
 }
 .active.filter {
     color: #777777;
-    background: #b9dddd;
     padding: 0.2em 0.7em;
+    border-bottom: 3px dashed #a6dde8
 }
 
 /*grid*/
@@ -144,6 +150,11 @@ a:visited {
 .indexpics {
     width: 100%;
     transition: opacity 0.2s ease-in-out;
+}
+
+
+.box.gm {
+    display: none;
 }
 
 .mask {
@@ -204,8 +215,29 @@ a:visited {
     display: none;
 }
 
+#linkstoother {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3em;
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+#linkstoother a {
+    display: block;
+    margin-bottom: 1em;
+}
+#linkstoother a:link{
+    color: #000000;
+}
+#linkstoother a:visited{
+    color: #000000;
+}
+#linkstoother a:hover{
+    color: #a6dde8;
+}
+
 .more {
-    display: inline-block;
     margin-bottom: 5%;
     width: 100%;
 

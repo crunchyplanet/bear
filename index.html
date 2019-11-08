@@ -15,7 +15,7 @@
     <meta charset="utf-8" />
     <meta name="description"
         content="Recent work and projects ranging from UX/UI design, visual design, motion design, animation and digital electronics.">
-    <meta name="keywords" content="Jinghan Luo, Interaction Design, Portfolio">
+    <meta name="keywords" content="Jillian Jinghan Luo, Interaction Design, Portfolio">
     <meta name="author" content="Jinghan Luo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/fgx1ngo.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -56,14 +57,14 @@
         <p>I’m an interaction designer based in San Francisco, exploring ways to create compelling visual and
             interactive experiences.
         </p>
-        <p>Here’s some of the <a href="">recent work I’ve done.&#8595;</a></p>
+        <p>Here’s some of the <a id="scrollmark" href="#filters">recent work I’ve done.&#8595;</a></p>
     </div>
 
     <div id="filters">
-        <span class="filter active">All</span>
-        <span class="filter">UX Design</span>
-        <span class="filter">Graphic/Motion Design</span>
-        <span class="filter">Animation</span>
+        <!-- <span class="filter active">All</span> -->
+        <span class="filter active">Product Design</span>
+        <span class="filter">Motion Graphics</span>
+        <!-- <span class="filter">Animation</span> -->
     </div>
     <div id="grid">
         <div class="box ux" id="enroute">
@@ -123,37 +124,7 @@
             </a>
         </div>
 
-        <!-- <div class="box" id="pixelband">
-            <a href="pixelband/pixelband.html">
-                <img class="indexpics" src="indexpics/indexpics-pixelband.jpg">
-                <div class="mask">
-                    <div class="masktext">
-                        <p>Pixel Band</p>
-                        <p class="category">Product Design | UX | Programming</p>
-                    </div>
-                </div>
-            </a>
-            <a class="projectname" href="pixelband/pixelband.html">
-                <p>Wearable Therapy - Pixel Band</p>
-            </a>
-        </div> -->
-
-        <!-- <div class="box ux" id="dxm">
-            <a href="dxm/dxm.html">
-                <img class="indexpics" src="indexpics/indexpics-dxm.jpg">
-                <div class="mask">
-                    <div class="masktext">
-                        <p>UX Design Internship at Baidu</p>
-                        <p class="category">UX/UI</p>
-                    </div>
-                </div>
-            </a>
-            <a class="projectname" href="dxm/dxm.html">
-                <p>UX Design Internship at Baidu</p>
-            </a>
-        </div> -->
-
-        <div class="box animation" id="puzzle">
+        <!-- <div class="box animation" id="puzzle">
             <a href="jigsawpuzzle/jigsawpuzzle.html">
                 <img class="indexpics" src="indexpics/indexpics-puzzle.png">
                 <div class="mask">
@@ -180,7 +151,7 @@
             <a class="projectname" href="journey/journey.html">
                 <p>Journey around the Globe</p>
             </a>
-        </div>
+        </div> -->
 
         <div class="more">
             <div class="moretext">
@@ -189,10 +160,15 @@
         </div>
 
     </div>
+    <div id="linkstoother">
+        <a href="otherstuff/">Some other stuff &rBarr;</a>
+        <a href="about/">More about me &rBarr;</a>
+    </div>
 
     <div id="footer">
         <p>&copy;2019 Jillian Jinghan Luo</p>
     </div>
+    <script src="basics.js"></script>
     <script src="filter.js"></script>
 </body>
 
