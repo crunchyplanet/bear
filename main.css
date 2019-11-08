@@ -280,7 +280,7 @@ a:visited {
         margin-left: 0;
         margin-right: 3em;
     }
-    #intro {
+    #intro, #filters {
         width: 100%;
     }
 
