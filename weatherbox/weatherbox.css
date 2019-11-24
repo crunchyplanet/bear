@@ -1,0 +1,82 @@
+.video {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+#projectbrief, #concept, #narrative, #electronics p, #writingcode, #casing {
+    width: 65%;
+    margin: 0 auto;
+}
+.contentblocks#precedentpic1 {
+    width: 45%;
+}
+.contentblocks#precedentpic2 {
+    width: 50%;
+}
+
+.contentblocks#process3 {
+    width: 25%;
+}
+.contentblocks#precedentpics {
+    text-align: justify;
+}
+
+.contentblocks#wiring {
+    width: 45%;
+}
+.contentblocks#diagram {
+    width: 40%;
+}
+
+.contentblocks#casing1 {
+    width: 60%;
+}
+.contentblocks#casing23 {
+    width: 35%;
+}
+.contentblocks.exhibitionpics {
+    width: 48%;
+}
+.contentblocks.exhibitionpics .images{
+    padding-bottom: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #projectflow #projectbrief {
+        width: 100%;
+    }
+    #projectflow .flexflow div.contentblocks p{
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #projectbrief, #concept, #narrative, #electronics p, #writingcode, #casing {
+        width: 100%
+    }
+    .contentblocks#concept {
+        width: 100%;
+    }
+    .contentblocks#precedentpics {
+        width: 100%;
+    }
+    .contentblocks#moodboard {
+        width: 100%;
+    }
+    .contentblocks#narrative {
+        width: 100%;
+    }
+}
+
+

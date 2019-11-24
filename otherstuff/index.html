@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/fgx1ngo.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -52,30 +53,53 @@
     <div id="containerexample">
         <h4>?</h4>
     </div>
-    <div id="intro">
-        <p>Coming soon.</p>
-    </div>
 
-    <div class="masonry">
+    <div class="gridcontainer">
 
-        <div class="m-item">
-            <img src="assets/drink.png">
+        <div class="item">
+            <img class="gridimg" src="assets/weatherbox.gif">
         </div>
-        <div class="m-item">
-            <img src="assets/icecream.png">
+        <div class="item">
+            <img class="gridimg" src="assets/sftopo.jpg">
         </div>
-        <div class="m-item">
-            <img src="assets/watermelon.png">
+        <div class="item">
+            <img class="gridimg" src="assets/wander.PNG">
         </div>
-        <div class="m-item">
-            <img src="assets/drink.png">
-        </div>
-        <div class="m-item">
-            <img src="assets/icecream.png">
-        </div>
-        <div class="m-item">
-            <img src="assets/watermelon.png">
+        <div class="item">
+            <img class="gridimg" src="assets/coast.JPG">
         </div>
         <!-- weather box-gif, felt map, city impressions, photography, illustrations, animations-with play label
         open modal to view-->
     </div>
+
+    <div class="modal">
+        <span class="closebtn">&times;</span>
+        <div class="modal-content">
+            <div class="video">
+                <iframe id="player" src="https://player.vimeo.com/video/307826619?loop=1" frameborder="0"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <span class="closebtn">&times;</span>
+        <div class="modal-content">
+            <img src="assets/sftopo.jpg">
+        </div>
+    </div>
+    <div class="modal">
+        <span class="closebtn">&times;</span>
+        <div class="modal-content">
+            <img src="assets/wander.PNG">
+        </div>
+    </div>
+    <div class="modal">
+        <span class="closebtn">&times;</span>
+        <div class="modal-content">
+            <img src="assets/coast.JPG">
+        </div>
+    </div>
+
+    <script src="modal.js"></script>
+</body>
