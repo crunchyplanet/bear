@@ -37,6 +37,7 @@ for (let i = 0; i < anchor.length; i++) {
     }
     window.onclick = function (event) {
         if (event.target == modal[i]) {
+            console.log(modal[i]);
             modal[i].style.display = "none";
         }
     }

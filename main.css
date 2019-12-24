@@ -10,8 +10,10 @@ body {
     position: relative;
 }
 #logo {
-    width: 60px;
+    width: 54px;
     display: inline-block;
+    position: relative;
+    top: 20px;
 }
 #headtext {
     display: inline-block;
@@ -19,21 +21,14 @@ body {
 }
 #name {
     /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: active, sans-serif; */
     font-family: 'DM Serif Display', serif;
-    font-size: 2em;
+    /* font-family: 'DM Sans', sans-serif; */
+    font-size: 1.8em;
     font-weight: 400;
-    margin-bottom: 0.2em;
 }
 #name a {
     color: #000000;
-}
-
-#jobtitle {
-    color: #999999;
-    font-size: 1em;
-    font-weight: 300;
-    margin-top: 0;
-    margin-left: 2px;
 }
 
 #containerexample {
@@ -52,7 +47,7 @@ a:visited {
 /*navigation*/
 #navigation {
     position: absolute;
-    top: 50px;
+    top: 35px;
     right: 0px;
 }
 /* 
@@ -134,14 +129,10 @@ a:visited {
     border-bottom: 3px dashed #a6dde8
 }
 
-/*grid*/
-#grid {
-    text-align: justify;
-}
+/*projects*/
 
 .box {
-    width: 45%;
-    display: inline-block;
+    width: 100%;
     text-align: center;
     margin-bottom: 6em;
     position: relative;
@@ -159,8 +150,8 @@ a:visited {
 
 .mask {
     width: 100%;
-    height: 0;
-    padding-top: 100%;
+    height: 100%;
+    /* padding-top: 100%; */
     position: absolute;
     top: 0px;
     left: 0px;
@@ -171,6 +162,7 @@ a:visited {
 
 .masktext {
     color: white;
+    font-family: 'DM Serif Display', serif;;
     font-size: 2em;
     position: absolute;
     top: 50%;
@@ -179,6 +171,7 @@ a:visited {
 }
 .masktext .category {
     font-size: 0.5em;
+    font-family: canada-type-gibson, sans-serif;
 }
 
 #enroute .mask {
@@ -221,11 +214,12 @@ a:visited {
     font-size: 1.3em;
     color: #333333;
     font-weight: 400;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 #linkstoother a {
     display: block;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
+    /* border: 3px solid #a6dde8; */
 }
 #linkstoother a:link{
     color: #000000;
