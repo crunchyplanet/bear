@@ -7,8 +7,16 @@ $(document).ready(function () {
     top4 = sections[3].offsetTop;
     top5 = sections[4].offsetTop;
     tops = [top_content, top1, top2, top3, top4, top5];
+    topoflessons = document.getElementById('lessons').offsetTop;
     side = document.getElementsByClassName('sideitems');
     //console.log(tops);
+
+    $(".sideitems").on("click", function (e) {
+        e.preventDefault();
+        $("body, html").animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 600);
+    });
 
     function removeActive() {
         for (i = 0; i < 6; i++) {
@@ -68,14 +76,14 @@ $(document).ready(function () {
             $(side[4]).addClass('activesec');
             $(side[4]).text('- Prototyping');
         }
-        if (tops[5] + 300 < bottom_of_window && tops[5] + 1500 > bottom_of_window) {
+        if (tops[5] + 300 < bottom_of_window && topoflessons + 200 > bottom_of_window) {
             $('.sideitems').show();
             removeActive();
 
             $(side[5]).addClass('activesec');
             $(side[5]).text('- Branding');
         }
-        if (tops[5] + 1500 < bottom_of_window) {
+        if (topoflessons + 200 < bottom_of_window) {
             removeActive();
 
             $('.sideitems').hide();
