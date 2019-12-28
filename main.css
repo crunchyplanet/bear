@@ -254,6 +254,7 @@ a:visited {
     #logo {
         display: block;
         margin: 10px auto;
+        top: 0px;
     }
     #headtext {
         margin: 0;

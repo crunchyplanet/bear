@@ -24,7 +24,7 @@ for (let i = 0; i < ftrs.length; i++) {
                 }
             }
         }
-        if (ctg == "Motion Graphics") {
+        if (ctg == "Visual/Motion Design") {
             for (let i = 0; i < boxes.length; i++) {
                 boxes[i].style.display = "inline-block";
                 if (boxes[i].className != "box gm") {
