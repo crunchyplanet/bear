@@ -174,8 +174,8 @@ h3.subtitles {
 }
 #projectflow p.captions {
     text-align: center;
-    font-size: 0.9em;
-    color: #cccccc;
+    font-size: 1em;
+    color: #999;
 }
 
 #footnotes {

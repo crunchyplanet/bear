@@ -175,29 +175,21 @@ a:visited {
 }
 
 #enroute .mask {
-    background: rgb(35, 81, 151); 
+    background: rgb(47, 94, 91); 
 }
 #knowie .mask {
     background: rgb(255, 146, 45); 
 }
-#weatherbox .mask {
-    background: rgb(11, 9, 95); 
+#food .mask {
+    background: rgb(35, 81, 151); 
 }
-#pixelband .mask {
-    background: rgb(24, 133, 66); 
-}
-#dxm .mask {
-    background: rgba(255, 31, 31, 0.904);   
-}
-#puzzle .mask {
-    background: rgb(178, 204, 233); 
+#makersshack .mask {
+    background: rgb(68, 113, 165); 
 }
 #journey .mask {
     background: rgb(104, 23, 77); 
 }
-#kitchen .mask {
-    background: rgb(255, 218, 9); 
-}
+
 
 .box:hover .mask{
     opacity: 0.8;

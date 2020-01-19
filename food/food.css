@@ -1,0 +1,23 @@
+#dimsum.contentblocks {
+    margin-bottom: 60px;
+}
+#icecream.contentblocks {
+    margin-bottom: 60px;
+}
+#pizza.contentblocks {
+    margin-bottom: 60px;
+}
+#ramen.contentblocks {
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    #projectflow .flexflow div.contentblocks p{
+        width: 100%
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .ctext {
+        width: 100%;
+    }
+}
