@@ -48,6 +48,11 @@ body {
     border: white solid 15px;
 }
 
+.modal-content p {
+    font-size: 1.2em;
+    color: rgb(196, 196, 196);
+}
+
 .video {
     height: 100%;
     position:relative;
