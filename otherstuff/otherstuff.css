@@ -1,76 +1,76 @@
 body {
-    background-color: #fff3eb;
+  background-color: #fff3eb;
 }
+
 .gridcontainer {
-    text-align: justify;
+  text-align: justify;
 }
-.item{
-    width: 32%;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 1em;
-    position: relative;
-    cursor: pointer;
+.item {
+  width: 32%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 1em;
+  position: relative;
+  cursor: pointer;
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
 
 .closebtn {
-    color: #eeeeee;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    font-size: 36px;
-    cursor: pointer;
+  color: #eeeeee;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 36px;
+  cursor: pointer;
 }
 
 /* Modal Content */
 .modal-content {
-    margin: auto;
-    height: 75vh;
-    text-align: center;
+  margin: auto;
+  height: 75vh;
+  text-align: center;
 }
 
 .modal-content img {
-    height: 100%;
-    border: white solid 15px;
+  height: 100%;
+  border: white solid 15px;
 }
 
 .modal-content p {
-    font-size: 1.2em;
-    color: rgb(196, 196, 196);
+  font-size: 1.2em;
+  color: rgb(196, 196, 196);
 }
 
 .video {
-    height: 100%;
-    position:relative;
-    /* height:0;
+  height: 100%;
+  position: relative;
+  /* height:0;
     overflow:hidden;
     padding-bottom:56.25%; */
 }
-.video iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+.video iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
-
 @media screen and (max-width: 768px) {
-    .item {
-        width: 100%;
-    }
+  .item {
+    width: 100%;
+  }
 }
