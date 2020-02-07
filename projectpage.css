@@ -1,47 +1,47 @@
 body {
-    max-width: 75%;
-    -webkit-font-smoothing: subpixel-antialiased;
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 300;
-    margin: 5em auto;
+  max-width: 75%;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 300;
+  margin: 5em auto;
 }
 /*top*/
 #header {
-    position: relative;
+  position: relative;
 }
 #logo {
-    width: 48px;
-    display: inline-block;
-    margin-left: 50px;
+  width: 48px;
+  display: inline-block;
+  margin-left: 50px;
 }
 
 #containerexample {
-    background-color: rgb(136, 155, 144);
-    padding: 10px;
-    visibility: hidden;
+  background-color: rgb(136, 155, 144);
+  padding: 10px;
+  visibility: hidden;
 }
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 #navigation {
-    position: absolute;
-    top: 15px;
-    right: 0px;
+  position: absolute;
+  top: 15px;
+  right: 0px;
 }
 #navigation a:hover {
-    color: #777777;
+  color: #777777;
 }
-.tabs a{
-    margin-left: 3em;
-    color: #cccccc;
-    font-size: 1em;
-    letter-spacing: 0.1em;
+.tabs a {
+  margin-left: 3em;
+  color: #cccccc;
+  font-size: 1em;
+  letter-spacing: 0.1em;
 }
-#activetab.tabs a{
-    color: #777777;
+#activetab.tabs a {
+  color: #777777;
 }
 
 /*
@@ -74,206 +74,213 @@ a:visited {
 */
 
 .column {
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
-    vertical-align: top;
-    /* text-align: center; */
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  vertical-align: top;
+  /* text-align: center; */
 }
 
 /*sidebar*/
 #sidebar {
-    position: fixed;
-    top: 25%;
-    left: 5%;
-    z-index: 1;
+  position: fixed;
+  top: 25%;
+  left: 5%;
+  z-index: 1;
 }
 #sidebar a {
-    display: block;
-    line-height: 2em;
-    color: #aaa;
+  display: block;
+  line-height: 2em;
+  color: #aaa;
 }
 .sideitems {
-    opacity: 0;
-    position: relative;
-    top: 200px;
+  opacity: 0;
+  position: relative;
+  top: 200px;
 }
 #sidebar .activesec.sideitems {
-    color: #777;
-    font-weight: 500;
+  color: #777;
+  font-weight: 500;
 }
 
 /*project*/
 #project {
-    font-family: canada-type-gibson, sans-serif;
+  font-family: canada-type-gibson, sans-serif;
 }
 #projecttitle {
-    font-family: 'DM Serif Display', serif;
-    font-size: 2.5em;
-    font-weight: 600;
-    text-align: center;
-    line-height: 0.8em;
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-align: center;
+  line-height: 0.8em;
 }
 #projectsubtitle {
-    font-size: 1.6em;
-    font-weight: 400;
-    text-align: center;
+  font-size: 1.6em;
+  font-weight: 400;
+  text-align: center;
 }
 div#basicinfo {
-    margin-top: 90px;
-    margin-bottom: 100px;
-    color: #777777;
-    font-size: 0.9em;
-    font-weight: 300;
-    letter-spacing: 0.1em;
+  margin-top: 90px;
+  margin-bottom: 100px;
+  color: #777777;
+  font-size: 0.9em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
 }
 #basicinfo p {
-    margin-bottom: -10px; 
-    text-align: center;
+  margin-bottom: -10px;
+  text-align: center;
 }
 #projectflow a:link {
-    text-decoration: underline dotted #777777;
-    color: #777777;
+  text-decoration: underline dotted #777777;
+  color: #777777;
 }
 #projectflow a:visited {
-    text-decoration: underline dotted #777777;
-    color: #777777;
+  text-decoration: underline dotted #777777;
+  color: #777777;
 }
 #projectflow div {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 #projectflow p {
-    color: #333333;
-    line-height: 1.5em;
-    font-size: 1.3em;
-    font-weight: 300;
-    font-style: normal;
+  color: #333333;
+  line-height: 1.5em;
+  font-size: 1.3em;
+  font-weight: 300;
+  font-style: normal;
 }
 .flexflow {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 h3.subtitles {
-    font-size: 1.3em;
-    letter-spacing: 0.1em;
-    color: #cccccc;
-    padding-top: 50px;
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.5em;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  color: #cccccc;
+  padding-top: 50px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
 }
 .ctext {
-    width: 65%;
-    margin: 0 auto;
+  width: 65%;
+  margin: 0 auto;
 }
 .images {
-    max-width: 100%;
+  max-width: 100%;
 }
 #projectflow p.captions {
-    text-align: center;
-    font-size: 1em;
-    color: #999;
+  text-align: center;
+  font-size: 1em;
+  color: #999;
 }
 
 #footnotes {
-    margin: 5em auto 1em auto;
+  margin: 5em auto 1em auto;
 }
-#footnotes p{
-    font-size: 0.9em;
-    color: #fff;
+#footnotes p {
+  font-size: 0.9em;
+  color: #fff;
 }
 hr {
-    border: 1px dashed #aaa;
-    margin-top: 1em;
-    width: 100%;
+  border: 1px dashed #aaa;
+  margin-top: 1em;
+  width: 100%;
 }
 #lessons {
-    font-family: 'DM Serif Display', serif;
-    margin: 100px auto;
-    width: 20%;
-    font-size: 1.2em;
-    text-align: center;
-    color: #777;
+  font-family: "DM Serif Display", serif;
+  margin: 100px auto;
+  width: 20%;
+  font-size: 1.2em;
+  text-align: center;
+  color: #777;
 }
 #lessonslist {
-    margin: 30px auto;
-    width: 70%;
-    text-align: justify;
-    color: #777;
+  margin: 30px auto;
+  width: 70%;
+  text-align: justify;
+  color: #777;
 }
 /*bottom*/
 #bottomnavigation {
-    margin-top: 150px;
-    padding-bottom: 80px;
-    position: relative;
-    color: #cccccc;
-    letter-spacing: 0.1em;
+  margin-top: 150px;
+  padding-bottom: 80px;
+  position: relative;
+  color: #cccccc;
+  letter-spacing: 0.1em;
 }
-#bottomnavigation a:link{
-    color: #cccccc
+#bottomnavigation a:link {
+  color: #cccccc;
 }
-#bottomnavigation a:visited{
-    color: #cccccc
+#bottomnavigation a:visited {
+  color: #cccccc;
 }
-#bottomnavigation a:hover{
-    color: #777777;
+#bottomnavigation a:hover {
+  color: #777777;
 }
 #bottomnavigation a.nalink:hover {
-    color: #cccccc
+  color: #cccccc;
 }
 #back {
-    position: absolute;
-    left: 0;
+  position: absolute;
+  left: 0;
 }
 #arrows {
-    position: absolute;
-    right: 0;
-    text-align: right;
+  position: absolute;
+  right: 0;
+  text-align: right;
 }
 #next {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 #top {
-    margin-left: 20px;
-}
-/*mobile*/
-@media screen and (max-width: 768px) {
-    #name {
-        text-align: center;
-    }
-    #jobtitle {
-        text-align: center;
-    }
-    #navigation {
-        display: none;
-        position: relative;
-        top: 20px;
-    }
-    #workdropdown #worklist {
-        display: none;
-    }
-    h3.subtitles {
-        width: 100%;
-    }
-    #projectflow .flexflow div.contentblocks {
-        width: 100%
-    }
-    #sidebar {
-        display: none;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    h3.subtitles {
-        width: 100%;
-    }
-    #workdropdown #worklist {
-        display: none;
-    }
-    #sidebar {
-        display: none;
-    }
+  margin-left: 20px;
 }
 
+#footer {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #999999;
+}
+
+/*mobile*/
+@media screen and (max-width: 768px) {
+  #name {
+    text-align: center;
+  }
+  #jobtitle {
+    text-align: center;
+  }
+  #navigation {
+    display: none;
+    position: relative;
+    top: 20px;
+  }
+  #workdropdown #worklist {
+    display: none;
+  }
+  h3.subtitles {
+    width: 100%;
+  }
+  #projectflow .flexflow div.contentblocks {
+    width: 100%;
+  }
+  #sidebar {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h3.subtitles {
+    width: 100%;
+  }
+  #workdropdown #worklist {
+    display: none;
+  }
+  #sidebar {
+    display: none;
+  }
+}

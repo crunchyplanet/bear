@@ -1,54 +1,54 @@
 body {
-    max-width: 75%;
-    -webkit-font-smoothing: subpixel-antialiased;
-    font-family: canada-type-gibson, sans-serif;
-    font-weight: 300;
-    margin: 5em auto;
+  max-width: 75%;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-family: canada-type-gibson, sans-serif;
+  font-weight: 300;
+  margin: 5em auto;
 }
 /*header*/
 #header {
-    position: relative;
+  position: relative;
 }
 #logo {
-    width: 54px;
-    display: inline-block;
-    position: relative;
-    top: 20px;
+  width: 54px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
 }
 #headtext {
-    display: inline-block;
-    margin-left: 20px;
+  display: inline-block;
+  margin-left: 20px;
 }
 #name {
-    /* font-family: 'Montserrat', sans-serif; */
-    /* font-family: active, sans-serif; */
-    font-family: 'DM Serif Display', serif;
-    /* font-family: 'DM Sans', sans-serif; */
-    font-size: 1.8em;
-    font-weight: 400;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: active, sans-serif; */
+  font-family: "DM Serif Display", serif;
+  /* font-family: 'DM Sans', sans-serif; */
+  font-size: 1.8em;
+  font-weight: 400;
 }
 #name a {
-    color: #000000;
+  color: #000000;
 }
 
 #containerexample {
-    background-color: rgb(136, 155, 144);
-    padding: 10px;
-    visibility: hidden;
+  background-color: rgb(136, 155, 144);
+  padding: 10px;
+  visibility: hidden;
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /*navigation*/
 #navigation {
-    position: absolute;
-    top: 35px;
-    right: 0px;
+  position: absolute;
+  top: 35px;
+  right: 0px;
 }
 /* 
 #navigation a:link {  
@@ -59,221 +59,217 @@ a:visited {
 } 
 */
 #navigation a:hover {
-    color: #777777;
-}  
-.tabs a{
-    margin-left: 3em;
-    color: #cccccc;
-    font-size: 1em;
-    letter-spacing: 0.1em;
+  color: #777777;
 }
-#activetab.tabs a{
-    color: #777777;
+.tabs a {
+  margin-left: 3em;
+  color: #cccccc;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+#activetab.tabs a {
+  color: #777777;
 }
 
 #intro {
-    width:75%;
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.5em;
-    color: #333333;
-    font-weight: 400;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
+  width: 75%;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5em;
+  color: #333333;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
 }
-#intro a:link{
-    color: #000000;
+#intro a:link {
+  color: #000000;
 }
-#intro a:visited{
-    color: #000000;
+#intro a:visited {
+  color: #000000;
 }
-#intro a:hover{
-    color: #a6dde8;
+#intro a:hover {
+  color: #a6dde8;
 }
-
 
 .box a:link {
-    color: #777777;
+  color: #777777;
 }
 .box a:visited {
-    color: #777777;
+  color: #777777;
 }
 .box a:hover {
-    color: #444444;
+  color: #444444;
 }
-
-
 
 /*filters*/
 #filters {
-    color: #cccccc;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 80px;
-    line-height: 2em;
-    text-align: center;
-    font-size: 1.1em;
+  color: #cccccc;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  line-height: 2em;
+  text-align: center;
+  font-size: 1.1em;
 }
 .filter {
-    margin-left: 2em;
-    display: inline-block;
-    cursor: pointer;
+  margin-left: 2em;
+  display: inline-block;
+  cursor: pointer;
 }
 .filter:hover {
-    color: #777777;
+  color: #777777;
 }
 .active.filter {
-    color: #777777;
-    padding: 0.2em 0.7em;
-    border-bottom: 3px dashed #a6dde8
+  color: #777777;
+  padding: 0.2em 0.7em;
+  border-bottom: 3px dashed #a6dde8;
 }
 
 /*projects*/
 
 .box {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 6em;
-    position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6em;
+  position: relative;
 }
 
 .indexpics {
-    width: 100%;
-    transition: opacity 0.2s ease-in-out;
+  width: 100%;
+  transition: opacity 0.2s ease-in-out;
 }
 
-
 .box.gm {
-    display: none;
+  display: none;
 }
 
 .mask {
-    width: 100%;
-    height: 100%;
-    /* padding-top: 100%; */
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;  
+  width: 100%;
+  height: 100%;
+  /* padding-top: 100%; */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .masktext {
-    color: white;
-    font-family: 'DM Serif Display', serif;;
-    font-size: 2em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  color: white;
+  font-family: "DM Serif Display", serif;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .masktext .category {
-    font-size: 0.5em;
-    font-family: canada-type-gibson, sans-serif;
+  font-size: 0.5em;
+  font-family: canada-type-gibson, sans-serif;
 }
 
 #enroute .mask {
-    background: rgb(47, 94, 91); 
+  background: rgb(47, 94, 91);
 }
 #knowie .mask {
-    background: rgb(255, 146, 45); 
+  background: rgb(255, 146, 45);
 }
 #food .mask {
-    background: rgb(35, 81, 151); 
+  background: rgb(35, 81, 151);
 }
 #makersshack .mask {
-    background: rgb(68, 113, 165); 
+  background: rgb(68, 113, 165);
 }
 #journey .mask {
-    background: rgb(104, 23, 77); 
+  background: rgb(104, 23, 77);
 }
 
-
-.box:hover .mask{
-    opacity: 0.8;
-    cursor: pointer;
+.box:hover .mask {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .projectname {
-    display: none;
+  display: none;
 }
 
 #linkstoother {
-    text-align: center;
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.3em;
-    color: #333333;
-    font-weight: 400;
-    margin-bottom: 200px;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.3em;
+  color: #333333;
+  font-weight: 400;
 }
 #linkstoother a {
-    display: block;
-    margin-bottom: 3em;
-    /* border: 3px solid #a6dde8; */
+  display: block;
+  margin-bottom: 3em;
+  /* border: 3px solid #a6dde8; */
 }
-#linkstoother a:link{
-    color: #000000;
+#linkstoother a:link {
+  color: #000000;
 }
-#linkstoother a:visited{
-    color: #000000;
+#linkstoother a:visited {
+  color: #000000;
 }
-#linkstoother a:hover{
-    color: #a6dde8;
+#linkstoother a:hover {
+  color: #a6dde8;
 }
 
 .more {
-    margin-bottom: 5%;
-    width: 100%;
+  margin-bottom: 5%;
+  width: 100%;
 }
 .moretext {
-    color: #777777;
-    font-size: 1.2em;
-    text-align: center;
+  color: #777777;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 /*footer*/
 #footer {
-    text-align: center;
-    font-size: 0.9em;
-    color: #999999;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #999999;
 }
 
 @media screen and (max-width: 1024px) {
-    #logo {
-        display: block;
-        margin: 10px auto;
-        top: 0px;
-    }
-    #headtext {
-        margin: 0;
-        display: block;
-    }
-    #name {
-        text-align: center;
-    }
-    #jobtitle {
-        text-align: center;
-    }
-    #navigation {
-        display: none;
-        position: relative;
-        top: 20px;
-    }
-    .tabs a {
-        margin-left: 0;
-        margin-right: 3em;
-    }
-    #intro, #filters {
-        width: 100%;
-    }
-
-    /*one box per row on mobile screen*/
-   .box {
-    width: 100%;
-   }
-   .projectname {
+  #logo {
     display: block;
-    }
+    margin: 10px auto;
+    top: 0px;
+  }
+  #headtext {
+    margin: 0;
+    display: block;
+  }
+  #name {
+    text-align: center;
+  }
+  #jobtitle {
+    text-align: center;
+  }
+  #navigation {
+    display: none;
+    position: relative;
+    top: 20px;
+  }
+  .tabs a {
+    margin-left: 0;
+    margin-right: 3em;
+  }
+  #intro,
+  #filters {
+    width: 100%;
+  }
+
+  /*one box per row on mobile screen*/
+  .box {
+    width: 100%;
+  }
+  .projectname {
+    display: block;
+  }
 }
