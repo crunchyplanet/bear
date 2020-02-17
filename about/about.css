@@ -1,17 +1,16 @@
 body {
-    max-width: 75%;
-    -webkit-font-smoothing: subpixel-antialiased;
-    margin: 5em auto;
-    background-color: #e7f3f7;
+  max-width: 75%;
+  -webkit-font-smoothing: subpixel-antialiased;
+  margin: 5em auto;
+  background-color: #e7f3f7;
 }
 /*header part in main.css*/
 
-
 #gridcontainer {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 20px;
 }
 
 /* #bio p, #bio img, #linkedin{
@@ -19,101 +18,99 @@ body {
 } */
 
 #bio {
-    width: 70%;
-    margin: 0 auto;
-    line-height: 1.5em;
-    text-align: left;
-    color: #333333;
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.2em;
-    font-weight: 300;
-
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.5em;
+  text-align: left;
+  color: #333333;
+  /* font-family: 'DM Serif Display', serif; */
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 #gridcontainer p {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
-
 #nature {
-    height: 255px;
-    margin: auto;
-    grid-column-start: 1;
-    grid-column-end: 3;
+  height: 255px;
+  margin: auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 #note {
-    width: 40%;
-    margin: 50px auto;
-    text-align: center;
-    font-family: canada-type-gibson, sans-serif;
-    font-size: 0.9em;
-    font-weight: 300;
-    color: #999999;
+  width: 40%;
+  margin: 50px auto;
+  text-align: center;
+  font-family: canada-type-gibson, sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #999999;
 }
 
 #linkedin {
-    width: 3%;
-    margin: 4em auto;
-    color: #0077B5;
+  width: 3%;
+  margin: 4em auto;
+  color: #0077b5;
 }
 #linkedin a i {
-    font-size: 30px;
+  font-size: 30px;
 }
 #linkedin a:link {
-    color: #0077B5;
+  color: #0077b5;
 }
 #linkedin a:visited {
-    color: #0077B5;
+  color: #0077b5;
 }
 
 #linkedin a i:hover {
-    color: rgb(82, 151, 189);
+  color: rgb(82, 151, 189);
 }
-
 
 @media screen and (max-width: 768px) {
-    #logo {
-        display: block;
-        margin: 10px auto;
-    }
-    #headtext {
-        margin: 0;
-        display: block;
-    }
-    #name {
-        text-align: center;
-    }
-    #jobtitle {
-        text-align: center;
-    }
-    #navigation {
-        display: none;
-        position: relative;
-        top: 20px;
-    }
-    .tabs a {
-        margin-left: 0;
-        margin-right: 3em;
-    }
-    #bio {
-        width: 80%;
-    }
-    #gridcontainer {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(auto, 7);
-    }
+  #logo {
+    display: block;
+    margin: 10px auto;
+  }
+  #headtext {
+    margin: 0;
+    display: block;
+  }
+  #name {
+    text-align: center;
+  }
+  #jobtitle {
+    text-align: center;
+  }
+  #navigation {
+    display: none;
+    position: relative;
+    top: 20px;
+  }
+  .tabs a {
+    margin-left: 0;
+    margin-right: 3em;
+  }
+  #bio {
+    width: 80%;
+  }
+  #gridcontainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(auto, 7);
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    #bio {
-        width: 75%;
-        text-align: left;
-    }
-    #gridcontainer {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
-    }
+  #bio {
+    width: 75%;
+    text-align: left;
+  }
+  #gridcontainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
 }
