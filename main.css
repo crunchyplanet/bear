@@ -22,8 +22,10 @@ body {
 #name {
   /* font-family: 'Montserrat', sans-serif; */
   font-family: active, sans-serif;
+  /* font-family: "DM Sans", sans-serif; */
   font-size: 2.1em;
   font-weight: 400;
+  letter-spacing: 0.2em;
 }
 #name a {
   color: #000000;
@@ -276,8 +278,10 @@ a:visited {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 0.8em;
+  }
   #filters {
-    font-size: 0.9em;
     margin-bottom: 2em;
   }
 

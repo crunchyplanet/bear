@@ -248,6 +248,9 @@ hr {
 
 /*mobile*/
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 0.8em;
+  }
   #name {
     text-align: center;
   }
