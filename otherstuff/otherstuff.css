@@ -3,15 +3,39 @@ body {
 }
 
 .gridcontainer {
-  text-align: justify;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+  justify-content: space-between;
+  margin: 0;
 }
 .item {
-  width: 32%;
-  display: inline-block;
-  text-align: center;
-  margin-bottom: 1em;
-  position: relative;
   cursor: pointer;
+  overflow: hidden;
+  margin: 1em 1em;
+}
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#weatherbox {
+  width: 60%;
+  flex: 0 1 auto;
+}
+#sftopo {
+  width: 30%;
+  flex: 1 1 auto;
+}
+#coast {
+  width: 20%;
+  flex: 1 1 auto;
+}
+#north {
+  width: 20%;
+  flex: 1 1 auto;
 }
 
 .modal {
@@ -71,6 +95,6 @@ body {
 
 @media screen and (max-width: 768px) {
   .item {
-    width: 100%;
+    width: 100% !important;
   }
 }
