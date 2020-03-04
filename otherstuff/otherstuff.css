@@ -29,13 +29,9 @@ body {
   width: 30%;
   flex: 1 1 auto;
 }
-#coast {
-  width: 20%;
-  flex: 1 1 auto;
-}
 #north {
   width: 20%;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
 }
 
 .modal {
