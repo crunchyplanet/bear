@@ -1,47 +1,13 @@
-body {
-  max-width: 75%;
-  -webkit-font-smoothing: subpixel-antialiased;
-  font-family: canada-type-gibson, sans-serif;
-  font-weight: 300;
-  margin: 5em auto;
-}
-/*top*/
-#header {
-  position: relative;
-}
 #logo {
   width: 48px;
   display: inline-block;
   margin-left: 50px;
 }
 
-#containerexample {
-  background-color: rgb(136, 155, 144);
-  padding: 10px;
-  visibility: hidden;
-}
-a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-}
 #navigation {
   position: absolute;
   top: 15px;
   right: 0px;
-}
-#navigation a:hover {
-  color: #777777;
-}
-.tabs a {
-  margin-left: 3em;
-  color: #aaaaaa;
-  font-size: 1em;
-  letter-spacing: 0.1em;
-}
-#activetab.tabs a {
-  color: #777777;
 }
 
 /*
@@ -83,6 +49,7 @@ a:visited {
 
 /*sidebar*/
 #sidebar {
+  font-family: "DM Sans", sans-serif;
   position: fixed;
   top: 25%;
   left: 5%;
@@ -166,7 +133,7 @@ h3.subtitles {
   margin-bottom: 1.5em;
 }
 .ctext {
-  width: 65%;
+  width: 70%;
   margin: 0 auto;
 }
 .images {
@@ -198,6 +165,7 @@ hr {
   text-align: center;
   color: #777;
 }
+
 #lessonslist {
   margin: 30px auto;
   width: 70%;
@@ -247,6 +215,22 @@ hr {
 }
 
 /*mobile*/
+@media screen and (max-width: 1024px) {
+  body {
+    max-width: 85%;
+  }
+  h3.subtitles {
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: auto;
+  }
+  #sidebar {
+    display: none;
+  }
+  .ctext {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     font-size: 0.8em;
@@ -265,24 +249,8 @@ hr {
   #workdropdown #worklist {
     display: none;
   }
-  h3.subtitles {
+
+  .contentblocks {
     width: 100%;
-  }
-  #projectflow .flexflow div.contentblocks {
-    width: 100%;
-  }
-  #sidebar {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  h3.subtitles {
-    width: 100%;
-  }
-  #workdropdown #worklist {
-    display: none;
-  }
-  #sidebar {
-    display: none;
   }
 }

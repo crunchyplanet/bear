@@ -1,56 +1,49 @@
 #mindmap {
-    width: 85%;
-    margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
 }
 #ad {
-    width: 65%;
-    margin: 0 auto;
+  width: 65%;
+  margin: 0 auto;
 }
-#uidesign p{
-    width: 65%;
-    margin: 0 auto;   
+#uidesign p {
+  width: 65%;
+  margin: 0 auto;
 }
 
 .contentblocks.ui {
-    width: 30%;
+  width: 30%;
 }
 .ui .images {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .ui#last2 {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 .ui#last1 {
-    margin-right: 10%;
+  margin-right: 10%;
 }
 .contentblocks.desktop {
-    width: 45%;
+  width: 45%;
 }
-.contentblocks#lessons {
-    margin: 80px auto;
-}
-
 
 @media screen and (max-width: 768px) {
-
-    #projectflow .flexflow div.contentblocks p{
-        width: 100%
-    }
-    .ui .images{
-        width: 75%;
-        margin-left: 12%;  
-    }
-    .ui#last2, .ui#last1 {
-        margin-left: 0;
-        margin-right: 0;
-    }
+  #projectflow .flexflow div.contentblocks p {
+    width: 100%;
+  }
+  .ui .images {
+    width: 75%;
+    margin-left: 12%;
+  }
+  .ui#last2,
+  .ui#last1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    #projectbrief, #problemstatement1, #problemstatement2, #persona, #brainstorm, #platforms, #questions, #brainstorm2 {
-        width: 100%;
-    }
-    #uidesign p{
-        width: 100%;   
-    }
+  #uidesign p {
+    width: 100%;
+  }
 }

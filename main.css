@@ -59,16 +59,22 @@ a:visited {
 } 
 */
 #navigation a:hover {
-  color: #777777;
+  color: #666;
 }
+
 .tabs a {
   margin-left: 3em;
-  color: #cccccc;
+  color: #aaa;
   font-size: 1em;
   letter-spacing: 0.1em;
 }
-#activetab.tabs a {
-  color: #777777;
+.tabs.current a {
+  color: #666;
+}
+
+/* hide side quest tab */
+#navigation span:nth-child(2) {
+  display: none;
 }
 
 #intro {
@@ -104,7 +110,8 @@ a:visited {
 
 /*filters*/
 #filters {
-  color: #cccccc;
+  font-family: "DM Sans", sans-serif;
+  color: #aaa;
   width: 60%;
   justify-content: space-around;
   margin-left: auto;
@@ -129,6 +136,9 @@ a:visited {
 }
 
 /*projects*/
+#projects {
+  text-align: justify;
+}
 
 .box {
   width: 100%;
@@ -139,17 +149,24 @@ a:visited {
 
 .indexpics {
   width: 100%;
+  box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   transition: opacity 0.2s ease-in-out;
 }
 
 .box.gm {
   display: none;
+  width: 48%;
+}
+#moregm {
+  width: 100%;
 }
 
 .mask {
   width: 100%;
-  height: 100%;
-  /* padding-top: 100%; */
+  /* height: 100%; */
+  padding-top: 56.25%;
+  border-radius: 5px;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -220,16 +237,6 @@ a:visited {
   color: #a6dde8;
 }
 
-.more {
-  margin-bottom: 5%;
-  width: 100%;
-}
-.moretext {
-  color: #777777;
-  font-size: 1.2em;
-  text-align: center;
-}
-
 /*footer*/
 #footer {
   margin-top: 200px;
@@ -239,6 +246,9 @@ a:visited {
 }
 
 @media screen and (max-width: 1024px) {
+  body {
+    max-width: 80%;
+  }
   #logo {
     display: block;
     margin: 10px auto;
@@ -263,7 +273,7 @@ a:visited {
     margin-left: 0;
     margin-right: 3em;
   }
-  #intro,
+
   #filters {
     width: 100%;
   }
@@ -271,6 +281,7 @@ a:visited {
   /*one box per row on mobile screen*/
   .box {
     width: 100%;
+    margin-bottom: 3em;
   }
   .projectname {
     display: block;
@@ -280,6 +291,11 @@ a:visited {
 @media screen and (max-width: 768px) {
   body {
     font-size: 0.8em;
+    max-width: 85%;
+  }
+  #intro {
+    margin-bottom: 50px;
+    width: 100%;
   }
   #filters {
     margin-bottom: 2em;
@@ -287,5 +303,16 @@ a:visited {
 
   .filter {
     margin-left: 0.6em;
+  }
+
+  .box {
+    margin-bottom: 2em;
+  }
+
+  .masktext {
+    display: none;
+  }
+  .box.gm {
+    width: 100%;
   }
 }
