@@ -1,21 +1,6 @@
 body {
-  max-width: 75%;
-  -webkit-font-smoothing: subpixel-antialiased;
-  margin: 5em auto;
   background-color: #e7f3f7;
 }
-/*header part in main.css*/
-
-#gridcontainer {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto;
-  grid-gap: 20px;
-}
-
-/* #bio p, #bio img, #linkedin{
-    opacity: 0;
-} */
 
 #bio {
   width: 70%;
@@ -29,26 +14,10 @@ body {
   font-weight: 300;
 }
 
-#gridcontainer p {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
 #nature {
   height: 255px;
-  margin: auto;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-#note {
-  width: 40%;
-  margin: 50px auto;
-  text-align: center;
-  font-family: canada-type-gibson, sans-serif;
-  font-size: 0.9em;
-  font-weight: 300;
-  color: #999999;
+  margin: 0 auto;
+  display: block;
 }
 
 #linkedin {
@@ -71,49 +40,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    font-size: 0.8em;
-  }
-  #logo {
-    display: block;
-    margin: 10px auto;
-  }
-  #headtext {
-    margin: 0;
-    display: block;
-  }
-  #name {
-    text-align: center;
-  }
-  #jobtitle {
-    text-align: center;
-  }
-  #navigation {
-    display: none;
-    position: relative;
-    top: 20px;
-  }
-  .tabs a {
-    margin-left: 0;
-    margin-right: 3em;
-  }
   #bio {
-    width: 90%;
-  }
-  #gridcontainer {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(auto, 7);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #bio {
-    width: 80%;
-    text-align: left;
-  }
-  #gridcontainer {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    width: 95%;
   }
 }
