@@ -3,7 +3,7 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   font-family: canada-type-gibson, sans-serif;
   font-weight: 300;
-  margin: 5em auto;
+  margin: 3em auto;
 }
 /*header*/
 #header {
@@ -23,7 +23,7 @@ body {
   /* font-family: 'Montserrat', sans-serif; */
   font-family: active, sans-serif;
   /* font-family: "DM Sans", sans-serif; */
-  font-size: 2.1em;
+  font-size: 2em;
   font-weight: 400;
   letter-spacing: 0.2em;
 }
