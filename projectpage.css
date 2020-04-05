@@ -220,6 +220,11 @@ hr {
     /* max-width: 85%; */
     padding: 0 8%;
   }
+  #logo {
+    display: block;
+    margin: 10px auto;
+    top: 0px;
+  }
   h3.subtitles {
     width: 100%;
     padding-top: 0;
