@@ -87,7 +87,7 @@ a:visited {
   font-weight: 400;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 #intro a:link {
   color: #000000;
@@ -122,6 +122,7 @@ a:visited {
 .filter {
   display: inline-block;
   cursor: pointer;
+  margin-right: 2em;
 }
 .filter:hover {
   color: #777777;
@@ -129,7 +130,7 @@ a:visited {
 .active.filter {
   color: #333;
   padding: 0.2em 0.7em;
-  border-bottom: 3px solid #a6dde8;
+  border-bottom: 3px solid #555;
 }
 
 /*projects*/
@@ -141,7 +142,7 @@ a:visited {
 }
 
 .box {
-  width: 100%;
+  display: inline-block;
   text-align: center;
   margin-bottom: 6em;
   position: relative;
