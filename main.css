@@ -1,9 +1,13 @@
+html {
+  overflow-x: hidden;
+}
 body {
   max-width: 75%;
   -webkit-font-smoothing: subpixel-antialiased;
   font-family: canada-type-gibson, sans-serif;
   font-weight: 300;
   margin: 3em auto;
+  overflow-x: hidden;
 }
 /*header*/
 #header {
@@ -86,7 +90,7 @@ a:visited {
   font-weight: 400;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
+  margin-bottom: 3em;
 }
 #intro a:link {
   color: #000000;
@@ -110,19 +114,15 @@ a:visited {
 
 /*filters*/
 #filters {
+  width: 75%;
   font-family: "DM Sans", sans-serif;
   color: #aaa;
-  width: 60%;
-  justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 80px;
   line-height: 2em;
-  text-align: center;
   font-size: 1.1em;
 }
 .filter {
-  margin-left: 3em;
   display: inline-block;
   cursor: pointer;
 }
@@ -130,14 +130,17 @@ a:visited {
   color: #777777;
 }
 .active.filter {
-  color: #777777;
+  color: #333;
   padding: 0.2em 0.7em;
-  border-bottom: 3px dashed #a6dde8;
+  border-bottom: 3px solid #a6dde8;
 }
 
 /*projects*/
 #projects {
   text-align: justify;
+  margin: 0 -9999rem;
+  padding: 3rem 9999rem;
+  background: #f5f5f5;
 }
 
 .box {
@@ -274,10 +277,6 @@ a:visited {
     margin-right: 3em;
   }
 
-  #filters {
-    width: 100%;
-  }
-
   /*one box per row on mobile screen*/
   .box {
     width: 100%;
@@ -296,13 +295,6 @@ a:visited {
   #intro {
     margin-bottom: 50px;
     width: 100%;
-  }
-  #filters {
-    margin-bottom: 2em;
-  }
-
-  .filter {
-    margin-left: 0.6em;
   }
 
   .box {
