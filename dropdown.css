@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 1024px) {
   #header {
-    margin-top: -60px;
+    margin-top: -4em;
   }
   #containerexample {
     padding: 0;

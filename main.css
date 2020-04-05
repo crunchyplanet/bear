@@ -307,6 +307,7 @@ a:visited {
   body {
     /* max-width: 80%; */
     padding: 0 10%;
+    padding-top: 3em;
   }
   #logo {
     display: block;
