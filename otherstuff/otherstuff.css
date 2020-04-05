@@ -11,6 +11,7 @@ body {
 }
 #categories .ctgr {
   margin-right: 1.5em;
+  cursor: pointer;
 }
 #categories .ctgr.active {
   color: #333;
@@ -30,10 +31,6 @@ body {
   flex-wrap: wrap;
   align-self: stretch;
   justify-content: space-between; */
-
-  /* margin: 0 -9999rem;
-  padding: 3rem 9999rem;
-  background: #eee; */
 }
 
 #illustrations {

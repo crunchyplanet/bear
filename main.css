@@ -1,9 +1,13 @@
+html {
+  overflow-x: hidden;
+}
 body {
-  max-width: 75%;
+  /* max-width: 75%; */
+  padding: 0 12%;
   -webkit-font-smoothing: subpixel-antialiased;
   font-family: canada-type-gibson, sans-serif;
   font-weight: 300;
-  margin: 3em auto;
+  margin: 3em auto 1em auto;
   overflow-x: hidden;
 }
 /*header*/
@@ -136,8 +140,8 @@ a:visited {
 
 /*projects*/
 #projects {
-  margin: 0 -9999rem;
-  padding: 3rem 9999rem;
+  margin: 0 -999rem;
+  padding: 3rem 999rem;
   background: #f5f5f5;
   text-align: justify;
 }
@@ -268,10 +272,6 @@ a:visited {
   cursor: pointer;
 }
 
-.projectname {
-  display: none;
-}
-
 #linkstoother {
   text-align: center;
   /* font-family: "DM Serif Display", serif; */
@@ -297,7 +297,7 @@ a:visited {
 
 /*footer*/
 #footer {
-  margin-top: 200px;
+  margin-top: 10vw;
   text-align: center;
   font-size: 0.9em;
   color: #999999;
@@ -305,7 +305,8 @@ a:visited {
 
 @media screen and (max-width: 1024px) {
   body {
-    max-width: 80%;
+    /* max-width: 80%; */
+    padding: 0 10%;
   }
   #logo {
     display: block;
@@ -342,7 +343,8 @@ a:visited {
 @media screen and (max-width: 768px) {
   body {
     font-size: 0.8em;
-    max-width: 85%;
+    /* max-width: 85%; */
+    padding: 0 8%;
   }
   #intro {
     margin-bottom: 50px;

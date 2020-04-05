@@ -217,7 +217,8 @@ hr {
 /*mobile*/
 @media screen and (max-width: 1024px) {
   body {
-    max-width: 85%;
+    /* max-width: 85%; */
+    padding: 0 8%;
   }
   h3.subtitles {
     width: 100%;
