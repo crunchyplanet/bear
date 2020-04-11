@@ -1,17 +1,10 @@
 body {
-  background-color: #c8deea;
+  background-color: #e7f5f8;
 }
 
-#bio {
+#biocontainer {
   width: 75%;
   margin: 0 auto;
-  line-height: 1.5em;
-  text-align: left;
-  color: #333;
-  /* font-family: 'DM Serif Display', serif; */
-  font-family: "DM Sans", sans-serif;
-  font-size: 1.1em;
-  font-weight: 400;
 }
 
 #biotitle {
@@ -19,6 +12,16 @@ body {
   font-size: 1.4em;
   margin-top: 1em;
   margin-bottom: 2em;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+#bio {
+  line-height: 1.5em;
+  text-align: left;
+  color: #333;
+  font-size: 1.2em;
 }
 
 #nature {
@@ -29,7 +32,7 @@ body {
 
 #linkedin {
   width: 3%;
-  margin: 4em auto;
+  margin: 0 auto;
   color: #0077b5;
 }
 #linkedin a i {
