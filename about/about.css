@@ -50,7 +50,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  #bio {
+  #biocontainer {
     width: 95%;
   }
 }
