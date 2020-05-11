@@ -1,6 +1,6 @@
-body {
+/* body {
   background-color: #e7f5f8;
-}
+} */
 
 #biocontainer {
   width: 75%;
@@ -30,23 +30,18 @@ body {
   display: block;
 }
 
-#linkedin {
-  width: 3%;
+#sociallinks {
   margin: 0 auto;
-  color: #0077b5;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
-#linkedin a i {
+.social {
+  margin: 0 20px;
+}
+.social a i {
   font-size: 30px;
-}
-#linkedin a:link {
-  color: #0077b5;
-}
-#linkedin a:visited {
-  color: #0077b5;
-}
-
-#linkedin a i:hover {
-  color: rgb(82, 151, 189);
+  color: #333;
 }
 
 @media screen and (max-width: 768px) {

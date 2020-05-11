@@ -1,0 +1,18 @@
+.w30 {
+  width: 30%;
+}
+
+.w60 {
+  width: 60%;
+}
+
+@media screen and (max-width: 480px) {
+  .w30,
+  .w60 {
+    width: 100%;
+  }
+  .w30 .images {
+    margin: 0 auto;
+    display: block;
+  }
+}

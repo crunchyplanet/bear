@@ -10,9 +10,3 @@
 #ramen.contentblocks {
   margin-bottom: 60px;
 }
-
-@media screen and (max-width: 768px) {
-  #projectflow .flexflow div.contentblocks {
-    width: 100%;
-  }
-}

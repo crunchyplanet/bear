@@ -103,16 +103,6 @@ a:visited {
   color: #a6dde8;
 }
 
-.box a:link {
-  color: #777777;
-}
-.box a:visited {
-  color: #777777;
-}
-.box a:hover {
-  color: #444444;
-}
-
 /*filters*/
 #filters {
   width: 75%;
@@ -204,6 +194,7 @@ a:visited {
 .projectdes .description {
   font-size: 1.1em;
   font-family: canada-type-gibson, sans-serif;
+  color: #777;
 }
 /* gm rules*/
 .box.gm .projectdes {

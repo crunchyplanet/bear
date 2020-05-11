@@ -33,7 +33,9 @@
 
   <body>
     <div id="header">
-      <a href="../"><img id="logo" src="../mainassets/logo.png"/></a>
+      <a id="homelink" href="../"
+        ><img id="logo" src="../mainassets/logo.png"
+      /></a>
 
       <div id="navigation">
         <span class="tabs"><a href="../">WORK</a></span>
@@ -41,26 +43,36 @@
         <span class="tabs"><a href="../about/">ABOUT</a></span>
       </div>
     </div>
+    <div id="contentnav">
+      <span id="navtitle">En Route</span>
+      <a class="navitems" href="#projecttitle">Overview</a> &gt;
+      <a class="navitems" href="#research">Research & Ideation</a> &gt;
+      <a class="navitems" href="#prototype">Sketch & Prototype</a>
+      <a class="navitems" href="#animation">Animation & Motion Design</a>
+    </div>
     <div id="containerexample">
       <h2>space</h2>
     </div>
     <div id="project">
-      <h1 id="projecttitle">En Route</h1>
-      <p id="projectsubtitle"></p>
-      <div id="basicinfo">
-        <p>2019</p>
-        <p>Individual Course Project</p>
-        <p>Product Design | UX/UI</p>
+      <div id="projecthead">
+        <div id="titleimage">
+          <img src="../indexpics/indexpics-enroute.png" />
+        </div>
+        <div id="titleinfo">
+          <h1 id="projecttitle">En Route</h1>
+          <p id="projectsubtitle"></p>
+          <div id="basicinfo">
+            <div>2019</div>
+            <div>Individual Project</div>
+            <div>Product Design | UX/UI</div>
+            <div id="tools">
+              Adobe XD &middot; Illustrator &middot; After Effects &middot;
+              Premiere
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="sidebar">
-        <a class="sideitems" id="side1" href="#projectbrief">Overview</a>
-        <a class="sideitems" id="side2" href="#research">Research & Ideation</a>
-        <a class="sideitems" id="side3" href="#prototype">Sketch & Prototype</a>
-        <a class="sideitems" id="side4" href="#animation"
-          >Animation & Motion Design</a
-        >
-      </div>
-      <div id="projectflow">
+      <div class="flexflow">
         <div class="contentblocks ctext" id="projectbrief">
           <p>
             En Route is a tool that makes travel planning and route tracking
@@ -83,141 +95,136 @@
           <!-- <iframe src="https://player.vimeo.com/video/329244326?autoplay=1&loop=1" frameborder="0"
                     webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
         </div>
-        <div class="flexflow">
-          <h3 class="subtitles" id="research">RESEARCH &amp; IDEATION</h3>
-          <div class="contentblocks ctext" id="user">
-            <p>
-              The target user is travelers who want an easier way to plan their
-              own trips. They might have some interests and priorities in mind
-              as well as some restrictions in time and budget. And they want to
-              make practical and informed travel plans and get the most out of
-              their experience.
-            </p>
-            <p>
-              Based on my idea of the target user, I created a proto-persona and
-              a journey map to identify the pain points and design
-              opportunities.
-            </p>
-          </div>
-          <div class="contentblocks" id="persona">
-            <img class="images" src="assets/persona.png" />
-          </div>
-          <div class="contentblocks" id="journeymap">
-            <img class="images" src="assets/journeymap.jpg" />
-          </div>
-          <div class="contentblocks ctext" id="brainstorm">
-            <p>
-              Through brainstorm, I came up with some features that would help
-              the user make a plan without painstaking research and arrangement
-              but still meet their interests and restrictions. To make the most
-              of the plan, it's also important to think about how it will come
-              into play during the trip and what would help with its
-              flexibility.
-            </p>
-          </div>
-          <div class="contentblocks" id="brainstormpic">
-            <img class="images" src="assets/brainstorm.jpg" />
-          </div>
 
-          <h3 class="subtitles" id="prototype">SKETCH &amp; PROTOTYPE</h3>
+        <h3 class="subtitles" id="research">RESEARCH &amp; IDEATION</h3>
+        <div class="contentblocks ctext" id="user">
+          <p>
+            The target user is travelers who want an easier way to plan their
+            own trips. They might have some interests and priorities in mind as
+            well as some restrictions in time and budget. And they want to make
+            practical and informed travel plans and get the most out of their
+            experience.
+          </p>
+          <p>
+            Based on my idea of the target user, I created a proto-persona and a
+            journey map to identify the pain points and design opportunities.
+          </p>
+        </div>
+        <div class="contentblocks" id="persona">
+          <img class="images" src="assets/persona.png" />
+        </div>
+        <div class="contentblocks" id="journeymap">
+          <img class="images" src="assets/journeymap.jpg" />
+        </div>
+        <div class="contentblocks ctext" id="brainstorm">
+          <p>
+            Through brainstorm, I came up with some features that would help the
+            user make a plan without painstaking research and arrangement but
+            still meet their interests and restrictions. To make the most of the
+            plan, it's also important to think about how it will come into play
+            during the trip and what would help with its flexibility.
+          </p>
+        </div>
+        <div class="contentblocks" id="brainstormpic">
+          <img class="images" src="assets/brainstorm.jpg" />
+        </div>
 
-          <div class="contentblocks ctext" id="idea">
-            <p>
-              I decided to build a tool that facilitates people to make highly
-              customizable plans according to their preferences, which is
-              enabled by a strong knowledge base and algorithms. While people
-              are traveling, it would serve as an informed guide for the
-              traveler to refer to at any time. I focused on designing the
-              experience of making the plan and following the route during the
-              trip.
-            </p>
-            <div class="contentblocks" id="infoarch">
-              <img class="images" src="assets/structure.jpg" />
-              <p class="captions">Information Architecture</p>
-            </div>
-            <p>
-              In the planning phase, the traveler's needs are broken down to
-              different parameters, and the user could be as specific as they
-              wish about their preferences. A suggested route will be generated
-              based on their input. Each spot on the route can be edited so the
-              user could explore different options while keeping the spots that
-              they like.
-            </p>
-            <p>
-              During the trip, the user can get information and tips about
-              destinations. Some steps or destinations will also allow users to
-              jump to other relevant apps like Uber, Airbnb, and Yelp for
-              extented functions. If a change to the plan comes up, or an
-              unexpected situation like a bad weather is detected, the app will
-              offer suggestions to adjust the plan.
-            </p>
-          </div>
-          <div class="contentblocks" id="sketch">
-            <img class="images" src="assets/sketch.jpg" />
-          </div>
-          <div class="contentblocks" id="wireframe">
-            <img class="images" src="assets/wireframe.png" />
-          </div>
-          <div class="contentblocks">
-            <img class="images" src="assets/mobileselect.jpg" />
-          </div>
-          <div class="contentblocks ctext">
-            <p>
-              In addition to the mobile app, I also designed a web version
-              mainly for the planning phase, so that the user could have more
-              space to view the preference choices for the trip.
-            </p>
-          </div>
-          <div>
-            <img class="images" src="assets/webselect.jpg" />
-          </div>
-          <h3 class="subtitles" id="animation">
-            ANIMATION &amp; MOTION DESIGN
-          </h3>
-          <div class="contentblocks ctext" id="animation">
-            <p>
-              I created some animation to fill in the transition between the
-              user's input and the system-generated route to give the user a
-              better idea of what's been taken into consideration. I also
-              designed animation that displays when the user reload for a
-              different result. Having the extra time between the input and
-              output not only allows time for the algorithm to calculate in a
-              technical sense, but also communicates to the user that the system
-              is treating every demand carefully.
-            </p>
-          </div>
-          <div class="contentblocks gifs" id="gif1">
-            <img class="images" src="assets/animation.gif" />
-          </div>
-          <div class="contentblocks gifs" id="gif2">
-            <img class="images" src="assets/switch.gif" />
-          </div>
-          <!--<h3> class="subtitles">ITERATIONS</h3>-->
-          <div class="contentblocks" id="footnotes">
-            <p>Thank you for reading!</p>
-          </div>
-          <hr id="division" />
-          <div class="contentblocks" id="lessons">
-            <p>Lessons Learned</p>
-            <p></p>
-          </div>
+        <h3 class="subtitles" id="prototype">SKETCH &amp; PROTOTYPE</h3>
 
-          <div class="contentblocks" id="lessonslist">
-            <p>
-              1. Different touchpoints(devices) could be used to cater to the
-              needs of the user in different phases of their experience. Using
-              the web platform for information-heavy scenarios and mobile
-              version for quick data retrival could make it more efficient and
-              easier to maneuver for the user.
-            </p>
-            <p>
-              2. When designing the user interface for collecting the user's
-              input, the input method(typing, selecting, sliding bar, etc.)
-              should match the type of information, helping the user to
-              understand the indication of their response and avoiding
-              confusions.
-            </p>
+        <div class="contentblocks ctext" id="idea">
+          <p>
+            I decided to build a tool that facilitates people to make highly
+            customizable plans according to their preferences, which is enabled
+            by a strong knowledge base and algorithms. While people are
+            traveling, it would serve as an informed guide for the traveler to
+            refer to at any time. I focused on designing the experience of
+            making the plan and following the route during the trip.
+          </p>
+          <div class="contentblocks" id="infoarch">
+            <img class="images" src="assets/structure.jpg" />
+            <p class="captions">Information Architecture</p>
           </div>
+          <p>
+            In the planning phase, the traveler's needs are broken down to
+            different parameters, and the user could be as specific as they wish
+            about their preferences. A suggested route will be generated based
+            on their input. Each spot on the route can be edited so the user
+            could explore different options while keeping the spots that they
+            like.
+          </p>
+          <p>
+            During the trip, the user can get information and tips about
+            destinations. Some steps or destinations will also allow users to
+            jump to other relevant apps like Uber, Airbnb, and Yelp for extented
+            functions. If a change to the plan comes up, or an unexpected
+            situation like a bad weather is detected, the app will offer
+            suggestions to adjust the plan.
+          </p>
+        </div>
+        <div class="contentblocks" id="sketch">
+          <img class="images" src="assets/sketch.jpg" />
+        </div>
+        <div class="contentblocks" id="wireframe">
+          <img class="images" src="assets/wireframe.png" />
+        </div>
+        <div class="contentblocks">
+          <img class="images" src="assets/mobileselect.jpg" />
+        </div>
+        <div class="contentblocks ctext">
+          <p>
+            In addition to the mobile app, I also designed a web version mainly
+            for the planning phase, so that the user could have more space to
+            view the preference choices for the trip.
+          </p>
+        </div>
+        <div>
+          <img class="images" src="assets/webselect.jpg" />
+        </div>
+        <h3 class="subtitles" id="animation">
+          ANIMATION &amp; MOTION DESIGN
+        </h3>
+        <div class="contentblocks ctext" id="animation">
+          <p>
+            I created some animation to fill in the transition between the
+            user's input and the system-generated route to give the user a
+            better idea of what's been taken into consideration. I also designed
+            animation that displays when the user reload for a different result.
+            Having the extra time between the input and output not only allows
+            time for the algorithm to calculate in a technical sense, but also
+            communicates to the user that the system is treating every demand
+            carefully.
+          </p>
+        </div>
+        <div class="contentblocks gifs" id="gif1">
+          <img class="images" src="assets/animation.gif" />
+        </div>
+        <div class="contentblocks gifs" id="gif2">
+          <img class="images" src="assets/switch.gif" />
+        </div>
+        <!--<h3> class="subtitles">ITERATIONS</h3>-->
+        <div class="contentblocks" id="footnotes">
+          <p>Thank you for reading!</p>
+        </div>
+        <hr id="division" />
+        <div class="contentblocks" id="lessons">
+          <p>Lessons Learned</p>
+          <p></p>
+        </div>
+
+        <div class="contentblocks" id="lessonslist">
+          <p>
+            &bull; Different touchpoints(devices) could be used to cater to the
+            needs of the user in different phases of their experience. Using the
+            web platform for information-heavy scenarios and mobile version for
+            quick data retrival could make it more efficient and easier to
+            maneuver for the user.
+          </p>
+          <p>
+            &bull; When designing the user interface for collecting the user's
+            input, the input method(typing, selecting, sliding bar, etc.) should
+            match the type of information, helping the user to understand the
+            indication of their response and avoiding confusions.
+          </p>
         </div>
       </div>
     </div>
@@ -233,6 +240,6 @@
     <div id="footer">
       <p>&copy;2020 Jillian Luo</p>
     </div>
-    <script src="sidebar.js"></script>
+    <script src="../navbar.js"></script>
   </body>
 </html>

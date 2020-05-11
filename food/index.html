@@ -20,14 +20,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="../main.css" />
     <link rel="stylesheet" type="text/css" href="../projectpage.css" />
+    <link rel="stylesheet" type="text/css" href="../projectpage_sim.css" />
     <link rel="stylesheet" type="text/css" href="food.css" />
     <link rel="stylesheet" href="https://use.typekit.net/fgx1ngo.css" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   </head>
 
   <body>
     <div id="header">
-      <a href="../"><img id="logo" src="../mainassets/logo.png" /></a>
+      <a id="homelink" href="../"
+        ><img id="logo" src="../mainassets/logo.png"
+      /></a>
 
       <div id="navigation">
         <span class="tabs"><a href="../">WORK</a></span>
@@ -39,11 +48,16 @@
       <h2>space</h2>
     </div>
     <div id="project">
-      <h1 id="projecttitle">Food in Motion</h1>
-      <div id="basicinfo">
-        <p>2019</p>
-        <p>Individual Project</p>
-        <p>Motion Graphics</p>
+      <div id="titleinfo">
+        <h1 id="projecttitle">Food in Motion</h1>
+        <div id="basicinfo">
+          <div>2019</div>
+          <div>Individual Project</div>
+          <div>Motion Graphics</div>
+          <div id="tools">
+            Adobe Illustrator &middot; After Effects
+          </div>
+        </div>
       </div>
       <div id="projectflow">
         <div class="flexflow">
@@ -77,5 +91,6 @@
     <div id="footer">
       <p>&copy;2020 Jillian Luo</p>
     </div>
+    <script src="../navbar_sim.js"></script>
   </body>
 </html>

@@ -1,0 +1,27 @@
+#titleinfo {
+  width: 100%;
+}
+
+#projecttitle {
+  margin-top: 1em;
+}
+#basicinfo {
+  margin-bottom: 4em;
+}
+#tools {
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 1024px) {
+  #project {
+    margin-top: 2em;
+  }
+  #basicinfo {
+    margin-bottom: 4em;
+  }
+}
+@media screen and (max-width: 768px) {
+  #projectflow .flexflow div.contentblocks {
+    width: 100%;
+  }
+}

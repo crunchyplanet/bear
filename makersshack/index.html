@@ -33,178 +33,190 @@
 
   <body>
     <div id="header">
-      <a href="../"><img id="logo" src="../mainassets/logo.png"/></a>
+      <a id="homelink" href="../"
+        ><img id="logo" src="../mainassets/logo.png"
+      /></a>
       <div id="navigation">
         <span class="tabs"><a href="../">WORK</a></span>
         <span class="tabs"><a href="../otherstuff/">SIDE QUESTS</a></span>
         <span class="tabs"><a href="../about/">ABOUT</a></span>
       </div>
     </div>
+    <div id="contentnav">
+      <span id="navtitle">Maker's Shack</span>
+      <a class="navitems" href="#projecttitle">Overview</a> &gt;
+      <a class="navitems" href="#research">Research</a> &gt;
+      <a class="navitems" href="#ideation">Ideation</a>
+      <a class="navitems" href="#prototyping">Prototyping</a>
+    </div>
     <div id="containerexample">
       <h2>space</h2>
     </div>
     <div id="project">
-      <h1 id="projecttitle">Maker's Shack</h1>
-      <p id="projectsubtitle"></p>
-      <div id="basicinfo">
-        <p>2019</p>
-        <p>Team Research & Individual Design</p>
-        <p>UX Research | Product Design</p>
+      <div id="projecthead">
+        <div id="titleimage">
+          <img src="../indexpics/indexpics-makersshack.png" />
+        </div>
+        <div id="titleinfo">
+          <h1 id="projecttitle">Maker's Shack</h1>
+          <p id="projectsubtitle"></p>
+          <div id="basicinfo">
+            <div>2019</div>
+            <div>Team Research & Individual Design</div>
+            <div>UX Research | Product Design</div>
+            <div id="tools">
+              Adobe XD &middot; Illustrator
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="sidebar">
-        <a class="sideitems" href="#projecttitle">Overview</a>
-        <a class="sideitems" href="#research">Research</a>
-        <a class="sideitems" href="#ideation">Ideation</a>
-        <a class="sideitems" href="#prototyping">Prototyping</a>
-      </div>
-      <div id="projectflow">
-        <div class="flexflow">
-          <div class="contentblocks ctext" id="projectbrief">
-            <p>
-              For a UX research course, I did a generative research project with
-              two teammates on the material utilization, recycling, and reuse in
-              the maker community. Through qualitative research, we learned
-              about the problems and needs that makers have with materials.
-              After the the research project, I designed an app for makers to
-              exchange unused materials based on the research findings.
-            </p>
-          </div>
-          <div class="contentblocks">
-            <img class="images" src="assets/heroshot.png" />
-          </div>
 
-          <h3 class="subtitles" id="research">RESEARCH</h3>
-          <div class="contentblocks ctext">
-            <p>
-              We interviewed some independent designers and makers in the bay
-              area as well as directors of makerspaces to get a sense of how
-              professional makers budget their material use and deal with waste.
-              We based our interview on the following research questions and got
-              some valuable insights from our interviewees.
-            </p>
-            <ul class="listofq">
-              <li>
-                What factors influence makers' material choice for a project?
-              </li>
-              <li>
-                Where do makers find their materials? How do they acquire them?
-              </li>
-              <li>
-                Do makers plan their material use during the making process in
-                order to reduce waste?
-              </li>
-              <li>
-                How do makers deal with their leftover materials and unwanted
-                projects?
-              </li>
-              <li>
-                Are there established ways that individuals and
-                organizations(makerspaces) use in terms of waste reduction and
-                material reuse?
-              </li>
-            </ul>
-          </div>
-          <div class="contentblocks">
-            <img class="images" src="assets/quotes.png" />
-            <p class="captions">What our interviewees said</p>
-          </div>
-          <div class="contentblocks ctext">
-            <p>
-              From our interviews, we learned that hoarding is a common practice
-              for makers due to uncertain future needs and lower unit price. As
-              a result, storage becomes a common problem because they wouldn't
-              quickly get through what they have in storage while they
-              accumulate other new materials. Some makers develop their own ways
-              to make use of scrap and get the most out of their materials,
-              others actively exchange extra material with peers or give away
-              spare material on Craigslist. But in general, there's still a
-              concern about how to keep a balance between having enough supplies
-              and storage space, and how to discard no longer needed materials
-              properly. Based on the findings, we created two personas to
-              illustrate the makers' needs and pain points concerning their
-              material utilization, waste, and recycling.
-            </p>
-          </div>
-          <div class="contentblocks">
-            <img class="images" src="assets/persona-01.png" />
-            <div></div>
-            <img class="images" src="assets/persona-02.png" />
-          </div>
-          <h3 class="subtitles" id="ideation">IDEATION</h3>
-          <div class="contentblocks ctext">
-            <p>
-              After the research project, I started thinking about a design
-              solution that help makers deal with their spare materials and
-              reduce waste. I wrote down some "how might we" questions to
-              explore the possible directions.
-            </p>
-            <ul class="listofq">
-              <li>
-                How might we help makers sort out their material storage and
-                figure out what's not needed?
-              </li>
-              <li>
-                How might we reduce material waste caused by overstocking?
-              </li>
-              <li>
-                How might we build a platform for makers to share and exchange
-                their spare materials?
-              </li>
-              <li>
-                How might we encourage makers to make use of other people's
-                spare material instead of getting new supplies?
-              </li>
-              <li>
-                How might we cultivate a nourishing and inspiring culture in the
-                maker community with the material-sharing practice.
-              </li>
-            </ul>
-            <p>
-              With these questions in mind, I came up with some ideas for a
-              platform with material logging, sharing and project browsing
-              features.
-            </p>
-          </div>
-          <div class="contentblocks">
-            <img class="images" src="assets/brainstorm.png" />
-            <p class="captions">Brainstorm</p>
-          </div>
-          <div class="contentblocks">
-            <img class="images" src="assets/sketches.png" />
-            <p class="captions">Sketches</p>
-          </div>
-          <h3 class="subtitles" id="prototyping">PROTOTYPING</h3>
-          <div class="contentblocks">
-            <img class="images" src="assets/wireframe.png" />
-            <p class="captions">Wireframe</p>
-          </div>
-          <div class="contentblocks">
-            <img class="images" src="assets/ui1.png" />
-            <img class="images" src="assets/ui2.png" />
-            <img class="images" src="assets/ui3.png" />
-            <p class="captions">User Interface</p>
-          </div>
+      <div class="flexflow">
+        <div class="contentblocks ctext" id="projectbrief">
+          <p>
+            For a UX research project, I did a generative research project with
+            two teammates on the material utilization, recycling, and reuse in
+            the maker community. Through qualitative research, we learned about
+            the problems and needs that makers have with materials. After the
+            the research project, I designed an app for makers to exchange
+            unused materials based on the research findings.
+          </p>
+        </div>
+        <div class="contentblocks">
+          <img class="images" src="assets/heroshot.png" />
+        </div>
 
-          <hr id="division" />
-          <div class="contentblocks" id="lessons">
-            <p>Lessons Learned</p>
-            <p></p>
-          </div>
+        <h3 class="subtitles" id="research">RESEARCH</h3>
+        <div class="contentblocks ctext">
+          <p>
+            We interviewed some independent designers and makers in the bay area
+            as well as directors of makerspaces to get a sense of how
+            professional makers budget their material use and deal with waste.
+            We based our interview on the following research questions and got
+            some valuable insights from our interviewees.
+          </p>
+          <ul class="listofq">
+            <li>
+              What factors influence makers' material choice for a project?
+            </li>
+            <li>
+              Where do makers find their materials? How do they acquire them?
+            </li>
+            <li>
+              Do makers plan their material use during the making process in
+              order to reduce waste?
+            </li>
+            <li>
+              How do makers deal with their leftover materials and unwanted
+              projects?
+            </li>
+            <li>
+              Are there established ways that individuals and
+              organizations(makerspaces) use in terms of waste reduction and
+              material reuse?
+            </li>
+          </ul>
+        </div>
+        <div class="contentblocks">
+          <img class="images" src="assets/quotes.png" />
+          <p class="captions">What our interviewees said</p>
+        </div>
+        <div class="contentblocks ctext">
+          <p>
+            From our interviews, we learned that hoarding is a common practice
+            for makers due to uncertain future needs and lower unit price. As a
+            result, storage becomes a common problem because they wouldn't
+            quickly get through what they have in storage while they accumulate
+            other new materials. Some makers develop their own ways to make use
+            of scrap and get the most out of their materials, others actively
+            exchange extra material with peers or give away spare material on
+            Craigslist. But in general, there's still a concern about how to
+            keep a balance between having enough supplies and storage space, and
+            how to discard no longer needed materials properly. Based on the
+            findings, we created two personas to illustrate the makers' needs
+            and pain points concerning their material utilization, waste, and
+            recycling.
+          </p>
+        </div>
+        <div class="contentblocks">
+          <img class="images" src="assets/persona-01.png" />
+          <div></div>
+          <img class="images" src="assets/persona-02.png" />
+        </div>
+        <h3 class="subtitles" id="ideation">IDEATION</h3>
+        <div class="contentblocks ctext">
+          <p>
+            After the research project, I started thinking about a design
+            solution that help makers deal with their spare materials and reduce
+            waste. I wrote down some "how might we" questions to explore the
+            possible directions.
+          </p>
+          <ul class="listofq">
+            <li>
+              How might we help makers sort out their material storage and
+              figure out what's not needed?
+            </li>
+            <li>
+              How might we reduce material waste caused by overstocking?
+            </li>
+            <li>
+              How might we build a platform for makers to share and exchange
+              their spare materials?
+            </li>
+            <li>
+              How might we encourage makers to make use of other people's spare
+              material instead of getting new supplies?
+            </li>
+            <li>
+              How might we cultivate a nourishing and inspiring culture in the
+              maker community with the material-sharing practice.
+            </li>
+          </ul>
+          <p>
+            With these questions in mind, I came up with some ideas for a
+            platform with material logging, sharing and project browsing
+            features.
+          </p>
+        </div>
+        <div class="contentblocks">
+          <img class="images" src="assets/brainstorm.png" />
+          <p class="captions">Brainstorm</p>
+        </div>
+        <div class="contentblocks">
+          <img class="images" src="assets/sketches.png" />
+          <p class="captions">Sketches</p>
+        </div>
+        <h3 class="subtitles" id="prototyping">PROTOTYPING</h3>
+        <div class="contentblocks">
+          <img class="images" src="assets/wireframe.png" />
+          <p class="captions">Wireframe</p>
+        </div>
+        <div class="contentblocks">
+          <img class="images" src="assets/ui1.png" />
+          <img class="images" src="assets/ui2.png" />
+          <img class="images" src="assets/ui3.png" />
+          <p class="captions">User Interface</p>
+        </div>
 
-          <div class="contentblocks" id="lessonslist">
-            <p>
-              1. On a platform built for a profession- and interest-based
-              community, it's good to have a focal point that encourage users to
-              explore and socialize.
-            </p>
-            <p>
-              2. The information that users make their decisions upon should be
-              the most highlighted. In this case, it's the price and type of the
-              material, and the handling method. They should also be easily
-              filtered so it takes less actions for the user to get their
-              desired result.
-            </p>
-          </div>
+        <hr id="division" />
+        <div class="contentblocks" id="lessons">
+          <p>Lessons Learned</p>
+          <p></p>
+        </div>
+
+        <div class="contentblocks" id="lessonslist">
+          <p>
+            &bull; On a platform built for a profession- and interest-based
+            community, it's good to have a focal point that encourage users to
+            explore and socialize.
+          </p>
+          <p>
+            &bull; The information that users make their decisions upon should
+            be the most highlighted. In this case, it's the price and type of
+            the material, and the handling method. They should also be easily
+            filtered so it takes less actions for the user to get their desired
+            result.
+          </p>
         </div>
       </div>
     </div>
@@ -219,6 +231,6 @@
     <div id="footer">
       <p>&copy;2020 Jillian Luo</p>
     </div>
-    <script src="sidebar.js"></script>
+    <script src="../navbar.js"></script>
   </body>
 </html>
