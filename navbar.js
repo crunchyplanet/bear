@@ -52,16 +52,18 @@ $(document).ready(function () {
     }
     //match navbar item to active part on screen
     for (let i = 0; i < seg.length; i++) {
+      console.log(seg[3]);
+      console.log(bottom_of_window);
       if (i < seg.length - 1) {
         if (
-          seg[i] < bottom_of_window - 100 &&
-          seg[i + 1] > bottom_of_window - 100
+          seg[i] + 500 < bottom_of_window - 100 &&
+          seg[i + 1] + 500 > bottom_of_window - 100
         ) {
           removeActive();
           $(nav[i]).addClass("activepart");
         }
       } else {
-        if (seg[i] < bottom_of_window - 100) {
+        if (seg[i] + 500 < bottom_of_window - 100) {
           removeActive();
           $(nav[i]).addClass("activepart");
         }
