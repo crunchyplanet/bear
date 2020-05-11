@@ -322,13 +322,6 @@ h3.subtitles {
   }
 }
 
-#footnotes {
-  margin: 5em auto 1em auto;
-}
-#footnotes p {
-  font-size: 0.9em;
-  color: #fff;
-}
 hr {
   border: 1px dashed #aaa;
   margin-top: 1em;

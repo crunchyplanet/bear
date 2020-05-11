@@ -1,12 +1,7 @@
 .gifs {
   width: 25%;
 }
-#gif1 {
-  margin-left: 20%;
-}
-#gif2 {
-  margin-right: 20%;
-}
+
 .gifs .images {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
