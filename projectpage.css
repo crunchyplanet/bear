@@ -239,10 +239,12 @@ h3.subtitles {
   max-width: 100%;
 }
 .contentblocks p.captions {
-  text-align: center;
   font-size: 1em;
   color: #999;
+  margin: 0 auto;
+  text-align: center;
 }
+
 /*video player*/
 .video {
   overflow: hidden;
