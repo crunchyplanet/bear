@@ -1,13 +1,7 @@
 $(document).ready(function () {
-  top_content = $("#projectbrief").offset().top;
-  subs = document.getElementsByClassName("subtitles");
-  subsarr = Array.from(subs);
-  seg = [];
-  for (let i = 0; i < subsarr.length; i++) {
-    seg[i] = subsarr[i].offsetTop;
-  }
-  seg.unshift(top_content);
   nav = document.getElementsByClassName("navitems");
+  top_check = $("#projecthead").offset().top - $(window).scrollTop();
+  vh = window.innerHeight;
 
   //when navitem clicked, scroll to corresponding section, leaving space on top
   $(".navitems").on("click", function (scrollto) {
@@ -26,20 +20,32 @@ $(document).ready(function () {
     }
   }
 
-  top_check = $("#projecthead").offset().top - $(window).scrollTop();
   if (top_check < 120) {
     $("#homelink").addClass("movedup");
     $("#navigation").addClass("movedup");
     $("#contentnav").addClass("showing");
     $("#header").addClass("withshadow");
   }
+
   //when scrolled, show content nav bar
   $(window).scroll(function () {
-    let top_of_window = $(window).scrollTop();
-    let bottom_of_window = $(window).scrollTop() + $(window).height();
-    let top_of_project = $("#projecthead").offset().top - $(window).scrollTop();
+    // let top_of_window = $(window).scrollTop();
+    // let bottom_of_window = $(window).scrollTop() + $(window).height();
+    let top_check = $("#projecthead").offset().top - $(window).scrollTop();
+
+    let brief_ypos = document
+      .getElementById("projectbrief")
+      .getBoundingClientRect().top;
+    let subs = document.getElementsByClassName("subtitles");
+    let subsarr = Array.from(subs);
+    let ypos = [];
+    for (let i = 0; i < subsarr.length; i++) {
+      ypos[i] = subsarr[i].getBoundingClientRect().top;
+    }
+    ypos.unshift(brief_ypos);
+
     //when top of banner reaches bottom of top bar, show shadow and content nav bar
-    if (top_of_project < 120) {
+    if (top_check < 120) {
       $("#homelink").addClass("movedup");
       $("#navigation").addClass("movedup");
       $("#contentnav").addClass("showing");
@@ -51,19 +57,14 @@ $(document).ready(function () {
       $("#navigation").removeClass("movedup");
     }
     //match navbar item to active part on screen
-    for (let i = 0; i < seg.length; i++) {
-      console.log(seg[3]);
-      console.log(bottom_of_window);
-      if (i < seg.length - 1) {
-        if (
-          seg[i] + 500 < bottom_of_window - 100 &&
-          seg[i + 1] + 500 > bottom_of_window - 100
-        ) {
+    for (let i = 0; i < ypos.length; i++) {
+      if (i < ypos.length - 1) {
+        if (ypos[i] < vh / 2 && ypos[i + 1] > vh / 2) {
           removeActive();
           $(nav[i]).addClass("activepart");
         }
       } else {
-        if (seg[i] + 500 < bottom_of_window - 100) {
+        if (ypos[i] < vh / 2) {
           removeActive();
           $(nav[i]).addClass("activepart");
         }
