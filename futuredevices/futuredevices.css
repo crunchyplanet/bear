@@ -1,12 +1,3 @@
-#dimsum.contentblocks {
-  margin-bottom: 60px;
-}
-#icecream.contentblocks {
-  margin-bottom: 60px;
-}
-#pizza.contentblocks {
-  margin-bottom: 60px;
-}
-#ramen.contentblocks {
-  margin-bottom: 60px;
+.flexflow div.contentblocks {
+  margin-bottom: 5em;
 }
