@@ -241,7 +241,7 @@ h3.subtitles {
 .contentblocks p.captions {
   font-size: 1em;
   color: #999;
-  margin: 0 auto;
+  margin: 1em auto 0 auto;
   text-align: center;
 }
 
