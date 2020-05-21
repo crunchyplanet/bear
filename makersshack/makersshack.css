@@ -5,3 +5,11 @@
   width: 65%;
   margin: 0 auto;
 }
+
+.uiscreen {
+  width: 25%;
+}
+
+.fullwidth {
+  margin: 0 !important;
+}
