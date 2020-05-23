@@ -1,7 +1,11 @@
-.gifs {
-  width: 25%;
+.w30 {
+  width: 30%;
 }
 
-.gifs .images {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.w40 {
+  width: 40%;
 }
+
+/* .gifs .images {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+} */
