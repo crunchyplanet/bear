@@ -228,8 +228,18 @@ h3.subtitles {
   margin-right: auto;
   margin-bottom: 1.5em;
 }
+/*widths*/
 .fullwidth {
   width: 100%;
+}
+.w30 {
+  width: 30%;
+}
+.w50 {
+  width: 50%;
+}
+.w60 {
+  width: 60%;
 }
 .ctext {
   width: 70%;
