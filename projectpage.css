@@ -232,6 +232,9 @@ h3.subtitles {
 .fullwidth {
   width: 100%;
 }
+.w25 {
+  width: 25%;
+}
 .w30 {
   width: 30%;
 }
