@@ -37,12 +37,12 @@ $(document).ready(function () {
       .getElementById("projectbrief")
       .getBoundingClientRect().top;
     let subs = document.getElementsByClassName("subtitles");
-    let subsarr = Array.from(subs);
+    let subsarr = Array.from(subs); //turn class elements into an array
     let ypos = [];
     for (let i = 0; i < subsarr.length; i++) {
       ypos[i] = subsarr[i].getBoundingClientRect().top;
-    }
-    ypos.unshift(brief_ypos);
+    } //create an array of subtitles' y-positions
+    ypos.unshift(brief_ypos); //add project brief's y-position to the beginning of the y-position array
 
     //when top of banner reaches bottom of top bar, show shadow and content nav bar
     if (top_check < 120) {
