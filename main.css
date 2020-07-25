@@ -78,9 +78,9 @@ a:visited {
 }
 
 /* hide side quest tab */
-#navigation span:nth-child(2) {
+/* #navigation span:nth-child(2) {
   display: none;
-}
+} */
 
 #intro {
   width: 75%;

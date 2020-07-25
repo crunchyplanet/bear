@@ -1,0 +1,129 @@
+body {
+  background-color: #f3f3f3;
+}
+
+#categories {
+  color: #aaa;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  margin-bottom: 3em;
+  text-align: left;
+}
+#categories .ctgr {
+  margin-right: 1.5em;
+  cursor: pointer;
+}
+#categories .ctgr.active {
+  color: #333;
+  padding: 0.2em 0.2em;
+  border-bottom: 2px solid #777;
+}
+
+.gridcontainer {
+  width: 100%;
+  /* display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1em; */
+  column-count: 3;
+  column-gap: 1em;
+  /* display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+  justify-content: space-between; */
+}
+
+#illustrations {
+  display: none;
+}
+
+.item {
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 0.6em;
+  width: 100%;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .item:nth-child(1) {
+  grid-row: 1 / 2;
+  grid-column: 1 / 5;
+} */
+
+#weatherbox {
+  display: none;
+}
+/* #sftopo {
+  width: 30%;
+  flex: 1 1 auto;
+} */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.closebtn {
+  color: #eeeeee;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  height: 75vh;
+  text-align: center;
+}
+
+.modal-content img {
+  height: 100%;
+  border: white solid 15px;
+}
+
+.modal-content p {
+  font-size: 1.2em;
+  color: rgb(196, 196, 196);
+}
+
+.video {
+  height: 100%;
+  position: relative;
+  /* height:0;
+    overflow:hidden;
+    padding-bottom:56.25%; */
+}
+.video iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .gridcontainer {
+    column-count: 2;
+  }
+  #illustration {
+    height: auto;
+  }
+}

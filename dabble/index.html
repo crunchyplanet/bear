@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-116936546-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-116936546-2");
+    </script>
+    <title>Jillian Jinghan Luo, Interaction Designer</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Recent work and projects ranging from UX/UI design, visual design, motion design, animation and digital electronics."
+    />
+    <meta
+      name="keywords"
+      content="Jillian Jinghan Luo, Interaction Design, Portfolio"
+    />
+    <meta name="author" content="Jinghan Luo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../main.css" />
+    <link rel="stylesheet" type="text/css" href="../dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="dabble.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/fgx1ngo.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="menu">
+      <input id="check01" type="checkbox" name="menu" />
+      <label for="check01">&equiv;</label>
+      <div class="submenu">
+        <p><a href="../">WORK</a></p>
+        <p><a href=".">DABBLE</a></p>
+        <p><a href="../about/">ABOUT</a></p>
+      </div>
+    </div>
+    <div id="header">
+      <a href="/"><img id="logo" src="../mainassets/logo.png" /></a>
+      <div id="headtext">
+        <h1 id="name"><a href="/">JILLIAN LUO</a></h1>
+      </div>
+      <div id="navigation">
+        <span class="tabs"><a href="../">WORK</a></span>
+        <span class="tabs current"><a href=".">DABBLE</a></span>
+        <span class="tabs"><a href="../about/">ABOUT</a></span>
+      </div>
+    </div>
+
+    <div id="containerexample">
+      <h4>?</h4>
+    </div>
+    <div id="categories">
+      <span class="ctgr active">Photography</span>
+      <span class="ctgr">Illustrations</span>
+    </div>
+
+    <div id="photography" class="gridcontainer">
+      <div class="item">
+        <img class="thumbnail" src="photography/duck.jpg" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="photography/bridge.jpg" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="photography/nightbeach.jpg" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="photography/ocean.jpg" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="photography/bubble.jpg" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="photography/cat.jpg" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="photography/peachblossoms.jpg" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="photography/building.JPG" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="photography/huanglong.JPG" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="photography/bougainvillea.jpeg" />
+      </div>
+
+      <div class="item">
+        <img class="thumbnail" src="photography/hike.jpg" />
+      </div>
+
+      <div class="item">
+        <img class="thumbnail" src="photography/alley.jpg" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="photography/bostonivy.JPG" />
+      </div>
+      <div class="item" id="weatherbox">
+        <img class="thumbnail" src="assets/weatherbox.gif" />
+      </div>
+    </div>
+
+    <div id="illustrations" class="gridcontainer">
+      <div class="item">
+        <img class="thumbnail" src="illustrations/north.JPG" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="illustrations/roleplaying.jpg" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="illustrations/bird.png" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="illustrations/Fedux.jpg" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="illustrations/coast.png" />
+      </div>
+      <div class="item">
+        <img class="thumbnail" src="illustrations/succulent.jpg" />
+      </div>
+    </div>
+
+    <div class="modal">
+      <span class="closebtn">&times;</span>
+      <div class="modal-content">
+        <img src="photography/duck.jpg" />
+        <p></p>
+      </div>
+    </div>
+
+    <div class="modal">
+      <span class="closebtn">&times;</span>
+      <div class="modal-content">
+        <div class="video">
+          <iframe
+            id="player"
+            src="https://player.vimeo.com/video/307826619?loop=1"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <p>
+          The Weather Box, a motion-responsive light box that displays multiple
+          weather patterns in perspective.
+        </p>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>&copy;2020 Jinghan (Jillian) Luo</p>
+    </div>
+
+    <!-- modal -->
+    <!-- <script src="modal.js"></script> -->
+    <script src="dbtabs.js"></script>
+  </body>
+</html>
