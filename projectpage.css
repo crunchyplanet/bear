@@ -478,7 +478,7 @@ hr {
     padding: 0 5%;
   }
   .contentblocks {
-    width: 100%;
+    width: 100% !important;
   }
   #lessons {
     margin: 0 auto;
