@@ -5,21 +5,33 @@ function makeactive() {
 }
 
 var ctgr = document.getElementsByClassName("ctgr");
-var content = document.getElementsByClassName("gridcontainer");
+var content = document.getElementsByClassName("content");
 
 for (let i = 0; i < ctgr.length; i++) {
   ctgr[i].addEventListener("click", makeactive);
   ctgr[i].addEventListener("click", function () {
-    ctgrtxt = ctgr[i].textContent;
-    console.log(ctgrtxt);
+    // ctgrtxt = ctgr[i].textContent;
+    ctgrtitle = ctgr[i].getAttribute("data-cat");
 
     for (let i = 0; i < content.length; i++) {
-      let contenttxt = content[i].id;
-      if (ctgrtxt.toLowerCase() === contenttxt.toLowerCase()) {
-        content[i].style.display = "block";
+      let contenttitle = content[i].id;
+      if (ctgrtitle === contenttitle) {
+        if (ctgrtitle === "cc") {
+          content[i].style.display = "flex";
+        } else {
+          content[i].style.display = "block";
+        }
       } else {
         content[i].style.display = "none";
       }
     }
+    // for (let i = 0; i < content.length; i++) {
+    //   let contenttxt = content[i].id;
+    //   if (ctgrtxt.toLowerCase() === contenttxt.toLowerCase()) {
+    //     content[i].style.display = "block";
+    //   } else {
+    //     content[i].style.display = "none";
+    //   }
+    // }
   });
 }

@@ -27,6 +27,13 @@
   font-size: 26px;
   color: #666;
 }
+
+#linkedin a i:hover {
+  color: #0e76a8;
+}
+#instagram a i:hover {
+  color: #f25555;
+}
 /* #biotitle {
   color: #333;
   font-size: 1.4em;
