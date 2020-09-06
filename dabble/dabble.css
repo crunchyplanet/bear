@@ -50,6 +50,7 @@ body {
 .labelcontainer {
   padding: 5px;
   color: #666;
+  font-size: 1.1em;
 }
 .social {
   float: right;
@@ -60,6 +61,9 @@ body {
 }
 #vimeo a i:hover {
   color: #19b7ea;
+}
+#github a i:hover {
+  color: #6f42c1;
 }
 .item {
   cursor: pointer;
