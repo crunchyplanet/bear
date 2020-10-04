@@ -136,41 +136,18 @@ a:visited {
 } */
 
 .box {
-  display: inline-block;
-  text-align: center;
+  width: 100%;
   position: relative;
   margin-bottom: 3em;
-}
-
-.box.ux {
-  width: 100%;
-}
-.box.gm {
-  display: none;
-  width: 48%;
-}
-#moregm {
-  width: 100%;
-  font-size: 1.1em;
-}
-
-.indexpics {
   box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
   transition: opacity 0.2s, box-shadow 0.2s ease-in-out;
 }
-.indexpics:hover {
+.box:hover {
   box-shadow: 0px 5px 35px -5px rgba(0, 0, 0, 0.5);
 }
 
-.box.ux .indexpics {
-  width: 100%;
-  margin-right: 2em;
-}
-.box.gm .indexpics {
-  width: 100%;
-}
-.box.gm .indexgifs {
+.indexpics {
+  display: block;
   width: 100%;
   border-radius: 5px;
 }
