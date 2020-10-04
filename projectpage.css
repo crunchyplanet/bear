@@ -141,30 +141,26 @@ body {
   font-family: canada-type-gibson, sans-serif;
 }
 #projecthead {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  background-color: #eee;
+  align-items: center; */
   margin-bottom: 1em;
-}
-#titleinfo {
-  display: inline-block;
-  width: 25%;
   text-align: center;
 }
+
 #titleimage {
-  display: inline-block;
-  width: 75%;
+  width: 100%;
+  margin-bottom: 2em;
 }
 #titleimage img {
   width: 100%;
   display: block;
 }
+
 #projecttitle {
   font-family: "DM Sans", sans-serif;
-  font-size: 2.5em;
-  font-weight: 600;
-  /* text-align: center; */
+  font-size: 2em;
+  font-weight: 700;
   line-height: 1em;
   margin: 0.8em 9%;
 }
@@ -184,10 +180,10 @@ body {
 #basicinfo div {
   margin-bottom: 0.5em;
 }
-#tools {
-  margin-top: 3em;
-  font-size: 0.9em;
+.fas {
+  margin-right: 1em;
 }
+
 .flexflow {
   flex-wrap: wrap;
   display: flex;
@@ -214,6 +210,10 @@ body {
   font-size: 1.3em;
   font-weight: 300;
   font-style: normal;
+}
+.contentblocks p.subheading {
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 h3.subtitles {

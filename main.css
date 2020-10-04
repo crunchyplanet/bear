@@ -8,7 +8,7 @@ body {
   font-family: canada-type-gibson, sans-serif;
   font-weight: 300;
   margin: 3em auto 1em auto;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 /*header*/
 #header {
@@ -103,15 +103,14 @@ a:visited {
   color: #a6dde8;
 }
 
-/*filters*/
-#filters {
+/*filters - disabled*/
+/* #filters {
   width: 75%;
   color: #aaa;
   margin-left: auto;
   margin-right: auto;
   line-height: 2em;
   font-size: 1.1em;
-  /* font-family: "DM Sans", sans-serif; */
   letter-spacing: 0.1em;
 }
 .filter {
@@ -126,15 +125,15 @@ a:visited {
   color: #333;
   padding: 0.2em 0.7em;
   border-bottom: 2px solid #777;
-}
+} */
 
 /*projects*/
-#projects {
+/* #projects {
   margin: 0 -999rem;
   padding: 3rem 999rem;
   background: #f5f5f5;
   text-align: justify;
-}
+} */
 
 .box {
   display: inline-block;
@@ -165,7 +164,7 @@ a:visited {
 }
 
 .box.ux .indexpics {
-  width: 67%;
+  width: 100%;
   margin-right: 2em;
 }
 .box.gm .indexpics {
@@ -179,27 +178,39 @@ a:visited {
 .projectdes {
   display: inline-block;
   width: 25%;
-  text-align: left;
   font-family: "DM Sans", sans-serif;
+  position: absolute;
 }
+
 .projectdes .projecttitle {
-  font-size: 1.6em;
+  font-size: 1.8em;
   color: #333;
   font-weight: 700;
 }
-
 .projectdes .category {
   font-size: 1em;
-  color: #aaa;
+  color: #777;
 }
 .projectdes .description {
   font-size: 1.1em;
   font-family: canada-type-gibson, sans-serif;
-  color: #777;
+  color: #666;
 }
-
-#knowie {
-  display: none;
+/* project des positions */
+#wildposts a .projectdes {
+  text-align: left;
+  top: 10%;
+  left: 8%;
+}
+#makersshack a .projectdes {
+  text-align: right;
+  top: 15%;
+  right: 8%;
+}
+#enroute a .projectdes {
+  text-align: right;
+  top: 15%;
+  right: 8%;
 }
 
 /* gm rules*/
@@ -212,61 +223,6 @@ a:visited {
 }
 .box.gm .projectdes .projecttitle {
   font-size: 1.4em;
-}
-
-.mask {
-  width: 100%;
-  /* height: 100%; */
-  padding-top: 56.25%;
-  border-radius: 5px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-}
-.mask.gifs {
-  padding-top: 0;
-}
-
-/* .masktext {
-  color: white;
-  font-family: "DM Sans", sans-serif;
-  font-size: 2em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.masktext .category {
-  font-size: 0.5em;
-  font-family: canada-type-gibson, sans-serif;
-} */
-
-#enroute .mask {
-  background: rgb(47, 94, 91);
-}
-#knowie .mask {
-  background: rgb(255, 146, 45);
-}
-#food .mask {
-  background: rgb(35, 81, 151);
-}
-#makersshack .mask {
-  background: rgb(68, 113, 165);
-}
-#futuredevices .mask {
-  background: rgb(104, 23, 84);
-}
-
-.box:hover .mask {
-  opacity: 0.8;
-  cursor: pointer;
-}
-.box:hover .mask.gifs {
-  opacity: 1;
-  cursor: pointer;
 }
 
 #linkstoother {
@@ -349,13 +305,13 @@ a:visited {
     margin-bottom: 50px;
     width: 100%;
   }
-  #filters {
+  /* #filters {
     width: 100%;
     letter-spacing: 0;
   }
   .filter {
     margin-right: 1em;
-  }
+  } */
   .box {
     margin-bottom: 4em;
   }
@@ -369,8 +325,10 @@ a:visited {
 
   .projectdes {
     display: block;
+    text-align: left !important;
     width: 100%;
     margin-top: 0.8em;
+    position: inherit;
   }
   .projectdes .projecttitle {
     font-size: 1.4em;
