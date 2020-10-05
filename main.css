@@ -292,13 +292,10 @@ a:visited {
   } */
   .box {
     margin-bottom: 4em;
+    box-shadow: none;
   }
-
-  .masktext {
-    display: none;
-  }
-  .box.gm {
-    width: 100%;
+  .box:hover {
+    box-shadow: none;
   }
 
   .projectdes {
