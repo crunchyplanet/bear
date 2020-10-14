@@ -150,4 +150,8 @@ body {
   #il {
     height: auto;
   }
+  .itemplus {
+    width: 100%;
+    margin-bottom: 5em;
+  }
 }
