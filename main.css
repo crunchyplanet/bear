@@ -83,7 +83,7 @@ a:visited {
 } */
 
 #intro {
-  width: 75%;
+  width: 70%;
   /* font-family: "DM Serif Display", serif; */
   font-family: "DM Sans", sans-serif;
   font-size: 1.4em;
@@ -161,33 +161,34 @@ a:visited {
 }
 
 .projectdes .projecttitle {
-  font-size: 1.8em;
+  font-size: 2em;
   color: #333;
   font-weight: 700;
 }
 .projectdes .category {
-  font-size: 1em;
+  font-size: 1.1em;
   color: #777;
+  margin: 0.3em 0 1.5em 0;
 }
 .projectdes .description {
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-family: canada-type-gibson, sans-serif;
-  color: #666;
+  color: #444;
 }
 /* project des positions */
 #wildposts a .projectdes {
   text-align: left;
-  top: 10%;
+  top: 20%;
   left: 8%;
 }
 #makersshack a .projectdes {
   text-align: right;
-  top: 15%;
+  top: 20%;
   right: 8%;
 }
 #enroute a .projectdes {
   text-align: right;
-  top: 15%;
+  top: 20%;
   right: 8%;
 }
 
@@ -265,20 +266,6 @@ a:visited {
     margin-right: 3em;
   }
 
-  /*one box per row on mobile screen*/
-  .box {
-    width: 100%;
-    margin-bottom: 3em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 0.9em;
-    /* max-width: 85%; */
-    padding: 0 8%;
-    padding-top: 3em;
-  }
   #intro {
     margin-bottom: 50px;
     width: 100%;
@@ -291,7 +278,7 @@ a:visited {
     margin-right: 1em;
   } */
   .box {
-    margin-bottom: 4em;
+    margin-bottom: 3em;
     box-shadow: none;
   }
   .box:hover {
@@ -308,11 +295,19 @@ a:visited {
   .projectdes .projecttitle {
     font-size: 1.4em;
   }
-  .projectdes p {
-    margin: 0.2em;
+  .projectdes div {
+    margin: 0.2em !important;
   }
-  .box.ux .indexpics {
-    width: 100%;
-    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.9em;
+    /* max-width: 85%; */
+    padding: 0 8%;
+    padding-top: 3em;
+  }
+  .box {
+    margin-bottom: 4em;
   }
 }
