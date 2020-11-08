@@ -212,8 +212,19 @@ body {
   font-style: normal;
 }
 .contentblocks p.subheading {
-  font-size: 1.5em;
-  font-weight: 500;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #777777;
+}
+/* override bottom margin */
+#projectbrief {
+  margin-bottom: 1em;
+}
+#psflex {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 h3.subtitles {
@@ -251,7 +262,7 @@ h3.subtitles {
   width: 80%;
 }
 .ctext {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 .images {
@@ -479,6 +490,9 @@ hr {
   }
   .contentblocks {
     width: 100% !important;
+  }
+  .ps {
+    width: 100%;
   }
   #lessons {
     margin: 0 auto;
