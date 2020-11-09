@@ -376,12 +376,13 @@ hr {
 }
 /*bottom*/
 #bottomnavigation {
-  display: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.1em;
   height: 20px;
   position: relative;
   color: #aaa;
   margin: 50px 12%;
-  letter-spacing: 0.1em;
+  /* letter-spacing: 0.1em; */
 }
 #bottomnavigation a:link {
   color: #aaa;
@@ -395,20 +396,14 @@ hr {
 #bottomnavigation a.nalink:hover {
   color: #aaa;
 }
-#back {
+#prev {
   position: absolute;
   left: 0;
 }
-#arrows {
+#next {
   position: absolute;
   right: 0;
   text-align: right;
-}
-#next {
-  margin-left: 20px;
-}
-#top {
-  margin-left: 20px;
 }
 
 #footer {
@@ -463,6 +458,10 @@ hr {
   }
   #header {
     height: 80px;
+    position: static;
+  }
+  #header.withshadow {
+    box-shadow: 0px 4px 5px -1px rgba(122, 122, 122, 0);
   }
   #homelink {
     position: static;
@@ -483,7 +482,8 @@ hr {
     display: none;
   }
   #containerexample {
-    height: 60px;
+    height: 0px;
+    /* height: 60px; */
   }
   .flexflow {
     padding: 0 5%;
