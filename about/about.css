@@ -2,18 +2,18 @@
   background-color: #e7f5f8;
 } */
 #containerexample {
-  height: 20px;
+  height: 60px;
 }
 #biocontainer {
+  padding: 0 5%;
   margin: 0 auto;
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 #sociallinks {
   width: 100%;
-  text-align: center;
   margin-bottom: 2em;
   /* margin: 0 auto;
   width: 50%;
@@ -22,6 +22,7 @@
 }
 .social {
   margin: 0 1em;
+  float: right;
 }
 .social a i {
   font-size: 26px;
@@ -44,16 +45,46 @@
   text-align: center;
 } */
 
-.bio {
+.aboutsub {
+  display: inline-block;
+  font-size: 1.4em;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  width: 25%;
+}
+.aboutblock {
+  display: inline-block;
+  width: 70%;
   line-height: 1.5em;
   text-align: left;
   color: #333;
   font-size: 1.2em;
 }
-.bblock {
-  width: 50%;
+.aboutblock p {
+  margin: 0 0 1em 0;
+}
+.breakgap {
+  width: 100%;
+  height: 4em;
+}
+a.externallink {
+  font-style: italic;
+}
+a.externallink:hover {
+  color: #a6dde8;
+}
+a:link {
+  color: #666;
+}
+a:visited {
+  color: #666;
 }
 
+.tools {
+  height: 2.5em;
+  display: inline;
+  margin: 0 1.6em 1em 0;
+}
 #nature {
   display: block;
   width: 300px;
