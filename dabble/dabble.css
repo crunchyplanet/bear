@@ -102,6 +102,9 @@ body {
 #github a i:hover {
   color: #6f42c1;
 }
+#sourcecode a i:hover {
+  color: #ed225c;
+}
 .item {
   cursor: pointer;
   overflow: hidden;
