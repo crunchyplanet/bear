@@ -27,6 +27,11 @@
       src="https://kit.fontawesome.com/516b328431.js"
       crossorigin="anonymous"
     ></script>
+    <!-- highlight -->
+    <script
+      type="module"
+      src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
@@ -126,10 +131,13 @@
         <div class="contentblocks ctext" id="user">
           <p>
             The target user is travelers who want an easier way to plan their
-            own trips. They might have some interests and priorities in mind as
-            well as some restrictions around time and budget. And they want to
-            make practical and informed travel plans and get the most out of
-            their experience.
+            own trips.
+            <span class="hl"
+              >They might have some interests and priorities in mind as well as
+              some restrictions around time and budget.</span
+            >
+            And they want to make practical and informed travel plans and get
+            the most out of their experience.
           </p>
           <p>
             Based on my idea of the target user, I created a proto-persona and a
@@ -159,12 +167,13 @@
 
         <div class="contentblocks ctext">
           <p>
-            I decided to design a tool that facilitates people to make highly
-            customizable plans according to their preferences, which is enabled
-            by a strong knowledge base and algorithms. While people are
-            traveling, it would serve as an informed guide for the traveler to
-            refer to at any time. I focused on designing the experience of
-            making the plan and tracking the route during the trip.
+            The application should allow people to make
+            <span class="hl">highly customizable plans</span> according to their
+            preferences, which is enabled by a strong knowledge base and
+            algorithms. While people are traveling, it would serve as an
+            informed guide for the traveler to refer to at any time. I focused
+            on designing the experience of making the plan and tracking the
+            route during the trip.
           </p>
         </div>
         <div class="contentblocks">
@@ -268,5 +277,6 @@
       <p>&copy;2020 Jinghan (Jillian) Luo</p>
     </div>
     <script src="../navbar.js"></script>
+    <script type="module" src="../highlight.js"></script>
   </body>
 </html>
