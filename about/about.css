@@ -97,8 +97,24 @@ a:visited {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .aboutsub {
+    width: 100%;
+    margin-bottom: 0.2em;
+  }
+  .aboutblock {
+    width: 100%;
+  }
+  .breakgap {
+    height: 1em;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #nature {
     width: 80%;
+  }
+  #biocontainer {
+    padding: 0 0;
   }
 }
