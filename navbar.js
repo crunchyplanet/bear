@@ -27,6 +27,15 @@ $(document).ready(function () {
     $("#header").addClass("withshadow");
   }
 
+  //experiment - lift header and navbar after 5 seconds
+  function hideNav() {
+    $("#homelink").removeClass("movedup");
+    $("#header").removeClass("withshadow");
+    $("#homelink").addClass("hideup");
+    $("#navigation").addClass("hideup");
+    $("#contentnav").addClass("hideup");
+  }
+
   //when scrolled, show content nav bar
   $(window).scroll(function () {
     // let top_of_window = $(window).scrollTop();
@@ -50,6 +59,7 @@ $(document).ready(function () {
       $("#navigation").addClass("movedup");
       $("#contentnav").addClass("showing");
       $("#header").addClass("withshadow");
+      //setTimeout(hideNav, 5000);
     } else {
       $("#header").removeClass("withshadow");
       $("#contentnav").removeClass("showing");
