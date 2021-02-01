@@ -283,6 +283,9 @@ h3.subtitles {
 .w60 {
   width: 60%;
 }
+.w70 {
+  width: 70%;
+}
 .w80 {
   width: 80%;
 }
@@ -384,21 +387,7 @@ hr {
   margin-top: 1em;
   width: 100%;
 }
-#lessons {
-  font-family: "DM Sans", sans-serif;
-  margin: 100px auto;
-  width: 20%;
-  font-size: 1.2em;
-  text-align: center;
-  color: #777;
-}
 
-#lessonslist {
-  margin: 30px auto;
-  width: 70%;
-  text-align: justify;
-  color: #777;
-}
 /*bottom*/
 #bottomnavigation {
   font-family: "DM Sans", sans-serif;
@@ -446,6 +435,12 @@ hr {
   }
   #navigation {
     display: block;
+  }
+  #header {
+    height: 95px;
+  }
+  #contentnav {
+    display: none;
   }
   #projecthead {
     display: block;
@@ -504,9 +499,7 @@ hr {
     position: relative;
     top: 20px;
   }
-  #contentnav {
-    display: none;
-  }
+
   #containerexample {
     height: 0px;
     /* height: 60px; */
