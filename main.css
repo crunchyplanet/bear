@@ -94,10 +94,10 @@ a:visited {
   margin-bottom: 4em;
 }
 #intro a:link {
-  color: #000000;
+  color: #333333;
 }
 #intro a:visited {
-  color: #000000;
+  color: #333333;
 }
 #intro a:hover {
   color: #a6dde8;
