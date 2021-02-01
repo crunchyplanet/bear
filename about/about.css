@@ -73,10 +73,10 @@ a.externallink {
 a.externallink:hover {
   color: #a6dde8;
 }
-a:link {
+a.externallink:link {
   color: #666;
 }
-a:visited {
+a.externallink:visited {
   color: #666;
 }
 
