@@ -175,6 +175,13 @@ a:visited {
   font-family: canada-type-gibson, sans-serif;
   color: #444;
 }
+.projectdes .access {
+  font-size: 1em;
+  font-family: canada-type-gibson, sans-serif;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.8em;
+}
 /* project des positions */
 #cpq a .projectdes {
   text-align: left;
