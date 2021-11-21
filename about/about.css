@@ -33,8 +33,19 @@
   color: #0e76a8;
 }
 #instagram a i:hover {
-  color: #f25555;
+  /* color: #f25555; */
+  background: linear-gradient(
+    144deg,
+    rgba(78, 94, 213, 1) 0%,
+    rgba(228, 51, 95, 1) 47%,
+    rgba(253, 204, 103, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 /* #biotitle {
   color: #333;
   font-size: 1.4em;
