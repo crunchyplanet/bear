@@ -93,6 +93,10 @@ a:visited {
   margin-right: auto;
   margin-bottom: 4em;
 }
+
+#intro p:nth-child(1) {
+  font-weight: 600;
+}
 #intro a:link {
   color: #333333;
 }
