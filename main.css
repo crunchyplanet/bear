@@ -247,6 +247,10 @@ a:visited {
   color: #999999;
 }
 
+#footer p::after {
+  content: "\00A9  2021 Jillian Luo";
+}
+
 @media screen and (max-width: 1024px) {
   body {
     /* max-width: 80%; */
