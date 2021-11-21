@@ -420,12 +420,6 @@ hr {
   text-align: right;
 }
 
-#footer {
-  text-align: center;
-  font-size: 0.9em;
-  color: #999;
-}
-
 /*mobile*/
 @media screen and (max-width: 1024px) {
   /*override main.css logo margin*/
