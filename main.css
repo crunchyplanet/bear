@@ -252,7 +252,7 @@ a:visited {
 }
 
 #footer p::after {
-  content: "\00A9  2021 Jillian Luo";
+  content: "\00A9  2022 Jillian Luo";
 }
 
 @media screen and (max-width: 1024px) {
