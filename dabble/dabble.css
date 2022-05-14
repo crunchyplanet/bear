@@ -47,7 +47,7 @@ body {
   justify-content: space-between;
 }
 
-#il {
+#ph, #il {
   display: none;
 }
 .itemplus {
