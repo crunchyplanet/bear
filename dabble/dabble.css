@@ -148,7 +148,7 @@ body {
   .gridcontainer {
     column-count: 2;
   }
-  #il {
+  #ph, #il {
     height: auto;
   }
   .itemplus {
