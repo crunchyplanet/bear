@@ -192,11 +192,6 @@ body {
 .fas {
   margin-right: 1em;
 }
-.texticon {
-  display: inline;
-  width: 0.9em;
-  margin-right: 0.5em;
-}
 
 .flexflow {
   flex-wrap: wrap;
