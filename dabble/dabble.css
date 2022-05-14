@@ -73,7 +73,7 @@ body {
   color: #6f42c1;
 }
 #sourcecode a i:hover {
-  color: #ed225c;
+  color: #000;
 }
 .item {
   cursor: pointer;
