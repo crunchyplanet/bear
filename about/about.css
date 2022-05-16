@@ -5,7 +5,7 @@
   height: 60px;
 }
 #biocontainer {
-  padding: 0 5%;
+  /* padding: 0 5%; */
   margin: 0 auto;
   flex-wrap: wrap;
   display: flex;
@@ -29,10 +29,10 @@
   color: #666;
 }
 
-#linkedin a i:hover {
+.linkedin a i:hover {
   color: #0e76a8;
 }
-#instagram a i:hover {
+.instagram a i:hover {
   /* color: #f25555; */
   background: linear-gradient(
     144deg,
@@ -91,6 +91,51 @@ a.externallink:visited {
   color: #666;
 }
 
+#otherstufftitle {
+  width: 100%;
+  padding-bottom: 1em;
+}
+#otherstuffflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* Each item */
+.otherstuffitem {
+  box-sizing: border-box;
+  width: 32%;
+  margin-bottom: 2em;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.thumbnail {
+  width: 100%;
+  object-fit: cover;
+}
+.labelcontainer {
+  padding: 0.25em 0.75em;
+  color: #333;
+  font-size: 1em;
+}
+.socialsmall {
+  float: right;
+  margin-left: 1em;
+}
+.socialsmall a i {
+  color: #666;
+}
+.vimeo a i:hover {
+  color: #19b7ea;
+}
+.medium a i:hover {
+  color: #000;
+}
+.codepen a i:hover {
+  color: #000;
+}
+
+
 .tools {
   height: 2.5em;
   display: inline;
@@ -106,6 +151,9 @@ a.externallink:visited {
   .bblock {
     width: 100%;
   }
+  .otherstuffitem {
+    width: 48%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -117,7 +165,7 @@ a.externallink:visited {
     width: 100%;
   }
   .breakgap {
-    height: 1em;
+    height: 2em;
   }
 }
 
@@ -127,5 +175,12 @@ a.externallink:visited {
   }
   #biocontainer {
     padding: 0 0;
+  }
+  #otherstufftitle {
+    padding-bottom: 0.4em;
+  }
+  .otherstuffitem {
+    width: 100%;
+    margin-bottom: 1em;
   }
 }
