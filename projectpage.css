@@ -79,20 +79,17 @@ body {
 
 .navitems {
   margin: 0 1em;
-  color: #aaa;
+  color: #999;
 }
 .navitems:hover {
-  color: #777;
+  color: #666;
 }
 
 #contentnav .activepart.navitems {
-  color: #777;
+  color: #666;
   font-weight: 500;
 }
 
-#containerexample {
-  height: 150px;
-}
 /*
 #workdropdown {
     float: left;
@@ -148,6 +145,7 @@ body {
 /*project*/
 #project {
   font-family: canada-type-gibson, sans-serif;
+  padding-top: 150px;
 }
 #projecthead {
   /* display: flex;
@@ -180,7 +178,7 @@ body {
 #basicinfo {
   margin-top: 3em;
   margin-bottom: 3em;
-  color: #777777;
+  color: #777;
   font-size: 0.9em;
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -202,58 +200,55 @@ body {
   padding: 0 12%;
 }
 .flexflow a:link {
-  text-decoration: underline dotted #777777;
-  color: #777777;
+  text-decoration: underline dotted #777;
+  color: #777;
 }
 .flexflow a:visited {
-  text-decoration: underline dotted #777777;
-  color: #777777;
+  text-decoration: underline dotted #777;
+  color: #777;
 }
 .flexflow div {
   margin-bottom: 2em;
 }
 
 .contentblocks p {
-  color: #333333;
+  color: #333;
   line-height: 1.5em;
   font-size: 1.3em;
   font-weight: 300;
   font-style: normal;
+  margin: 0 0 1em 0; /*override default*/
 }
-.contentblocks p.subheading {
-  font-size: 1.3em;
-  font-weight: 700;
-  color: #999;
-}
-p.retrosubheading {
-  font-size: 1.3em;
-  font-weight: 500;
-  color: #999;
-}
+
 /* override bottom margin */
 #projectbrief {
   margin-bottom: 1em;
-}
-#psflex {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
 h3.subtitles {
   font-size: 1.3em;
   letter-spacing: 0.1em;
-  color: #cccccc;
+  color: #999;
   padding-top: 3em;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
 }
+h4.subheading {
+  font-size: 1.3em;
+  font-weight: 300;
+  background: #333;
+  color: #fff;
+  display: inline-block;
+  padding: 0 4px;
+  margin: 0 0 0.5em 0;
+}
 
 .bulletpoints {
   list-style-type: circle;
+  padding-left: 1em; /*override default*/
+  margin-top: 0.4em; /*override default*/
 }
 
 .bulletpoints li {
@@ -503,8 +498,5 @@ hr {
   }
   .contentblocks {
     width: 100% !important;
-  }
-  .ps {
-    width: 100%;
   }
 }

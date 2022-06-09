@@ -1,12 +1,9 @@
 /* body {
   background-color: #e7f5f8;
 } */
-#containerexample {
-  height: 60px;
-}
+
 #biocontainer {
-  /* padding: 0 5%; */
-  margin: 0 auto;
+  margin: 5em auto;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
@@ -191,9 +188,6 @@ a.externallink:visited {
 @media screen and (max-width: 480px) {
   #nature {
     width: 80%;
-  }
-  #biocontainer {
-    padding: 0 0;
   }
   #otherstufftitle {
     padding-bottom: 0.4em;

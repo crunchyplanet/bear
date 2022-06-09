@@ -6,7 +6,7 @@ body {
   color: #aaa;
   font-size: 1em;
   letter-spacing: 0.1em;
-  margin-bottom: 3em;
+  margin: 3em auto;
   text-align: left;
 }
 #categories .ctgr {
