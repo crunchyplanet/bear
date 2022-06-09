@@ -238,11 +238,12 @@ h3.subtitles {
 h4.subheading {
   font-size: 1.3em;
   font-weight: 300;
-  background: #333;
-  color: #fff;
+  color: #194c66;
   display: inline-block;
-  padding: 0 4px;
+  padding: 0 8px;
   margin: 0 0 0.5em 0;
+  border-left: #194c66 2px solid;
+  border-right: #194c66 2px solid;
 }
 
 .bulletpoints {
