@@ -77,6 +77,7 @@ a:visited {
 } */
 
 #intro {
+  display: none;
   width: 70%;
   /* font-family: "DM Serif Display", serif; */
   font-family: "DM Sans", sans-serif;
@@ -97,6 +98,70 @@ a:visited {
 }
 #intro a:hover {
   color: #a6dde8;
+}
+/*cursor intro*/
+#cursorintro {
+  width: 66%;
+  z-index: 1;
+  position: fixed;
+  top: 15%;
+  left: 33%;
+  animation: emerge 0.8s forwards ease-in-out;
+}
+#cursorintro.fadeout {
+  animation: blink 0.5s forwards;
+}
+#arrow {
+  position: absolute;
+}
+#tag {
+  display: inline-block;
+  padding: 2px 6px;
+  background: #A6DDE8;
+  max-width: 60%;
+  position: relative;
+  top: 24px;
+  left: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1em;
+}
+#nametag {
+  display: inline-block;
+}
+#tag.typing {
+  padding: 6px 12px;
+  border: 1.5px solid #48B6E0;
+  border-radius: 2px 20px 20px 20px;
+}
+#tag.typing #nametag {
+  display: none;
+  /* color: #666; */
+}
+#introtext {
+  line-height: 1.2;
+}
+#typeind {
+  display: none;
+  margin-left: 1px;
+  border-left: 1px solid black;
+  animation: blink 1s infinite;
+}
+@keyframes emerge {
+  0% {
+    opacity: 0;
+    top: 40%;
+    left: 60%;
+  }
+  100% {
+    opacity: 1;
+    top: 15%;
+    left: 33%;
+  }
+}
+
+@keyframes blink {
+  0% {opacity: 1}
+  100% {opacity: 0}
 }
 
 /*filters - disabled*/
@@ -124,12 +189,14 @@ a:visited {
 } */
 
 /*projects*/
-/* #projects {
-  margin: 0 -999rem;
+#projects {
+  margin-top: 5em;;
+  /* sectioned off with tabs */
+  /* margin: 0 -999rem;
   padding: 3rem 999rem;
   background: #f5f5f5;
-  text-align: justify;
-} */
+  text-align: justify; */
+}
 
 .box {
   width: 100%;
@@ -278,6 +345,13 @@ a:visited {
     margin-bottom: 50px;
     width: 100%;
   }
+
+  #tag {
+    max-width: 80%;
+  }
+  #projects {
+    margin-top: 3em;
+  }
   /* #filters {
     width: 100%;
     letter-spacing: 0;
@@ -314,8 +388,5 @@ a:visited {
     /* max-width: 85%; */
     padding: 0 8%;
     padding-top: 3em;
-  }
-  .box {
-    margin-bottom: 4em;
   }
 }
