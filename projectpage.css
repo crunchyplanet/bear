@@ -187,9 +187,9 @@ body {
 #basicinfo div {
   margin-bottom: 0.5em;
 }
-.fas {
+/* .fas {
   margin-right: 1em;
-}
+} */
 
 .flexflow {
   flex-wrap: wrap;
@@ -242,9 +242,9 @@ h4.subheading {
   display: inline-block;
   margin: 0 0 0.5em 0;
 }
-h4.subheading::before {
-  content: "# "
-}
+/* h4.subheading::before {
+  content: "\21E8";
+} */
 .bulletpoints {
   list-style-type: circle;
   padding-left: 1em; /*override default*/
@@ -405,13 +405,12 @@ hr {
 #bottomnavigation a.nalink:hover {
   color: #aaa;
 }
-#prev {
-  position: absolute;
-  left: 0;
+#prev,#next {
+  float: left;
+  margin-right: 3rem;
 }
-#next {
-  position: absolute;
-  right: 0;
+#top {
+  float: right;
   text-align: right;
 }
 
