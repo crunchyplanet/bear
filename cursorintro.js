@@ -3,7 +3,7 @@ const typedTextSpan = document.getElementById("introtext");
 const tagEl = document.getElementById("tag");
 const typeInd = document.getElementById("typeind");
 
-const textArray = ["Hi there!", "Thanks for stopping by : )", "Have a wonderful day!"];
+const textArray = ["Hi there!", "Thanks for stopping by : )", "Feel free to poke around and have a great day!"];
 const typingDelay = 50;
 let charIndex = 0;
 let strIndex = 0;
