@@ -107,6 +107,10 @@ a:visited {
 #intro a:hover {
   text-decoration: underline;
 }
+#blobwave {
+  display: inline-block;
+  width: 32px;
+}
 
 /*cursor intro*/
 #cursorintro {
