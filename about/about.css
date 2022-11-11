@@ -90,7 +90,8 @@ a.externallink:visited {
 /* other stuff section */
 #otherstufftitle {
   width: 100%;
-  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
 }
 #otherstuffflex {
   display: flex;
@@ -183,14 +184,14 @@ a.externallink:visited {
   .breakgap {
     height: 2em;
   }
+  #otherstufftitle {
+    padding-bottom: 0.5em;
+  }
 }
 
 @media screen and (max-width: 480px) {
   #nature {
     width: 80%;
-  }
-  #otherstufftitle {
-    padding-bottom: 0.4em;
   }
   .otherstuffitem {
     width: 100%;
