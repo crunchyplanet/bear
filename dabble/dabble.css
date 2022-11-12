@@ -16,7 +16,7 @@ body {
 #categories .ctgr.active {
   color: var(--grey900);
   padding: 0.2em 0em;
-  border-bottom: 2px dotted var(--grey500);
+  border-bottom: 2px dotted var(--grey600);
 }
 #dabbleintro {
   font-family: "DM Sans", sans-serif;
