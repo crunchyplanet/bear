@@ -1,7 +1,3 @@
-/* body {
-  background-color: #e7f5f8;
-} */
-
 #biocontainer {
   margin: 5em auto;
   flex-wrap: wrap;
@@ -23,7 +19,7 @@
 }
 .social a i {
   font-size: 26px;
-  color: #666;
+  color: var(--grey600);
 }
 
 .linkedin a i:hover {
@@ -43,7 +39,7 @@
 }
 
 /* #biotitle {
-  color: #333;
+  color: var(--grey900);
   font-size: 1.4em;
   margin-top: 1em;
   margin-bottom: 2em;
@@ -64,7 +60,7 @@
   width: 70%;
   line-height: 1.5em;
   text-align: left;
-  color: #333;
+  color: var(--grey900);
   font-size: 1.2em;
 }
 .aboutblock p {
@@ -79,13 +75,13 @@ a.externallink {
   font-style: italic;
 }
 a.externallink:hover {
-  color: #a6dde8;
+  color: var(--blue300);
 }
 a.externallink:link {
-  color: #666;
+  color: var(--grey600);
 }
 a.externallink:visited {
-  color: #666;
+  color: var(--grey600);
 }
 /* other stuff section */
 #otherstufftitle {
@@ -103,7 +99,7 @@ a.externallink:visited {
   box-sizing: border-box;
   width: 32%;
   margin-bottom: 2em;
-  border: 1px solid #aaa;
+  border: 1px solid var(--grey300);
   border-radius: 8px;
   overflow: hidden;
   transition: 0.2s;
@@ -117,7 +113,7 @@ a.externallink:visited {
 }
 .labelcontainer {
   padding: 0.25em 0.75em;
-  color: #333;
+  color: var(--grey900);
   display: flex;
   justify-content: space-between;
 }
@@ -125,7 +121,7 @@ a.externallink:visited {
   margin-left: 1em;
 }
 .socialsmall i {
-  color: #666;
+  color: var(--grey600);
   font-size: 1.3em;
 }
 /* social icon color change on hover */
@@ -133,10 +129,10 @@ a.externallink:visited {
   color: #19b7ea;
 }
 .medium i:hover {
-  color: #000;
+  color: black;
 }
 .codepen i:hover {
-  color: #000;
+  color: black;
 }
 .instagram i:hover {
   background: linear-gradient(

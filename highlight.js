@@ -18,7 +18,7 @@ window.onscroll = function () {
   for (let i = 0; i < hlarr.length; i++) {
     annotations[i] = annotate(hlarr[i], {
       type: "highlight",
-      color: "#c5f1fa",
+      color: "#c6f1fa",
       iterations: 1,
       multiline: true,
     });

@@ -3,7 +3,7 @@ body {
 }
 
 #categories {
-  color: #aaa;
+  color: var(--grey300);
   font-size: 1em;
   letter-spacing: 0.1em;
   margin: 3em auto;
@@ -14,14 +14,14 @@ body {
   cursor: pointer;
 }
 #categories .ctgr.active {
-  color: #333;
+  color: var(--grey900);
   padding: 0.2em 0em;
-  border-bottom: 2px dotted #777;
+  border-bottom: 2px dotted var(--grey500);
 }
 #dabbleintro {
   font-family: "DM Sans", sans-serif;
   font-size: 1.2em;
-  color: #333333;
+  color: var(--grey900);
   font-weight: 400;
   margin-bottom: 3em;
   text-align: center;
@@ -56,7 +56,7 @@ body {
 }
 .labelcontainer {
   padding: 5px;
-  color: #666;
+  color: var(--grey600);
   font-size: 1.1em;
 }
 .social {
@@ -64,7 +64,7 @@ body {
   margin-left: 1em;
 }
 .social a i {
-  color: #666;
+  color: var(--grey600);
 }
 #vimeo a i:hover {
   color: #19b7ea;
@@ -73,7 +73,7 @@ body {
   color: #6f42c1;
 }
 #codepen a i:hover {
-  color: #000;
+  color: black;
 }
 .item {
   cursor: pointer;
@@ -104,7 +104,7 @@ body {
 }
 
 .closebtn {
-  color: #eeeeee;
+  color: var(--grey100);
   position: absolute;
   top: 40px;
   right: 40px;
@@ -126,7 +126,7 @@ body {
 
 .modal-content p {
   font-size: 1.2em;
-  color: rgb(196, 196, 196);
+  color: var(--grey200);
 }
 
 .video {

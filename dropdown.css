@@ -16,7 +16,7 @@
     position: relative;
     top: -4em;
     margin: 0;
-    color: #aaa;
+    color: var(--grey300);
     text-align: center;
   }
 
@@ -31,7 +31,7 @@
 
   label:hover,
   input:checked ~ label {
-    color: #777;
+    color: var(--grey500);
   }
 
   /*hide the inputs*/
@@ -56,14 +56,14 @@
 
   .submenu p a {
     display: block;
-    color: #aaa;
+    color: var(--grey300);
     text-decoration: none;
     /* font-size: 0.9em; */
     letter-spacing: 0.1em;
   }
 
   .submenu p a:hover {
-    color: #777;
+    color: var(--grey500);
   }
   /* hide side quest tab */
   /* .submenu p:nth-child(2) {

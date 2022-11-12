@@ -1,6 +1,24 @@
 html {
   overflow-x: hidden;
 }
+
+:root {
+  --grey100: #eee;
+  --grey200: #ccc;
+  --grey300: #aaa;
+  --grey400: #999;
+  --grey500: #777;
+  --grey600: #666;
+  --grey700: #555;
+  --grey800: #444;
+  --grey900: #333;
+  --blue100: #f0fcff;
+  --blue200: #c6f1fa;
+  --blue300: #a6dde8;
+  --errorred: #9f0c0c;
+  --goodgreen: #398b07;
+}
+
 body {
   /* max-width: 1400px; */
   padding: 0 12%;
@@ -33,7 +51,7 @@ body {
   letter-spacing: 0.2em;
 }
 #name a {
-  color: #000000;
+  color: black;
 }
 
 a:link {
@@ -51,24 +69,24 @@ a:visited {
 }
 /* 
 #navigation a:link {  
-    color: #cccccc;
+    color: var(--grey300);
 }
 #navigation a:visited {
-    color: #cccccc;
+    color: var(--grey300);
 } 
 */
 #navigation a:hover {
-  color: #666;
+  color: var(--grey600);
 }
 
 .tabs a {
   margin-left: 3em;
-  color: #aaa;
+  color: var(--grey300);
   font-size: 1em;
   letter-spacing: 0.1em;
 }
 .tabs.current a {
-  color: #666;
+  color: var(--grey600);
 }
 
 /* hide side quest tab */
@@ -82,7 +100,7 @@ a:visited {
   /* font-family: "DM Serif Display", serif; */
   font-family: "DM Sans", sans-serif;
   font-weight: 400;
-  color: #666;
+  color: var(--grey600);
   padding: 0.2em 2em;
   margin: 2em 0 0 0;
   border-radius: 5px;
@@ -92,17 +110,17 @@ a:visited {
 
 /* #intro p:nth-child(1) {
   font-size: 1.3em;
-  color: #333;
+  color: var(--grey900);
   font-weight: 600;
 } */
 #intro p:nth-child(1) {
   font-size: 1em;
 }
 #intro a:link {
-  color: #666;
+  color: var(--grey600);
 }
 #intro a:visited {
-  color: #666;
+  color: var(--grey600);
 }
 #intro a:hover {
   text-decoration: underline;
@@ -130,7 +148,7 @@ a:visited {
 #tag {
   display: inline-block;
   padding: 2px 6px;
-  background: #A6DDE8;
+  background: var(--blue200);
   max-width: 60%;
   position: relative;
   top: 24px;
@@ -143,12 +161,12 @@ a:visited {
 }
 #tag.typing {
   padding: 6px 12px;
-  border: 1.5px solid #48B6E0;
+  border: 1.5px solid var(--blue300);
   border-radius: 2px 20px 20px 20px;
 }
 #tag.typing #nametag {
   display: none;
-  /* color: #666; */
+  /* color: var(--grey600); */
 }
 #introtext {
   line-height: 1.2;
@@ -185,7 +203,7 @@ a:visited {
 /*filters - disabled*/
 /* #filters {
   width: 75%;
-  color: #aaa;
+  color: var(--grey300);
   margin-left: auto;
   margin-right: auto;
   line-height: 2em;
@@ -198,12 +216,12 @@ a:visited {
   margin-right: 2em;
 }
 .filter:hover {
-  color: #777;
+  color: var(--grey500);
 }
 .active.filter {
-  color: #333;
+  color: var(--grey900);
   padding: 0.2em 0.7em;
-  border-bottom: 2px solid #777;
+  border-bottom: 2px solid var(--grey500);
 } */
 
 /*projects*/
@@ -243,24 +261,24 @@ a:visited {
 
 .projectdes .projecttitle {
   font-size: 2em;
-  color: #333;
+  color: var(--grey900);
   font-weight: 700;
 }
 .projectdes .category {
   font-size: 1.1em;
-  color: #777;
+  color: var(--grey500);
   margin: 0.3em 0 1.5em 0;
 }
 .projectdes .description {
   font-size: 1.3em;
   font-family: canada-type-gibson, sans-serif;
-  color: #444;
+  color: var(--grey800);
 }
 .projectdes .access {
   font-size: 1em;
   font-family: canada-type-gibson, sans-serif;
   font-style: italic;
-  color: #666;
+  color: var(--grey600);
   margin-top: 0.8em;
 }
 /* project des positions */
@@ -297,35 +315,12 @@ a:visited {
   font-size: 1.4em;
 }
 
-#linkstoother {
-  text-align: center;
-  /* font-family: "DM Serif Display", serif; */
-  font-family: "DM Sans", sans-serif;
-  font-size: 1.3em;
-  color: #333333;
-  font-weight: 400;
-}
-#linkstoother a {
-  display: block;
-  margin-bottom: 3em;
-  /* border: 3px solid #a6dde8; */
-}
-#linkstoother a:link {
-  color: #000000;
-}
-#linkstoother a:visited {
-  color: #000000;
-}
-#linkstoother a:hover {
-  color: #a6dde8;
-}
-
 /*footer*/
 #footer {
   margin-top: 10vw;
   text-align: center;
   font-size: 0.9em;
-  color: #999999;
+  color: var(--grey400);
 }
 
 #footer p::after {
