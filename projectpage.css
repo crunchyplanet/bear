@@ -82,11 +82,11 @@ body {
   color: var(--grey400);
 }
 .navitems:hover {
-  color: var(--grey600);
+  color: var(--grey700);
 }
 
 #contentnav .activepart.navitems {
-  color: var(--grey600);
+  color: var(--grey700);
   font-weight: 500;
 }
 
@@ -178,7 +178,7 @@ body {
 #basicinfo {
   margin-top: 3em;
   margin-bottom: 3em;
-  color: var(--grey500);
+  color: var(--grey600);
   font-size: 0.9em;
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -360,7 +360,7 @@ h4.subheading {
 }
 .activedot,
 .dot:hover {
-  background-color: var(--grey500);
+  background-color: var(--grey400);
 }
 
 .fade {
@@ -400,7 +400,7 @@ hr {
   color: var(--grey300);
 }
 #bottomnavigation a:hover {
-  color: var(--grey500);
+  color: var(--grey400);
 }
 #bottomnavigation a.nalink:hover {
   color: var(--grey300);

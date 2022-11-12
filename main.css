@@ -76,7 +76,7 @@ a:visited {
 } 
 */
 #navigation a:hover {
-  color: var(--grey600);
+  color: var(--grey500);
 }
 
 .tabs a {
