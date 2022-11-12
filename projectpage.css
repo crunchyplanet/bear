@@ -225,7 +225,7 @@ body {
   margin-bottom: 1em;
 }
 
-h3.subtitles {
+h3.heading {
   font-size: 1.3em;
   letter-spacing: 0.1em;
   color: var(--grey400);
@@ -449,7 +449,7 @@ hr {
   .flexflow {
     padding: 0 8%;
   }
-  h3.subtitles {
+  h3.heading {
     padding: 2em 0 1em 0;
     margin-bottom: auto;
     width: 100%;
