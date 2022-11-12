@@ -4,26 +4,26 @@ body {
 
 #categories {
   color: var(--grey300);
-  font-size: 1em;
-  letter-spacing: 0.1em;
-  margin: 3em auto;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin: 3rem auto;
   text-align: left;
 }
 #categories .ctgr {
-  margin-right: 1.5em;
+  margin-right: 1.5rem;
   cursor: pointer;
 }
 #categories .ctgr.active {
   color: var(--grey900);
-  padding: 0.2em 0em;
+  padding: 0.2rem 0rem;
   border-bottom: 2px dotted var(--grey600);
 }
 #dabbleintro {
   font-family: "DM Sans", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: var(--grey900);
   font-weight: 400;
-  margin-bottom: 3em;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -32,9 +32,9 @@ body {
   /* display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(12, 1fr);
-  gap: 1em; */
+  gap: 1rem; */
   column-count: 3;
-  column-gap: 1em;
+  column-gap: 1rem;
   /* display: flex;
   flex-wrap: wrap;
   align-self: stretch;
@@ -52,16 +52,16 @@ body {
 }
 .itemplus {
   width: 48%;
-  margin-bottom: 4em;
+  margin-bottom: 4rem;
 }
 .labelcontainer {
   padding: 5px;
   color: var(--grey600);
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 .social {
   float: right;
-  margin-left: 1em;
+  margin-left: 1rem;
 }
 .social a i {
   color: var(--grey600);
@@ -79,7 +79,7 @@ body {
   cursor: pointer;
   overflow: hidden;
   display: inline-block;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.6rem;
   width: 100%;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 .modal-content p {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: var(--grey200);
 }
 
@@ -153,6 +153,6 @@ body {
   }
   .itemplus {
     width: 100%;
-    margin-bottom: 5em;
+    margin-bottom: 5rem;
   }
 }

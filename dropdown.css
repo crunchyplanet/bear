@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 1024px) {
   #header {
-    margin-top: -4em;
+    margin-top: -4rem;
   }
   #containerexample {
     padding: 0;
@@ -14,14 +14,14 @@
   #menu {
     display: block;
     position: relative;
-    top: -4em;
+    top: -4rem;
     margin: 0;
     color: var(--grey300);
     text-align: center;
   }
 
   label {
-    font-size: 3em;
+    font-size: 3rem;
     position: relative;
     display: block;
     transition: color 0.3s;
@@ -58,8 +58,8 @@
     display: block;
     color: var(--grey300);
     text-decoration: none;
-    /* font-size: 0.9em; */
-    letter-spacing: 0.1em;
+    /* font-size: 0.9rem; */
+    letter-spacing: 0.1rem;
   }
 
   .submenu p a:hover {

@@ -3,21 +3,21 @@
 }
 
 #projecttitle {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 #basicinfo {
-  margin-bottom: 4em;
+  margin-bottom: 4rem;
 }
 #tools {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 1024px) {
   #project {
-    margin-top: 2em;
+    margin-top: 2rem;
   }
   #basicinfo {
-    margin-bottom: 4em;
+    margin-bottom: 4rem;
   }
 }
 @media screen and (max-width: 768px) {
