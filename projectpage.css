@@ -429,9 +429,6 @@ hr {
   #contentnav {
     display: none;
   }
-  #project {
-    padding: 0;
-  }
   #projecthead {
     display: block;
     background-color: transparent;
@@ -489,10 +486,8 @@ hr {
     position: relative;
     top: 20px;
   }
-
-  #containerexample {
-    height: 0px;
-    /* height: 60px; */
+  #project {
+    padding: 0;
   }
   .flexflow {
     padding: 0 5%;
