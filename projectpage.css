@@ -211,8 +211,8 @@ body {
 
 .contentblocks p {
   color: var(--grey900);
-  line-height: 1.5rem;
   font-size: 1.2rem;
+  line-height: 1.8rem;
   font-weight: 300;
   font-style: normal;
   margin: 0 0 1rem 0; /*override default*/
@@ -251,6 +251,7 @@ h4.subheading {
 
 .bulletpoints li {
   font-size: 1.2rem;
+  line-height: 1.8rem;
   margin-bottom: 0.5rem;
 }
 
@@ -495,5 +496,10 @@ hr {
   }
   .contentblocks {
     width: 100% !important;
+  }
+  .contentblocks .images {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
   }
 }

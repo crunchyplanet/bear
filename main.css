@@ -329,7 +329,6 @@ a:visited {
 
 @media screen and (max-width: 1024px) {
   body {
-    /* max-width: 80%; */
     padding: 0 10%;
     padding-top: 3rem;
   }
@@ -393,7 +392,6 @@ a:visited {
 @media screen and (max-width: 768px) {
   body {
     font-size: 0.9rem;
-    /* max-width: 85%; */
     padding: 0 8%;
     padding-top: 3rem;
   }
