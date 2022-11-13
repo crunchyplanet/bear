@@ -429,6 +429,9 @@ hr {
   #contentnav {
     display: none;
   }
+  #project {
+    padding: 0;
+  }
   #projecthead {
     display: block;
     background-color: transparent;
