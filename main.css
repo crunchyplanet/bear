@@ -97,7 +97,7 @@ a:visited {
 } */
 
 #intro {
-  /* display: none; */
+  display: none;
   opacity: 0;
   font-weight: 400;
   color: var(--grey600);
@@ -106,6 +106,16 @@ a:visited {
   border-radius: 5px;
   background: #f3f3f3;
   animation: fadein 0.8s forwards 18s ease-in-out;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
 }
 
 #intro p:nth-child(1) {
