@@ -19,7 +19,6 @@ body {
   border-bottom: 2px dotted var(--grey600);
 }
 #dabbleintro {
-  font-family: "DM Sans", sans-serif;
   font-size: 1.2rem;
   color: var(--grey900);
   font-weight: 400;
