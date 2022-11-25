@@ -24,8 +24,8 @@ body {
   margin: 0;
   padding: 3rem 12% 1rem 12%;
   -webkit-font-smoothing: subpixel-antialiased;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  /* font-family: 'DM Sans', sans-serif; */
+  /* font-family: 'Plus Jakarta Sans', sans-serif; */
+  font-family: 'DM Sans', sans-serif;
   /* font-family: 'Poppins', sans-serif; */
   /* font-family: canada-type-gibson, sans-serif; */
   font-weight: 300;
