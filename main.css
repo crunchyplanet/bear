@@ -97,15 +97,13 @@ a:visited {
 } */
 
 #intro {
-  display: none;
-  opacity: 0;
-  font-weight: 400;
-  color: var(--grey600);
-  padding: 0.2rem 2rem;
-  margin: 2rem 0 0 0;
-  border-radius: 5px;
-  background: #f3f3f3;
-  animation: fadein 0.8s forwards 18s ease-in-out;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--grey800);
+  text-align: center;
+  line-height: 1.5;
+  margin: 4rem 0;
+  /* animation: fadein 0.8s forwards 18s ease-in-out; */
 }
 
 @keyframes fadein {
@@ -115,8 +113,51 @@ a:visited {
   100% {
     opacity: 1;
   }
-  
 }
+/* below are for typed intro */
+#typeindicator {
+  display: none;
+  margin-left: 1px;
+  border-left: 1px solid black;
+  animation: blink 1s ease-in-out infinite;
+}
+#intro.typing #typeindicator {
+  display: inline;
+}
+.st {
+  position: relative;
+}
+.st #stroke {
+  border-top: 3px solid var(--grey800);
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  /* animation: strike 0.5s ease-in-out 1 forwards;  */
+}
+#stroke.inmotion {
+  animation-name: strike;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes strike {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/* above are for typed intro */
 
 #intro p:nth-child(1) {
   font-size: 1rem;
@@ -130,8 +171,9 @@ a:visited {
 #intro a:hover {
   text-decoration: underline;
 }
-#blobwave {
+#blobface {
   display: inline-block;
+  margin-left: 0.5rem;
   width: 32px;
 }
 
@@ -281,6 +323,10 @@ a:visited {
     display: none;
     position: relative;
     top: 20px;
+  }
+  #intro {
+    font-size: 1.2rem;
+    margin: 3rem 0;
   }
 
   #tag {

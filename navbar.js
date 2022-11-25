@@ -45,11 +45,11 @@ $(document).ready(function () {
     let brief_ypos = document
       .getElementById("projectbrief")
       .getBoundingClientRect().top;
-    let subs = document.getElementsByClassName("heading");
-    let subsarr = Array.from(subs); //turn class elements into an array
+    let heads = document.getElementsByClassName("heading");
+    let headsarr = Array.from(heads); //turn class elements into an array
     let ypos = [];
-    for (let i = 0; i < subsarr.length; i++) {
-      ypos[i] = subsarr[i].getBoundingClientRect().top;
+    for (let i = 0; i < headsarr.length; i++) {
+      ypos[i] = headsarr[i].getBoundingClientRect().top;
     } //create an array of headings' y-positions
     ypos.unshift(brief_ypos); //add project brief's y-position to the beginning of the y-position array
 

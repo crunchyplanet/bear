@@ -180,27 +180,33 @@ body {
   margin-right: 1rem;
 } */
 
-.flexflow {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-evenly;
-  /* align-items: flex-start; */
-  align-items: center;
+.contentarea {
   padding: 0 12%;
 }
-.flexflow a:link {
-  text-decoration: underline dotted var(--grey500);
-  color: var(--grey500);
-}
-.flexflow a:visited {
-  text-decoration: underline dotted var(--grey500);
-  color: var(--grey500);
-}
-.flexflow div {
+.contentarea div {
   margin-bottom: 2rem;
 }
+.contentarea a:link {
+  text-decoration: underline dotted var(--grey500);
+  color: var(--grey500);
+}
+.contentarea a:visited {
+  text-decoration: underline dotted var(--grey500);
+  color: var(--grey500);
+}
 
-.contentblocks p, .bulletpoints {
+.contentblock {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+}
+.contentblock.topaligned {
+  align-items: flex-start;
+}
+
+.contentblock p, .bulletpoints {
   color: var(--grey900);
   font-size: 1.1rem;
   line-height: 1.8rem;
@@ -209,28 +215,31 @@ body {
   margin: 0 0 1rem 0; /*override default*/
 }
 
-/* override bottom margin */
-#projectbrief {
-  margin-bottom: 1rem;
-}
-
-h3.heading {
+.heading {
   font-size: 1.3rem;
+  font-weight: 700;
   letter-spacing: 0.15rem;
   color: var(--grey400);
-  padding-top: 3rem;
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
+  margin: 4rem auto !important;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
 }
-h4.subheading {
+.heading > hr.divider {
+  display: inline-block;
+  width: 1rem;
+  flex-grow: 20;
+}
+
+.subheading {
   font-size: 1.2rem;
+  font-weight: 700;
   color: var(--grey700);
   display: inline-block;
   margin: 0 0 0.5rem 0;
 }
-/* h4.subheading::before {
+/* .subheading::before {
   content: "\21E8";
 } */
 .bulletpoints {
@@ -244,7 +253,7 @@ h4.subheading {
 }
 
 /*widths*/
-.fullwidth {
+.w100 {
   width: 100%;
 }
 .w25 {
@@ -268,17 +277,20 @@ h4.subheading {
 .w70 {
   width: 70%;
 }
+.w75-t {
+  width: 75%;
+}
 .w80 {
   width: 80%;
 }
-.ctext {
-  width: 75%;
-  margin: 0 auto;
+.w90 {
+  width: 90%;
 }
-.images {
+
+.image {
   max-width: 100%;
 }
-.contentblocks p.captions {
+.contentpiece .caption {
   font-size: 0.9rem;
   color: var(--grey500);
   margin: 0.5rem auto;
@@ -416,7 +428,6 @@ hr {
   #projecthead {
     display: block;
     background-color: transparent;
-    margin-bottom: 1rem;
   }
   #titleinfo {
     width: 100%;
@@ -429,20 +440,20 @@ hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .flexflow {
+  .contentarea {
     padding: 0 8%;
   }
-  h3.heading {
-    padding: 2rem 0 1rem 0;
-    margin-bottom: auto;
+  .heading {
+    margin: 3rem 0 !important;
+  }
+  .w75-t {
     width: 100%;
   }
+  
   #sidebar {
     display: none;
   }
-  .ctext {
-    width: 100%;
-  }
+
 }
 @media screen and (max-width: 768px) {
   body {
@@ -473,15 +484,18 @@ hr {
   #project {
     padding: 0;
   }
-  .flexflow {
+  .contentarea {
     padding: 0 5%;
   }
-  .contentblocks {
-    width: 100% !important;
+  .contentpiece {
+    width: 100%;
+    margin-bottom: 1rem;
   }
-  .contentblocks .images {
-    width: 80%;
-    display: block;
-    margin: 0 auto;
+  .heading > hr.divider {
+    display: none;
+  }
+  .contentblock p, .bulletpoints {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }

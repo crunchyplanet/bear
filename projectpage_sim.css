@@ -21,7 +21,7 @@
   }
 }
 @media screen and (max-width: 768px) {
-  div.contentblocks {
+  div.contentblock {
     width: 100%;
   }
 }
