@@ -387,7 +387,7 @@ hr {
 #bottomnavigation {
   color: var(--grey600);
   display: flex;
-  margin: 3rem var(--padding-l);
+  padding: 3rem var(--padding-l);
   justify-content: space-between;
   /* letter-spacing: 0.1rem; */
 }
@@ -445,6 +445,9 @@ hr {
   #sidebar {
     display: none;
   }
+  #bottomnavigation {
+    padding: 3rem var(--padding-s);
+  }
 
 }
 @media screen and (max-width: 768px) {
@@ -489,5 +492,8 @@ hr {
   .contentblock p, .bulletpoints {
     font-size: 1rem;
     line-height: 1.5;
+  }
+  #bottomnavigation {
+    padding: 3rem var(--padding-s);
   }
 }
