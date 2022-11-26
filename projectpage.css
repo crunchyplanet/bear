@@ -257,7 +257,7 @@ body {
 .w100 {
   width: 100%;
 }
-.w25 {
+.w25-i {
   width: 25%;
 }
 .w30 {
@@ -485,6 +485,9 @@ hr {
   .contentpiece {
     width: 100%;
     margin-bottom: 1rem;
+  }
+  .w25-i {
+    width: 75%;
   }
   .heading > hr.divider {
     display: none;
