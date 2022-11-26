@@ -446,7 +446,7 @@ hr {
     display: none;
   }
   #bottomnavigation {
-    padding: 3rem var(--padding-s);
+    padding: 3rem var(--padding-m);
   }
 
 }
