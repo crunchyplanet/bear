@@ -17,7 +17,7 @@ body {
 
 #homelink {
   position: fixed;
-  left: 12%;
+  left: var(--padding-l);
   top: 40px;
   transition: top 0.1s;
 }
@@ -39,7 +39,7 @@ body {
 
 #navigation {
   position: fixed;
-  right: 12%;
+  right: var(--padding-l);
   top: 70px;
   transition: top 0.1s;
 }
@@ -61,7 +61,7 @@ body {
   opacity: 0;
   width: 100vw;
   background-color: var(--grey100);
-  padding: 0.5rem 12% 0.5rem 12%;
+  padding: 0.5rem var(--padding-l) 0.5rem var(--padding-l);
   transition: opacity 0.2s;
 }
 #contentnav.showing {
@@ -163,7 +163,7 @@ body {
 #projecttitle {
   font-size: 2rem;
   font-weight: 700;
-  margin: 0.8rem 12%;
+  margin: 0.8rem var(--padding-l);
 }
 
 #basicinfo {
@@ -171,7 +171,7 @@ body {
   font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
-  margin: 3rem 12%;
+  margin: 3rem var(--padding-l);
 }
 #basicinfo div {
   margin-bottom: 0.5rem;
@@ -181,7 +181,8 @@ body {
 } */
 
 .contentarea {
-  padding: 0 12%;
+    /* font-family: 'Plus Jakarta Sans', sans-serif; */
+  padding: 0 var(--padding-l);
 }
 .contentarea div {
   margin-bottom: 2rem;
@@ -384,10 +385,10 @@ hr {
 
 /*bottom*/
 #bottomnavigation {
-  height: 20px;
-  position: relative;
   color: var(--grey600);
-  margin: 50px 12%;
+  display: flex;
+  margin: 3rem var(--padding-l);
+  justify-content: space-between;
   /* letter-spacing: 0.1rem; */
 }
 #bottomnavigation a:link {
@@ -398,15 +399,6 @@ hr {
 }
 #bottomnavigation a:hover {
   color: var(--grey700);
-}
-
-#prev,#next {
-  float: left;
-  margin-right: 3rem;
-}
-#top {
-  float: right;
-  text-align: right;
 }
 
 /*mobile*/
@@ -441,7 +433,7 @@ hr {
     margin-bottom: 1rem;
   }
   .contentarea {
-    padding: 0 8%;
+    padding: 0 var(--padding-m);
   }
   .heading {
     margin: 3rem 0 !important;
@@ -485,7 +477,7 @@ hr {
     padding: 0;
   }
   .contentarea {
-    padding: 0 5%;
+    padding: 0 var(--padding-s);
   }
   .contentpiece {
     width: 100%;

@@ -17,12 +17,15 @@ html {
   --blue300: #a6dde8;
   --errorred: #9f0c0c;
   --goodgreen: #398b07;
+  --padding-l: 12%;
+  --padding-m: 8%;
+  --padding-s: 5%;
 }
 
 body {
   /* max-width: 1400px; */
   margin: 0;
-  padding: 3rem 12% 1rem 12%;
+  padding: 3rem var(--padding-l) 1rem var(--padding-l);
   -webkit-font-smoothing: subpixel-antialiased;
   /* font-family: 'Plus Jakarta Sans', sans-serif; */
   font-family: 'DM Sans', sans-serif;
@@ -293,7 +296,7 @@ a:visited {
 
 @media screen and (max-width: 1024px) {
   body {
-    padding: 0 10%;
+    padding: 0 var(--padding-m);
     padding-top: 3rem;
   }
   #logo {
@@ -360,7 +363,7 @@ a:visited {
 @media screen and (max-width: 768px) {
   body {
     font-size: 0.9rem;
-    padding: 0 8%;
+    padding: 0 var(--padding-s);
     padding-top: 3rem;
   }
 }
