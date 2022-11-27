@@ -235,14 +235,19 @@ body {
 
 .subheading {
   font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--grey700);
+  font-weight: 500;
+  color: white;
+  background: var(--grey600);
   display: inline-block;
-  margin: 0 0 0.5rem 0;
+  margin-bottom: 1rem !important;
+  padding: 0.25rem;
 }
-/* .subheading::before {
-  content: "\21E8";
-} */
+.subheading::before {
+  content: ": ";
+}
+.subheading::after {
+  content: " :";
+}
 .bulletpoints {
   list-style-type: circle;
   padding-left: 1rem; /*override default*/
