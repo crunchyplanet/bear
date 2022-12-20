@@ -236,18 +236,16 @@ body {
 .subheading {
   font-size: 1.2rem;
   font-weight: 500;
-  color: white;
-  background: var(--grey600);
+  color: var(--grey900);
   display: inline-block;
   margin-bottom: 1rem !important;
-  padding: 0.25rem;
 }
-.subheading::before {
+/* .subheading::before {
   content: ": ";
 }
 .subheading::after {
   content: " :";
-}
+} */
 .bulletpoints {
   list-style-type: circle;
   padding-left: 1rem; /*override default*/
