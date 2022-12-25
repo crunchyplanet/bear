@@ -16,7 +16,15 @@ html {
   --blue200: #c6f1fa;
   --blue300: #a6dde8;
   --errorred: #9f0c0c;
-  --goodgreen: #398b07;
+  --goodgreen: #2a8f7d;
+  --accent-wildposts-lt: #B2B8EA;
+  --accent-enroute-lt: #9CCFBC;
+  --accent-maker-lt: #EDD068;
+  
+  --accent-cpq-lt: #71afe5;
+  --accent-cpq-dk: #0078d4;
+
+  --accent-ctx-lt: #05758a;
   --padding-l: 12%;
   --padding-m: 8%;
   --padding-s: 5%;
@@ -198,7 +206,9 @@ a:visited {
 
 /*projects*/
 #projects {
-  margin-top: 2rem;;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
   /* sectioned off with tabs */
   /* margin: 0 -999rem;
   padding: 3rem 999rem;
@@ -206,79 +216,46 @@ a:visited {
   text-align: justify; */
 }
 
-.box {
-  width: 100%;
+
+.box a {
+  display: flex;
+  align-items: center;
   position: relative;
-  margin-bottom: 3rem;
-  border-radius: 5px;
-  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.2s, box-shadow 0.2s ease-in-out;
 }
-.box:hover {
-  box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.4);
-}
-
-.indexpics {
-  display: block;
-  width: 100%;
-  border-radius: 5px;
+.boxlabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
-.projectdes {
-  display: inline-block;
-  width: 25%;
-  position: absolute;
-}
-
-.projectdes .projecttitle {
-  font-size: 2rem;
+.boxlabel .projecttitle {
+  font-size: 1.6rem;
   color: var(--grey900);
   font-weight: 700;
 }
-.projectdes .category {
+.boxlabel .themetags {
   color: var(--grey500);
-  margin: 0.3rem 0 1.5rem 0;
 }
-.projectdes .description {
+.boxlabel .description {
   color: var(--grey800);
 }
-.projectdes .access {
-  font-size: 1rem;
+.boxlabel .access {
   font-style: italic;
   color: var(--grey600);
-  margin-top: 0.8rem;
-}
-/* project des positions */
-#cpq a .projectdes {
-  text-align: left;
-  top: 20%;
-  left: 8%;
-}
-#makersshack a .projectdes {
-  text-align: right;
-  top: 20%;
-  right: 8%;
-}
-#wildposts a .projectdes {
-  text-align: left;
-  top: 20%;
-  left: 8%;
-}
-#enroute a .projectdes {
-  text-align: right;
-  top: 20%;
-  right: 8%;
+  margin-top: 0.5rem;
 }
 
+
 /* gm rules*/
-.box.gm .projectdes {
+.box.gm .boxlabel {
   width: 100%;
   margin-top: 0.8rem;
 }
-.box.gm .projectdes p {
+.box.gm .boxlabel p {
   margin: 0.2rem;
 }
-.box.gm .projectdes .projecttitle {
+.box.gm .boxlabel .projecttitle {
   font-size: 1.4rem;
 }
 
@@ -292,6 +269,59 @@ a:visited {
 
 #footer p::after {
   content: "\00A9  2022 Jillian Luo";
+}
+
+@media screen and (min-width: 1024px) {
+  #projects {
+    justify-content: space-between;
+  }
+  .box {
+    max-width: 48%;
+    min-width: 320px;
+    margin-bottom: 4%;
+  }
+  /* .box:nth-child(4n+1), .box:nth-child(4n+2) {
+    margin-right: 25%;
+  }
+  .box:nth-child(4n+3), .box:nth-child(4n) {
+    margin-left: 25%;
+  } */
+  .boxlabel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(255,255,255, 0.8);
+    box-sizing: border-box;
+    border: 1rem solid var(--grey200);
+    opacity: 0;
+    border-radius: 4px;
+    transition: opacity 0.5s;
+  }
+  #cpq .boxlabel {
+    border-color: var(--accent-cpq-lt);
+  }
+  #wildposts .boxlabel {
+    border-color: var(--accent-wildposts-lt);
+  }
+  #makersshack .boxlabel {
+    border-color: var(--accent-maker-lt);
+  }
+  #enroute .boxlabel {
+    border-color: var(--accent-enroute-lt);
+  }
+  .box:hover .boxlabel {
+      opacity: 1;
+      transition: opacity 0.8s;
+  }
+  .boxlabel > div {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .coverimg {
+    width: 100%;
+    border-radius: 4px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -338,32 +368,53 @@ a:visited {
     margin-right: 1rem;
   } */
   .box {
-    margin-bottom: 3rem;
-    box-shadow: none;
-  }
-  .box:hover {
-    box-shadow: none;
-  }
-
-  .projectdes {
-    display: block;
-    text-align: left !important;
     width: 100%;
-    margin-top: 0.8rem;
-    position: inherit;
+    margin-bottom: 5%;
   }
-  .projectdes .projecttitle {
-    font-size: 1.4rem;
+  .box a {
+    justify-content: center;
+    gap: 2rem;
   }
-  .projectdes div {
-    margin: 0.2rem !important;
+  .box:nth-child(odd) a {
+    flex-direction: row;
+  }
+  .box:nth-child(even) a {
+    flex-direction: row-reverse;
+  }
+  .coverimg {
+    width: 45%;
+    border-radius: 12px;
+  }
+  .boxlabel {
+    width: 45%;
+  }
+  .box:nth-child(odd) .boxlabel {
+    text-align: left;
+  }
+  .box:nth-child(even) .boxlabel {
+    text-align: right;
+  }
+  .boxlabel div {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 768px) {
   body {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 0 var(--padding-s);
     padding-top: 3rem;
+  }
+  .boxlabel .projecttitle {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .coverimg {
+    width: 100%;
+  }
+  .boxlabel {
+    display: none;
   }
 }
