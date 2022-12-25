@@ -52,9 +52,8 @@
         }
         
         #mainDialog {
-            max-width: 400px;
-            min-width: 320px;
-            margin: 5px;
+            max-width: 480px;
+            min-width: 440px;
             border: solid var(--grey200) 1px;
             border-radius: 8px;
             box-shadow: 0px 0px 2px 0px var(--grey300);
@@ -65,14 +64,13 @@
             text-align: left;
         }
         #mainDialog > * {
-            padding: 10px 30px;
+            padding: 1rem 2rem;
         }
         #passArea {
-            padding: 20px 30px;
             background-color: white;
         }
         #passArea > * {
-            margin: 5px auto;
+            margin: 0.5rem auto;
         }
         #pass {
             box-sizing: border-box;
@@ -96,22 +94,34 @@
         }
         
         #success {
-            color: var(--goodgreen);
+            color: var(--okgreen);
         }
         
-        #submitPass {
+        button#submitPass, button#cancel {
             font-size: 1rem;
-            color: var(--grey900);
-            background-color: var(--blue200);
-            padding: 0.5rem 1.5rem;
+            font-weight: 700;
+            padding: 0.5rem 0;
+            width: 5rem;
             border-radius: 4px;
             border: none;
             float: left;
             cursor: pointer;
             transition: 0.2s
         }
+        #submitPass {
+            color: white;
+            background-color: var(--grey700);
+            margin-right: 0.5rem;
+        }
+        #cancel {
+            color: var(--grey900);
+            background-color: var(--grey100);
+        }
         #submitPass:hover {
-            background-color: var(--blue300);
+            background-color: var(--grey900);
+        }
+        #cancel:hover {
+            background-color: var(--grey200);
         }
         #contentFrame {
             position: absolute;
@@ -150,12 +160,13 @@
                     <input id="pass" type="password" name="pass" autofocus>
                     <div>
                         <span id="messageWrapper">
-                            <span id="invalidPass" class="error">Oops, that's not the right password.</span>
+                            <span id="invalidPass" class="error"><i class="fas fa-times-circle"></i> Password incorrect.</span>
                             <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
-                            <span id="success" class="notifyText">&#x2714; The page will load shortly.</span>
+                            <span id="success" class="notifyText"><i class="fas fa-check-circle"></i> The page will load shortly.</span>
                             &nbsp;
                         </span>
                         <button id="submitPass" type="button">Go</button>
+                        <button id="cancel" type="button" onclick="window.location.href='../';">Cancel</button>
                         <div style="clear: both;"></div>
                     </div>
                 </div>
