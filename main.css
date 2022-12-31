@@ -415,6 +415,22 @@ a:visited {
     width: 100%;
   }
   .boxlabel {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background: rgba(255,255,255, 0.8);
+    box-sizing: border-box;
+    border-radius: 0 0 4px 4px;
+    padding: 1rem 0;
+    text-align: left !important;
+  }
+  .box a {
+    align-items: flex-end;
+    flex-direction: row !important;
+  }
+  /* hide tags and desc for CPQ on small screen size */
+  #cpq .themetags, #cpq .description {
     display: none;
   }
+
 }
