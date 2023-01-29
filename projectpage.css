@@ -9,6 +9,7 @@ body {
   position: fixed;
   width: 100vw;
   height: 120px;
+  padding: 0;
   transition: box-shadow 0.2s;
 }
 #header.withshadow {
