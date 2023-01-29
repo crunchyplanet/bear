@@ -1,5 +1,5 @@
 #biocontainer {
-  margin: 5rem auto;
+  margin: 5rem var(--padding-l);
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
@@ -153,6 +153,9 @@ a.externallink:visited {
 }
 
 @media screen and (max-width: 1024px) {
+  #biocontainer {
+    margin: 2rem var(--padding-m);
+  }
   .otherstuffitem {
     width: 48%;
   }
@@ -175,6 +178,9 @@ a.externallink:visited {
 }
 
 @media screen and (max-width: 480px) {
+  #biocontainer {
+    margin: 1rem var(--padding-s)
+  }
   #nature {
     width: 80%;
   }

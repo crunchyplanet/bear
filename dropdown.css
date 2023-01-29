@@ -3,15 +3,10 @@
 }
 
 @media screen and (max-width: 1024px) {
-  #header {
-    margin-top: -4rem;
-  }
-
   /*Style for the first level menu bar*/
   #menu {
     display: block;
     position: relative;
-    top: -4rem;
     margin: 0;
     color: var(--grey300);
     text-align: center;
@@ -36,7 +31,7 @@
     display: none;
   }
 
-  /*show the second levele menu of the selected voice*/
+  /*show the second level menu of the selected voice*/
   input:checked ~ .submenu {
     max-height: 300px;
     transition: max-height 0.5s ease-in;
@@ -62,8 +57,4 @@
   .submenu p a:hover {
     color: var(--grey500);
   }
-  /* hide side quest tab */
-  /* .submenu p:nth-child(2) {
-    display: none;
-  } */
 }
