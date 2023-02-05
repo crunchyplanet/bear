@@ -29,12 +29,12 @@
       type="module"
       src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
   </head>
 
   <body>
@@ -42,38 +42,38 @@
       <a id="homelink" href="../"
         ><img id="logo" src="../mainassets/logo.png"
       /></a>
-
       <div id="navigation">
         <span class="tabs"><a href="../">WORK</a></span>
         <!-- <span class="tabs"><a href="../dabble/">DABBLE</a></span> -->
         <span class="tabs"><a href="../about/">ABOUT</a></span>
       </div>
     </div>
-    <div id="contentnav">
-      <span id="navtitle">En Route</span>
-      <a class="navitems" href="#projecttitle">Overview</a> &gt;
-      <a class="navitems" href="#research">Research & Ideation</a> &gt;
-      <a class="navitems" href="#prototype">Design & Prototype</a> &gt;
-      <a class="navitems" href="#animation">Animation & Motion Design</a> &gt;
-      <a class="navitems" href="#retro">Retrospective</a>
+    <div id="titleimage">
+      <img src="../coverimg/coverimg-enroute-in.jpg" />
     </div>
     <div id="project">
-      <div id="projecthead">
-        <div id="titleimage">
-          <img src="../coverimg/coverimg-enroute-in.jpg" />
+      <div id="sidebar">
+        <h1 id="projecttitle">En Route</h1>
+        <p id="projectsubtitle"></p>
+        <div id="basicinfo">
+          <div>March &ndash; April 2019</div>
+          <div>Independent Project</div>
         </div>
-        <div id="titleinfo">
-          <h1 id="projecttitle">En Route</h1>
-          <p id="projectsubtitle"></p>
-          <div id="basicinfo">
-            <div>March &ndash; April 2019</div>
-            <div>Independent Project</div>
-          </div>
+        <div id="contentnav">
+          <a class="navitems">Overview</a>
+          <a class="navitems">Research & Ideation</a>
+          <a class="navitems">Design & Prototype</a>
+          <a class="navitems">Animation & Motion Design</a>
+          <a class="navitems">Retrospecitve</a>
+        </div>
+        <div id="pagenav">
+          <span id="back"><a href="../"><i class="fas fa-arrow-left"></i> All projects</a></span>
         </div>
       </div>
       <div class="contentarea">
+        <div class="heading" id="beginning"><hr class="divider" /><hr class="divider" /></div>
         <div class="contentblock" id="projectbrief">
-          <p class="contentpiece w75-t">
+          <p class="contentpiece w100">
             En Route is a tool that makes travel planning and route tracking
             easy and enjoyable. With maximum customizability, the user will be
             able to plan a route that covers any important spot they wish to
@@ -84,7 +84,7 @@
           </p>
         </div>
         <div class="contentblock">
-          <div class="contentpiece w75-t">
+          <div class="contentpiece w100">
             <div class="subheading">&#128205; Problem</div>
             <ul class="bulletpoints">
               <li>It takes a lot of time and effort to plan a trip that covers all
@@ -97,7 +97,7 @@
               </div>
             </div>
             <div class="contentblock">
-              <div class="contentpiece w75-t">
+              <div class="contentpiece w100">
             <div class="subheading">&#128161; Solution</div>
             <ul class="bulletpoints">
               <li> En Route has a trip planning system that allows users to input their
@@ -122,7 +122,7 @@
 
         <div class="heading" id="research"><hr class="divider" />RESEARCH &amp; IDEATION<hr class="divider" /></div>
         <div class="contentblock">
-          <div class="contentpiece w75-t">
+          <div class="contentpiece w100">
           <p>
             Based on the problems defined in this project, I created a proto-persona and a
             journey map to identify target users' pain points and design opportunities.
@@ -145,7 +145,7 @@
           <img class="contentpiece image" src="assets/journeymap.jpg" />
         </div>
         <div class="contentblock" id="brainstorm">
-          <div class="contentpiece w40">
+          <div class="contentpiece w45">
           <p>
             Through brainstorm, I came up with some features that would help the
             user make a plan without painstaking research and arrangement but
@@ -161,17 +161,17 @@
               <li>Track users’ progress during the trip and provide live tips and updates.</li>
           </ul>
           </div>
-          <img class="contentpiece w40 image" src="assets/brainstorm.jpg" />
+          <img class="contentpiece w45 image" src="assets/brainstorm.jpg" />
         </div>
 
         <div class="heading" id="prototype"><hr class="divider" />DESIGN &amp; PROTOTYPE<hr class="divider" /></div>
 
         <div class="contentblock">
-          <p class="contentpiece w75-t">
+          <p class="contentpiece w100">
             To help users make <span class="hl">highly customizable plans</span> according to their
             preferences, the app needs a strong knowledge base and
             powerful algorithms. And the user interface for the trip planner needs to let the user navigate through a large amount of options and information in a intuitive way.</p>
-            <p class="contentpiece w75-t">Once the traveler is on their way, they can launch the planned trip, and the app would serve as an
+            <p class="contentpiece w100">Once the traveler is on their way, they can launch the planned trip, and the app would serve as an
             informed travel guide that they can refer to for any information and resources. During this project, I focused on designing the experience of making travel plans and launching them for live-tracking.
           </p>
         </div>
@@ -182,7 +182,7 @@
           <img class="image" src="assets/wireframe.png" />
         </div> -->
         <div class="contentblock">
-          <p class="contentpiece w75-t">
+          <p class="contentpiece w100">
             In the planning phase, the traveler's needs are broken down to
             different parameters, and the user could be as specific as they wish
             about their preferences. A suggested route will be generated based
@@ -197,7 +197,7 @@
           <img class="contentpiece image" src="assets/mobilecallout.png" />
         </div>
         <div class="contentblock">
-          <p class="contentpiece w75-t">
+          <p class="contentpiece w100">
             In addition to the mobile app, I also designed a web version,
             which allows users to take advantage of the screen space and
             navigate more freely, especially in the planning phase.
@@ -207,7 +207,7 @@
           <img class="contentpiece image" src="assets/web.jpg" />
         </div>
         <div class="contentblock">
-          <p class="contentpiece w75-t">
+          <p class="contentpiece w100">
             During the trip, the user can get information and tips about
             destinations. Some steps or destinations will also allow users to
             jump to other relevant apps like Uber, Airbnb, and Yelp for extended
@@ -222,21 +222,21 @@
 
         <div class="heading" id="animation"><hr class="divider" />ANIMATION &amp; MOTION DESIGN<hr class="divider" /></div>
         <div class="contentblock">
-          <img class="contentpiece w30 image" src="assets/progressbar.gif" />
-          <p class="contentpiece w30">
+          <img class="contentpiece w25 mobile image" src="assets/progressbar.gif" />
+          <p class="contentpiece w45">
             I created some animation to display while the system is generating a route based on the user input, which makes the transition less boring and gives the user a
             better idea of what's been taken into consideration.
           </p>
         </div>
         <div class="contentblock">
-          <p class="contentpiece w30">
+          <p class="contentpiece w45">
             I also designed a micro-animation for the reload transition. It gives the app some charater and helps strengthen the brand impression.
           </p>
-          <img class="contentpiece w30 image" src="assets/switchout.gif" />
+          <img class="contentpiece w25 mobile image" src="assets/switchout.gif" />
         </div>
         <div class="heading" id="retro"><hr class="divider" />RETROSPECTIVE<hr class="divider" /></div>
         <div class="contentblock">
-          <div class="contentpiece w75-t">
+          <div class="contentpiece w100">
           <div class="subheading">&#128214; Lessons Learned</div>
           <ul class="bulletpoints">
             <li>Different touchpoints (devices) could be used to cater to the needs of the user in different phases of their experience. Using the web platform for information-heavy scenarios and mobile version for quick data retrieval could make it more efficient and easier to maneuver for the user.</li>
@@ -245,7 +245,7 @@
           </div>
         </div>
         <div class="contentblock">
-          <div class="contentpiece w75-t">
+          <div class="contentpiece w100">
           <div class="subheading">&#128173; Opportunities for Improvement</div>
           <ul class="bulletpoints">
             <li>It would be helpful to let users save their preference settings and apply them to future trips.</li>
@@ -254,19 +254,17 @@
           </ul>
         </div>
         </div>
-        <hr class="bottomdivider"/>
+        <div id="bottomnav">
+          <span id="back"><a href="../"><i class="fas fa-arrow-left"></i> All projects</a></span>
+          <span id="top"><a href="#project"><i class="fas fa-arrow-up"></i> Top</a></span>
+        </div>
       </div>
     </div>
 
-    <div id="bottomnavigation">
-      <span id="prev"><a href="../makersshack/"><i class="fas fa-angle-left"></i> Maker's Shack</a></span>
-      <span id="top"><a href="#project"><i class="fas fa-arrow-up"></i> Back to top</a></span>
-      <span id="next"><a href="../wildposts/">Wild Posts <i class="fas fa-angle-right"></i></a></span>
-    </div>
     <div id="footer">
       <p></p>
     </div>
-    <script src="../navbar.js"></script>
+    <script src="../contentnav.js"></script>
     <script type="module" src="../highlight.js"></script>
   </body>
 </html>

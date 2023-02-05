@@ -2,154 +2,9 @@ body {
   margin: 0;
   padding: 0;
 }
-#header {
-  background: white;
-  box-shadow: 0px 0px 5px -1px rgba(122, 122, 122, 0);
-  z-index: 1;
-  position: fixed;
-  width: 100vw;
-  height: 120px;
-  padding: 0;
-  transition: box-shadow 0.2s;
-}
-#header.withshadow {
-  box-shadow: 0px 4px 5px -1px rgba(122, 122, 122, 0.5);
-}
-
-#homelink {
-  position: fixed;
-  left: var(--padding-l);
-  top: 40px;
-  transition: top 0.1s;
-}
-#homelink.movedup {
-  top: 0px;
-}
-#homelink.hideup {
-  top: -115px;
-}
-/*for projects without content nav bar */
-#homelink.nudge {
-  top: 20px;
-}
 
 #logo {
   width: 48px;
-  display: inline-block;
-}
-
-#navigation {
-  position: fixed;
-  right: var(--padding-l);
-  top: 70px;
-  transition: top 0.1s;
-}
-#navigation.movedup {
-  top: 35px;
-}
-#navigation.hideup {
-  top: -80px;
-}
-/*for projects without content nav bar */
-#navigation.nudge {
-  top: 50px;
-}
-/*content nav bar*/
-#contentnav {
-  position: fixed;
-  top: 85px;
-  z-index: 1;
-  opacity: 0;
-  width: 100vw;
-  background-color: var(--grey100);
-  padding: 0.5rem var(--padding-l) 0.5rem var(--padding-l);
-  transition: opacity 0.2s;
-}
-#contentnav.showing {
-  opacity: 1;
-}
-#contentnav.hideup {
-  top: -30px;
-}
-#navtitle {
-  margin-right: 2rem;
-  font-weight: 700;
-}
-
-.navitems {
-  margin: 0 1rem;
-  color: var(--grey500);
-}
-.navitems:hover {
-  color: var(--grey700);
-}
-
-#contentnav .activepart.navitems {
-  color: var(--grey700);
-  font-weight: 500;
-}
-
-/*
-#workdropdown {
-    float: left;
-    overflow: hidden;
-    margin-right: 20px;
-}
-#workdropdown .tabs {
-    text-align: right;
-    display: inline-block;
-    margin-right: 50px;
-}
-#worklist {
-    height: 0;
-    position: relative;
-    top: 30px;
-    left: 35px;
-    z-index: 1;
-    background: rgb(245, 248, 250);
-}
-#workdropdown:hover #worklist {
-    height: 210px;
-    transition:height 0.2s ease-in-out;
-}
-#worklist .column p {
-    width: fit-content;
-    margin: 20px auto;
-}
-*/
-
-/*sidebar*/
-/* #sidebar {
-  position: fixed;
-  top: 25%;
-  left: 5%;
-  z-index: 1;
-}
-#sidebar a {
-  display: block;
-  line-height: 2rem;
-  color: var(--grey300);
-}
-.sideitems {
-  opacity: 0;
-  position: relative;
-  top: 200px;
-}
-#sidebar .activesec.sideitems {
-  color: var(--grey500);
-  font-weight: 500;
-} */
-
-/*project*/
-#project {
-  padding-top: 150px;
-}
-#projecthead {
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center; */
-  margin-bottom: 1rem;
-  text-align: center;
 }
 
 #titleimage {
@@ -160,19 +15,33 @@ body {
   width: 100%;
   display: block;
 }
+#project {
+  padding: 0 var(--padding-m);
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
 
+#sidebar {
+  width: 25%;
+  position: sticky;
+  top: 1rem;
+  border-right: 1px solid var(--grey200);
+  padding-top: 1rem;
+  padding-right: 1rem;
+  height: 92vh;
+  box-sizing: border-box;
+}
 #projecttitle {
   font-size: 2rem;
   font-weight: 700;
-  margin: 0.8rem var(--padding-l);
+  margin: 0;
 }
-
 #basicinfo {
   color: var(--grey600);
   font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
-  margin: 3rem var(--padding-l);
 }
 #basicinfo div {
   margin-bottom: 0.5rem;
@@ -181,9 +50,50 @@ body {
   margin-right: 1rem;
 } */
 
+/*content nav*/
+#contentnav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 4rem 0;
+}
+.navitems {
+  color: var(--grey500);
+  cursor: pointer;
+}
+.navitems:hover {
+  color: var(--grey700);
+}
+.navitems.active {
+  color: var(--grey700);
+  font-weight: 700;
+}
+/*across-page nav*/
+#pagenav {
+  color: var(--grey600);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 4rem 0;
+  /* letter-spacing: 0.1rem; */
+}
+#pagenav a:link {
+  color: var(--grey600);
+}
+#pagenav a:visited {
+  color: var(--grey600);
+}
+#pagenav a:hover {
+  color: var(--grey700);
+}
+#bottomnav {
+  display: none;
+}
+
+/* content */
 .contentarea {
-    /* font-family: 'Plus Jakarta Sans', sans-serif; */
-  padding: 0 var(--padding-l);
+  width: 75%;
+  padding-top: 1rem;
 }
 .contentarea a:link {
   text-decoration: underline dotted var(--grey500);
@@ -201,17 +111,14 @@ body {
   /* justify-content: space-between; */
   justify-content: space-evenly;
   margin-bottom: 2rem;
-}
-.contentblock.topaligned {
-  align-items: flex-start;
-}
-
-.contentblock {
   color: var(--grey900);
   font-size: 1.1rem;
   line-height: 1.8rem;
   font-weight: 300;
   font-style: normal;
+}
+.contentblock.topaligned {
+  align-items: flex-start;
 }
 
 .contentblock p {
@@ -233,6 +140,11 @@ body {
   display: inline-block;
   width: 1rem;
   flex-grow: 20;
+}
+.heading#beginning {
+  visibility: hidden;
+  height: 0;
+  margin: 0 !important;
 }
 
 .subheading {
@@ -259,35 +171,17 @@ body {
 }
 
 /*widths*/
-.w25-mobileui {
+.w25 {
   width: 25%;
-}
-.w30 {
-  width: 30%;
-}
-.w40 {
-  width: 40%;
 }
 .w45 {
   width: 45%;
 }
-.w50 {
-  width: 50%;
-}
 .w60 {
   width: 60%;
 }
-.w70 {
-  width: 70%;
-}
-.w75-t {
-  width: 75%;
-}
 .w80 {
   width: 80%;
-}
-.w90 {
-  width: 90%;
 }
 .w100 {
   width: 100%;
@@ -296,16 +190,12 @@ body {
 .image {
   max-width: 100%;
 }
-.contentblock.spread {
-  margin: 2rem -20%;
-  padding: 1.5rem 20%;
-}
 
 .cpq .themecolor, .cpq .heading {
   color: var(--accent-cpq-dk);
 }
 
-.contentpiece .caption {
+.caption {
   font-size: 0.9rem;
   color: var(--grey500);
   margin: 0.5rem auto;
@@ -333,9 +223,9 @@ body {
 }
 /*image slideshow*/
 .slidecontainer {
-  width: 100%;
+  width: 90%;
   position: relative;
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 .prevbtn,
 .nextbtn {
@@ -401,120 +291,82 @@ hr {
   width: 100%;
 }
 
-/*bottom*/
-#bottomnavigation {
-  color: var(--grey600);
-  display: flex;
-  padding: 3rem var(--padding-l);
-  justify-content: space-between;
-  /* letter-spacing: 0.1rem; */
-}
-#bottomnavigation a:link {
-  color: var(--grey600);
-}
-#bottomnavigation a:visited {
-  color: var(--grey600);
-}
-#bottomnavigation a:hover {
-  color: var(--grey700);
-}
-
-/*mobile*/
-@media screen and (max-width: 1024px) {
-  /*override main.css logo margin*/
-  #logo {
-    margin: 0 auto;
-    top: 20px;
-  }
-  #navigation {
-    display: block;
-  }
-  #header {
-    height: 95px;
-  }
-  #contentnav {
-    display: none;
-  }
-  #projecthead {
-    display: block;
-    background-color: transparent;
-  }
-  #titleinfo {
-    width: 100%;
-  }
+@media screen and (max-width: 1080px) {
   #titleimage {
-    width: 100%;
     margin-bottom: 1rem;
+  }
+  #project {
+    padding: 0 var(--padding-m);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  #sidebar {
+    width: auto;
+    height: auto;
+    border: none;
+    position: inherit;
   }
   #basicinfo {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+  #contentnav {
+    display: none;
+  }
+  #pagenav {
+    display: none;
+  }
+  #bottomnav {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed var(--grey300);
+    padding-top: 1rem;
+  }
+  #bottomnav a {
+    text-decoration: none;
+  }
   .contentarea {
-    padding: 0 var(--padding-m);
+    width: 100%;
   }
   .heading {
     margin: 3rem 0 !important;
   }
-  .w75-t {
-    width: 100%;
+  .contentblock.spread {
+    margin: 2rem -20%;
+    padding: 1.5rem 20%;
   }
-  
-  #sidebar {
-    display: none;
-  }
-  #bottomnavigation {
-    padding: 3rem var(--padding-m);
-  }
-
 }
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 0.9rem;
-  }
-  #header {
-    height: 80px;
-    position: static;
-  }
-  #header.withshadow {
-    box-shadow: 0px 4px 5px -1px rgba(122, 122, 122, 0);
-  }
-  #homelink {
-    position: static;
-    left: 50%;
-    top: 50px;
-    margin-left: -24px;
-  }
-  #logo {
-    display: block;
-    top: 0;
-  }
+@media screen and (max-width: 720px) {
   #navigation {
     display: none;
-    position: relative;
-    top: 20px;
   }
   #project {
-    padding: 0;
-  }
-  .contentarea {
     padding: 0 var(--padding-s);
+    gap: 0;
   }
   .contentpiece {
     width: 100%;
     margin-bottom: 1rem;
   }
-  .w25-mobileui {
-    width: 75%;
+  .w25.mobileui {
+    width: 50%;
   }
   .heading > hr.divider {
     display: none;
   }
   .contentblock {
-    font-size: 1rem;
     line-height: 1.5;
   }
-  #bottomnavigation {
+  #pagenav {
     padding: 3rem var(--padding-s);
+  }
+}
+@media screen and (max-width: 480px) {
+  .contentblock {
+    font-size: 0.9rem;
+  }
+  .w25.mobileui {
+    width: 75%;
   }
 }

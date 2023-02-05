@@ -26,7 +26,7 @@ html {
   --accent-cpq-dk: #0078d4;
 
   --accent-ctx-lt: #05758a;
-  --padding-l: 12%;
+
   --padding-m: 8%;
   --padding-s: 5%;
 }
@@ -45,18 +45,22 @@ body {
 }
 /*header*/
 #header {
-  position: relative;
-  padding: 2rem var(--padding-l);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem var(--padding-m);
+}
+#menu {
+  display: none;
+}
+#homelink {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
 }
 #logo {
   width: 54px;
   display: inline-block;
-  position: relative;
-  top: 20px;
-}
-#headtext {
-  display: inline-block;
-  margin-left: 20px;
 }
 #name {
   font-family: 'Carter One', sans-serif;
@@ -64,8 +68,6 @@ body {
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.2rem;
-}
-#name a {
   color: black;
 }
 
@@ -76,12 +78,6 @@ a:visited {
   text-decoration: none;
 }
 
-/*global navigation*/
-#navigation {
-  position: absolute;
-  top: 70px;
-  right: var(--padding-l);
-}
 /* 
 #navigation a:link {  
     color: var(--grey400);
@@ -322,52 +318,76 @@ a:visited {
   content: "\00A9  2023 Jillian Luo";
 }
 
-@media screen and (max-width: 1024px) {
-  #logo {
-    display: block;
-    margin: 10px auto;
-    top: 0px;
-  }
+@media screen and (max-width: 1080px) {
   #header {
-    padding: 1rem;
+    padding: 1.5rem var(--padding-m);
   }
-  #headtext {
-    margin: 0;
-    display: block;
-  }
-  #name {
-    text-align: center;
-  }
-  #jobtitle {
-    text-align: center;
-  }
-  #navigation {
-    display: none;
-    position: relative;
-    top: 20px;
-  }
-  #intro {
-    font-size: 1.2rem;
-    margin: 3rem 0;
-  }
-
-  #tag {
-    max-width: 80%;
-  }
-
-  /* #filters {
-    width: 100%;
-    letter-spacing: 0;
-  }
-  .filter {
-    margin-right: 1rem;
-  } */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   body {
     font-size: 0.8rem;
   }
+  #header {
+    padding: 0.5rem var(--padding-s);
+    justify-content: center;
+  }
+  #homelink {
+    flex-direction: column;
+    gap: 0;
+  }
+  #navigation {
+    display: none;
+  }
+
+  /*Style for the first level menu bar*/
+  #menu {
+    display: block;
+    position: relative;
+    margin: 0;
+    color: var(--grey300);
+    text-align: center;
+  }
+  label {
+    font-size: 3rem;
+    position: relative;
+    display: block;
+    transition: color 0.3s;
+    cursor: pointer;
+    text-align: center;
+  }
+  label:hover,
+  input:checked ~ label {
+    color: var(--grey500);
+  }
+  /*hide the inputs*/
+  input {
+    display: none;
+  }
+  /*show the second level menu of the selected voice*/
+  input:checked ~ .submenu {
+    max-height: 300px;
+    transition: max-height 0.5s ease-in;
+  }
+  /*style for the second level menu*/
+  .submenu {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    min-width: 100%;
+  }
+  .submenu p a {
+    display: block;
+    color: var(--grey300);
+    text-decoration: none;
+    /* font-size: 0.9rem; */
+    letter-spacing: 0.1rem;
+  }
+  .submenu p a:hover {
+    color: var(--grey500);
+  }
+
   #projects {
     flex-wrap: wrap;
     height: auto;

@@ -33,12 +33,12 @@
       type="module"
       src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
   </head>
 
   <body>
@@ -52,35 +52,36 @@
         <span class="tabs"><a href="../about/">ABOUT</a></span>
       </div>
     </div>
-    <div id="contentnav">
-      <span id="navtitle">Wild Posts</span>
-      <a class="navitems" href="#projecttitle">Overview</a> &gt;
-      <a class="navitems" href="#exploration">Research &#38; Exploration</a>
-      &gt; <a class="navitems" href="#app">App Design &#38; Prototype</a> &gt;
-      <a class="navitems" href="#retro">Retrospective</a>
+    <div id="titleimage">
+      <img src="../coverimg/coverimg-wildposts-in.jpg" />
     </div>
     <div id="project">
-      <div id="projecthead">
-        <div id="titleimage">
-          <img src="../coverimg/coverimg-wildposts-in.jpg" />
+      <div id="sidebar">
+        <h1 id="projecttitle">Wild Posts</h1>
+        <p id="projectsubtitle"></p>
+        <div id="basicinfo">
+          <div>February &ndash; April 2020</div>
+          <div>Independent Project</div>
+          <!-- <div id="tools">
+            <i class="fas fa-tools"></i><b>Tools:</b>
+            Adobe XD &middot; Illustrator &middot; After Effects &middot; HTML
+            &middot; CSS &middot; Javascript &middot; PHP &middot; SQL
+          </div> -->
         </div>
-        <div id="titleinfo">
-          <h1 id="projecttitle">Wild Posts</h1>
-          <p id="projectsubtitle"></p>
-          <div id="basicinfo">
-            <div>February &ndash; April 2020</div>
-            <div>Independent Project</div>
-            <!-- <div id="tools">
-              <i class="fas fa-tools"></i><b>Tools:</b>
-              Adobe XD &middot; Illustrator &middot; After Effects &middot; HTML
-              &middot; CSS &middot; Javascript &middot; PHP &middot; SQL
-            </div> -->
-          </div>
+        <div id="contentnav">
+          <a class="navitems">Overview</a>
+          <a class="navitems">Research &#38; Exploration</a>
+          <a class="navitems">App Design &#38; Prototype</a>
+          <a class="navitems">Retrospective</a>
+        </div>
+        <div id="pagenav">
+          <span id="back"><a href="../"><i class="fas fa-arrow-left"></i> All projects</a></span>
         </div>
       </div>
       <div class="contentarea">
+        <div class="heading" id="beginning"><hr class="divider" /><hr class="divider" /></div>
         <div class="contentblock" id="projectbrief">
-          <p class="contentpiece w75-t">
+          <p class="contentpiece w100">
             Wild Posts is a platform where people create mock social media posts
             on behalf of other species in nature, intended to help people take
             the perspective of nature and build a stronger empathy with other
@@ -91,7 +92,7 @@
           </p>
           </div>
           <div class="contentblock">
-            <div class="contentpiece w75-t">
+            <div class="contentpiece w100">
             <div class="subheading">&#128205; Problem</div>
             <p>
               As human-beings, we rarely think in the perspective of other
@@ -101,7 +102,7 @@
           </div>
           </div>
             <div class="contentblock">
-              <div class="contentpiece w75-t">
+              <div class="contentpiece w100">
             <div class="subheading">&#128161; Solution</div>
             <p>
               The social media platform allows users to learn about
@@ -126,7 +127,7 @@
         
         <div class="heading" id="exploration"><hr class="divider" />RESEARCH &#38; EXPLORATION<hr class="divider" /></div>
         <div class="contentblock">
-          <div class="contentpiece w75-t">
+          <div class="contentpiece w100">
           <p>
             My thesis explored how we as humans could develop a closer
             connection and stronger empathy with nature. I did some research in the context of
@@ -146,7 +147,7 @@
         </div>
         </div>
         <div class="contentblock">
-          <div class="contentpiece w50">
+          <div class="contentpiece w60">
           <img class="image" src="assets/trianglediagram.png" />
           <p class="caption">
             Environmental psychology concepts and their relationship.
@@ -154,7 +155,7 @@
         </div>
         </div>
         <div class="contentblock">
-          <p class="contentpiece w75-t">
+          <p class="contentpiece w100">
             Through research, I also found perspective-taking to be an effective
             approach that helps people
             <span class="hl"
@@ -191,7 +192,7 @@
           </div>
         </div>
         <div class="contentblock">
-          <p class="contentpiece w75-t">
+          <p class="contentpiece w100">
             I found this process to be an educational and eye-opening
             experience, so I wanted to see what other people would feel about
             it. I asked people to come up with a post on a social platform of
@@ -211,7 +212,7 @@
         </div>
         </div>
         <div class="contentblock">
-          <p class="contentpiece w75-t">
+          <p class="contentpiece w100">
             Seeing the potential of this format in raising environmental
             awareness and cultivating empathy with nature, I created a test website using PHP and SQL. The platform allows users to compose
             posts with the content that they come up with. Aside from the main
@@ -228,7 +229,7 @@
           </p></div>
         </div>
         <div class="contentblock">
-          <div class="contentpiece w75-t">
+          <div class="contentpiece w100">
           <p>
             As these posts help people learn about the environmental problems
             that are impacting other species, it's important to incorporate a
@@ -252,22 +253,22 @@
         
         <div class="heading" id="app"><hr class="divider" />APP DESIGN &#38; PROTOTYPE<hr class="divider" /></div>
         <div class="contentblock">
-          <p class="contentpiece w75-t">To help people shift their behaviors and be persistent, I designed a mobile app that can keep track of users' environmental efforts and nudge people’s everyday actions.</p>
+          <p class="contentpiece w100">To help people shift their behaviors and be persistent, I designed a mobile app that can keep track of users' environmental efforts and nudge people’s everyday actions.</p>
         </div>
         <div class="contentblock">
-          <img class="contentpiece w25-mobileui image" src="assets/1missionsfrompost.gif" /><p class="contentpiece w30">
+          <img class="contentpiece w25 image mobileui" src="assets/1missionsfrompost.gif" /><p class="contentpiece w45">
             On each post, there is an action button that links to a list of
             missions for each problem reflected in the posts, guiding the user
             to take action.
           </p>
         </div>
         <div class="contentblock">
-          <p class="contentpiece w30">
+          <p class="contentpiece w45">
             The app provides recommended missions and weekly challenges. The
             choice is given to the users to pick what they would be will ing to
             do so they could slowly build up their level of engagement.
           </p>
-          <img class="image contentpiece w25-mobileui" src="assets/2addmission.gif" />
+          <img class="image contentpiece w25 mobileui" src="assets/2addmission.gif" />
         </div>
         <!-- <div class="contentblock">
           <img class="image" src="" />
@@ -278,8 +279,8 @@
           </p>
         </div> -->
         <div class="contentblock">
-          <img class="contentpiece w25-mobileui image" src="assets/3missiondetail.gif" />
-          <div class="contentpiece w60">
+          <img class="contentpiece w25 image mobileui" src="assets/3missiondetail.gif" />
+          <div class="contentpiece w45">
           <p>
             Each mission card provides information about the rationale
             and impact of the action with a link to a more elaborate article, a
@@ -290,22 +291,22 @@
             The missions are categorized by the environmental problems that
             are related.
           </p>
-          <img class="image w90" src="assets/problemtags.png" />
+          <img class="image w100" src="assets/problemtags.png" />
         </div>
         </div>
         
         <div class="contentblock">
-          <p class="contentpiece w30">
+          <p class="contentpiece w45">
             The app helps users keep track of their progress and get a sense of
             fulfillment when they achieve a new level. Different metrics and
             units are used for different types of actions so each time the user
             makes an effort, they can see their progress directly reflected.
           </p>
-          <img class="contentpiece w25-mobileui image" src="assets/4checkoff.gif" />
+          <img class="contentpiece w25 image mobileui" src="assets/4checkoff.gif" />
         </div>
         <div class="contentblock">
-          <img class="contentpiece w25-mobileui image" src="assets/5connection.gif" />
-          <p class="contentpiece w30">
+          <img class="contentpiece w25 image mobileui" src="assets/5connection.gif" />
+          <p class="contentpiece w45">
             The “connections” section shows the user’s links to the non-human characters whose posts they’ve responded to. On each
             character’s profile, the user could see the species’ information,
             status, and a summary of how much the user is doing to be an
@@ -314,30 +315,28 @@
         </div>
 
         <div class="contentblock">
-          <p class="contentpiece w30">
+          <p class="contentpiece w45">
             On the user’s own profile page, they could also see the
             eco-milestones they’ve achieved and the ones they’re working
             towards, so they could stay motivated.
           </p>
-          <img class="contentpiece w25-mobileui image" src="assets/6profile.gif" />
+          <img class="contentpiece w25 image mobileui" src="assets/6profile.gif" />
         </div>
         <div class="contentblock">
-          <img class="contentpiece w25-mobileui image" src="assets/7notification.gif" />
-        <p class="contentpiece w30">
+          <img class="contentpiece w25 image mobileui" src="assets/7notification.gif" />
+        <p class="contentpiece w45">
             Under different circumstances, the app would also provide
             suggestions and reminders at actionable moments to keep the user on
             track of their missions.
           </p>
         </div>
         <div
-          class="contentblock"
-          style="margin: 0 -20%; padding: 0 20%; background: #c5dde8"
-        >
+          class="contentblock spread" style="background: #c5dde8">
           <img class="w100 image" src="assets/appcollage.png" />
         </div>
         <div class="heading" id="retro"><hr class="divider" />RETROSPECTIVE<hr class="divider" /></div>
         <div class="contentblock">
-          <div class="contentpiece w75-t">
+          <div class="contentpiece w100">
           <div class="subheading">&#128214; Lessons Learned</div>
           <ul class="bulletpoints">
             <li>In order to engage the user in each stage of the experience, there needs to be a natural flow that leads the user through the transition between stages.</li>
@@ -346,7 +345,7 @@
         </div>
         </div>
         <div class="contentblock">
-          <div class="contentpiece w75-t">
+          <div class="contentpiece w100">
           <div class="subheading">&#128173; Opportunities for Improvement</div>
           <ul class="bulletpoints">
             <li>With further research, the progress tracking of missions can provide metrics to inform users of their reduced environmental impact.</li>
@@ -354,18 +353,17 @@
           </ul>
         </div>
         </div>
-        <hr class="bottomdivider"/>
+        <div id="bottomnav">
+          <span id="back"><a href="../"><i class="fas fa-arrow-left"></i> All projects</a></span>
+          <span id="top"><a href="#project"><i class="fas fa-arrow-up"></i> Top</a></span>
+        </div>
       </div>
     </div>
-    <div id="bottomnavigation">
-      <span id="prev"><a href="../enroute/"><i class="fas fa-angle-left"></i> En Route</a></span>
-      <span id="top"><a href="#project"><i class="fas fa-arrow-up"></i> Back to top</a></span>
-      <span id="next"><a href="../makersshack/">Maker's Shack <i class="fas fa-angle-right"></i></a></span>
-    </div>
+    
     <div id="footer">
       <p></p>
     </div>
-    <script src="../navbar.js"></script>
+    <script src="../contentnav.js"></script>
     <script src="../slideshow.js"></script>
     <script type="module" src="../highlight.js"></script>
   </body>

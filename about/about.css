@@ -1,5 +1,5 @@
 #biocontainer {
-  margin: 5rem var(--padding-l);
+  margin: 5rem var(--padding-m);
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
@@ -137,8 +137,6 @@ a.externallink:visited {
   -webkit-text-fill-color: transparent;
 }
 
-
-
 .tools {
   height: 2.5rem;
   display: inline;
@@ -150,7 +148,7 @@ a.externallink:visited {
   margin: 0 auto 3rem auto;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
   #biocontainer {
     margin: 2rem var(--padding-m);
   }
@@ -159,7 +157,7 @@ a.externallink:visited {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   .aboutsub {
     width: 100%;
     margin-bottom: 0.2rem;
