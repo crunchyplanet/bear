@@ -62,12 +62,32 @@ body {
   cursor: pointer;
 }
 .navitems:hover {
-  color: var(--grey700);
+  color: var(--grey800);
 }
 .navitems.active {
   color: var(--grey700);
   font-weight: 700;
 }
+.cpq .navitems.active, .cpq .themecolor, .cpq .heading {
+  color: var(--accent-cpq-dk);
+}
+.wp .navitems.active, .wp .themecolor, .wp .heading {
+  color: var(--accent-wp-dk);
+}
+.maker .navitems.active, .maker .themecolor, .maker .heading {
+  color: var(--accent-maker-dk);
+}
+.enroute .navitems.active, .enroute .themecolor, .enroute .heading {
+  color: var(--accent-enroute-dk);
+}
+.navitems .fas {
+  display: none;
+}
+.navitems.active .fas {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
 /*across-page nav*/
 #pagenav {
   color: var(--grey600);
@@ -119,6 +139,10 @@ body {
 }
 .contentblock.topaligned {
   align-items: flex-start;
+}
+/* mainly for w48 + w48 */
+.contentblock.space-between {
+  justify-content: space-between;
 }
 
 .contentblock p {
@@ -174,8 +198,8 @@ body {
 .w25 {
   width: 25%;
 }
-.w45 {
-  width: 45%;
+.w48 {
+  width: 48%;
 }
 .w60 {
   width: 60%;
@@ -189,10 +213,6 @@ body {
 
 .image {
   max-width: 100%;
-}
-
-.cpq .themecolor, .cpq .heading {
-  color: var(--accent-cpq-dk);
 }
 
 .caption {
@@ -250,7 +270,7 @@ body {
 }
 .prevbtn:hover,
 .nextbtn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--grey100);
 }
 .slideindicator {
   width: 100%;
@@ -268,7 +288,7 @@ body {
 }
 .activedot,
 .dot:hover {
-  background-color: var(--grey400);
+  background-color: var(--grey700);
 }
 
 .fade {
@@ -306,6 +326,8 @@ hr {
     height: auto;
     border: none;
     position: inherit;
+    text-align: center;
+    padding-right: 0;
   }
   #basicinfo {
     margin-top: 1rem;

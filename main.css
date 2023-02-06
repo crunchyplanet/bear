@@ -16,16 +16,23 @@ html {
   --blue100: #f0fcff;
   --blue200: #c6f1fa;
   --blue300: #a6dde8;
-  --errorred: #C04316;
-  --okgreen: #31934C;
-  --accent-wildposts-lt: #B2B8EA;
+  --status-red: #C04316;
+  --status-green: #31934C;
+
   --accent-enroute-lt: #9CCFBC;
+  --accent-enroute-dk: #4A857E;
+
   --accent-maker-lt: #EDD068;
+  --accent-maker-dk: #A47E1B;
+
+  --accent-wp-lt: #B2B8EA;
+  --accent-wp-dk: #5252AA;
+
   
   --accent-cpq-lt: #71afe5;
   --accent-cpq-dk: #0078d4;
 
-  --accent-ctx-lt: #05758a;
+  --accent-ctx-dk: #05758a;
 
   --padding-m: 8%;
   --padding-s: 5%;
@@ -283,15 +290,6 @@ a:visited {
 
 /* #cpq .boxlabel .themetags span {
   background: var(--accent-cpq-lt);
-}
-#wildposts .boxlabel .themetags span {
-  background: var(--accent-wildposts-lt);
-}
-#makersshack .boxlabel .themetags span {
-  background: var(--accent-maker-lt);
-}
-#enroute .boxlabel .themetags span {
-  background: var(--accent-enroute-lt);
 } */
 
 /* gm rules*/
