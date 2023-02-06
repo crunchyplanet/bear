@@ -114,6 +114,7 @@ body {
 .contentarea {
   width: 75%;
   padding-top: 1rem;
+  overflow-x: hidden;
 }
 .contentarea a:link {
   text-decoration: underline dotted var(--grey500);
@@ -243,9 +244,13 @@ body {
 }
 /*image slideshow*/
 .slidecontainer {
-  width: 90%;
+  width: 100%;
   position: relative;
   margin: 0 auto;
+}
+.slidecontainer:hover .prevbtn, .slidecontainer:hover .nextbtn {
+  opacity: 1;
+  transition: opacity 0.2s;
 }
 .prevbtn,
 .nextbtn {
@@ -255,22 +260,24 @@ body {
   width: auto;
   padding: 16px;
   margin-top: -40px;
-  color: var(--grey500);
+  color: var(--grey100);
   font-weight: bold;
   font-size: 1.5rem;
   transition: 0.2s ease;
   border-radius: 3px;
   user-select: none;
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 .prevbtn {
-  left: -60px;
+  left: 1rem;
 }
 .nextbtn {
-  right: -60px;
+  right: 1rem;
 }
 .prevbtn:hover,
 .nextbtn:hover {
-  background-color: var(--grey100);
+  background-color: rgba(0,0,0,0.25);
 }
 .slideindicator {
   width: 100%;
@@ -355,8 +362,8 @@ hr {
     margin: 3rem 0 !important;
   }
   .contentblock.spread {
-    margin: 2rem -20%;
-    padding: 1.5rem 20%;
+    margin: 2rem -10rem;
+    padding: 1.5rem 10rem;
   }
 }
 @media screen and (max-width: 720px) {
