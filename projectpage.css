@@ -131,7 +131,7 @@ body {
   align-items: center;
   /* justify-content: space-between; */
   justify-content: space-evenly;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: var(--grey900);
   font-size: 1.1rem;
   line-height: 1.8rem;
