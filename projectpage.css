@@ -186,13 +186,7 @@ body {
   content: " :";
 } */
 .bulletpoints {
-  list-style-type: circle;
-  padding-left: 1rem; /*override default*/
-  margin-top: 0.4rem; /*override default*/
-}
-
-.bulletpoints li {
-  margin-bottom: 0.5rem;
+  /* list-style-type: circle; */
 }
 
 /*widths*/
