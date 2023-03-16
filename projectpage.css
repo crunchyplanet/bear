@@ -187,6 +187,8 @@ body {
 } */
 .bulletpoints {
   /* list-style-type: circle; */
+  padding-inline-start: 1.5rem; /* override default */
+  margin: auto; /* override default */
 }
 
 /*widths*/
