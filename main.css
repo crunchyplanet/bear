@@ -107,10 +107,17 @@ a:visited {
   color: var(--grey700);
 }
 
-/* hide side quest tab */
+/* hide dabble tab */
 /* #navigation span:nth-child(2) {
   display: none;
 } */
+/* hide about tab */
+#navigation span:nth-child(2) {
+  display: none;
+}
+.submenu span:nth-child(2) {
+  display: none;
+}
 
 /* intro section - hidden*/
 #intro {
