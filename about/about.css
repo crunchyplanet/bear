@@ -83,6 +83,10 @@ a.externallink:visited {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+/* hide other stuff */
+#otherstufftitle, #otherstuffflex {
+  display: none !important;
+}
 /* each item */
 .otherstuffitem {
   box-sizing: border-box;
@@ -119,6 +123,9 @@ a.externallink:visited {
   color: #19b7ea;
 }
 .medium i:hover {
+  color: black;
+}
+.unsplash i:hover {
   color: black;
 }
 .codepen i:hover {
