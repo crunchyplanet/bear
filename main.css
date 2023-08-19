@@ -222,7 +222,8 @@ a:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64vh;
+  margin: 3rem 0;
+  width: 100%;
   /* flex-wrap: wrap; */
   /* sectioned off with tabs */
   /* margin: 0 -999rem;
@@ -231,9 +232,6 @@ a:visited {
   text-align: justify; */
 }
 
-.box {
-  min-width: 120px;
-}
 .box a {
   display: flex;
   flex-direction: column;
@@ -241,23 +239,22 @@ a:visited {
   position: relative;
 }
 .coverimg {
-  height: 60vh;
-  max-height: 50vw;
-  min-height: 25vw;
   object-fit: cover;
-  transition: height 0.5s;
+  width: 100%;
 }
 .boxlabel {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   justify-content: center;
   align-items: flex-start;
-  padding: 1rem;
+  padding: 2rem;
   width: 100%;
   position: absolute;
   box-sizing: border-box;
-  background: rgba(255,255,255,0.8);
+  background: rgba(0,0,0,0.5);
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -268,48 +265,26 @@ a:visited {
     opacity: 1;
     transition: opacity 0.5s;
 }
-.box:hover .coverimg {
-    height: 64vh;
-    box-shadow: 0px 0px 12px rgba(0,0,0,0.25);
-    transition: height 0.5s;
-}
 
 .boxlabel .projecttitle {
-  font-size: 1.4rem;
-  color: var(--grey900);
   font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--grey100);
 }
 .boxlabel .description {
-  color: var(--grey900);
+  color: var(--grey100);
 }
 .boxlabel .themetags span {
-  color: var(--grey700);
-  margin-right: 0.5rem;
-  font-size:0.9rem;
+  color: var(--grey200);
 }
 .boxlabel .access {
   font-style: italic;
+  background: var(--grey900);
   color: var(--grey100);
-  margin-top: 0.5rem;
-  padding: 0 0.5rem;
-  background: rgba(0,0,0,0.75);
 }
-
-/* #cpq .boxlabel .themetags span {
-  background: var(--accent-cpq-lt);
+/* .boxlabel > span::after {
+  content: " \00B7 ";
 } */
-
-/* gm rules*/
-.box.gm .boxlabel {
-  width: 100%;
-  margin-top: 0.8rem;
-}
-.box.gm .boxlabel p {
-  margin: 0.2rem;
-}
-.box.gm .boxlabel .projecttitle {
-  font-size: 1.4rem;
-}
 
 /*footer*/
 #footer {
@@ -334,7 +309,7 @@ a:visited {
     font-size: 0.8rem;
   }
   #header {
-    padding: 0.5rem var(--padding-s);
+    padding: 2rem var(--padding-s);
     justify-content: center;
   }
   #homelink {
@@ -345,9 +320,10 @@ a:visited {
     display: none;
   }
 
-  /*Style for the first level menu bar*/
+  /*Hamburger menu, hidden*/
   #menu {
     display: block;
+    display: none !important;
     position: relative;
     margin: 0;
     color: var(--grey300);
@@ -394,6 +370,7 @@ a:visited {
   }
 
   #projects {
+    margin-top: 0;
     flex-wrap: wrap;
     height: auto;
   }
@@ -401,13 +378,30 @@ a:visited {
     width: 50%;
   }
   .coverimg {
-    width: auto;
+    width: 100%;
     height: auto;
+    max-height: 100vh;
   }
+  
   .boxlabel {
-    display: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /*border: 1rem solid #acacac; */
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
   }
-  .boxlabel .projecttitle {
-    font-size: 1.2rem;
+   .box:hover .boxlabel {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  .box:hover .coverimg {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+  }
+  .boxlabel > div {
+    width: 80%;
   }
 }
