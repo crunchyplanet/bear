@@ -19,14 +19,14 @@ html {
   --status-red: #C04316;
   --status-green: #31934C;
 
-  --accent-enroute-lt: #9CCFBC;
-  --accent-enroute-dk: #4A857E;
+  --accent-enroute-lt: #b7ddd0;
+  --accent-enroute-dk: #4a875e;
 
-  --accent-maker-lt: #EDD068;
-  --accent-maker-dk: #A47E1B;
+  --accent-maker-lt: #fbe8a3;
+  --accent-maker-dk: #a47e1b;
 
-  --accent-wp-lt: #B2B8EA;
-  --accent-wp-dk: #5252AA;
+  --accent-wp-lt: #cbcff3;
+  --accent-wp-dk: #5252aa;
 
   
   --accent-cpq-lt: #71afe5;
@@ -220,43 +220,31 @@ a:visited {
 /*projects*/
 #projects {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 3rem 0;
-  width: 100%;
+  flex-direction: column;
+  padding: 2rem var(--padding-m);
+  gap: 6rem;
   /* flex-wrap: wrap; */
-  /* sectioned off with tabs */
-  /* margin: 0 -999rem;
-  padding: 3rem 999rem;
-  background: #f5f5f5;
-  text-align: justify; */
 }
 
-.box a {
+.box {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .coverimg {
   object-fit: cover;
-  width: 100%;
+  width: 40%;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.9);
 }
 .boxlabel {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  width: 40%;
   gap: 0.5rem;
   justify-content: center;
   align-items: flex-start;
-  padding: 2rem;
-  width: 100%;
-  position: absolute;
   box-sizing: border-box;
-  background: rgba(0,0,0,0.5);
-  opacity: 0;
-  transition: opacity 0.5s;
 }
 .box:hover {
     z-index: 1;
@@ -269,18 +257,59 @@ a:visited {
 .boxlabel .projecttitle {
   font-weight: 700;
   font-size: 1.4rem;
-  color: var(--grey100);
+  color: var(--grey900);
 }
 .boxlabel .description {
-  color: var(--grey100);
+  color: var(--grey900);
 }
 .boxlabel .themetags span {
-  color: var(--grey200);
+  color: var(--grey700);
 }
 .boxlabel .access {
   font-style: italic;
   background: var(--grey900);
   color: var(--grey100);
+}
+.boxlabel a {
+  margin-top: 1rem;
+  color: var(--grey900);
+  font-weight: 700;
+  position: relative;
+  transition: 0.5s;
+}
+.boxlabel a::after {
+  content: "\21E2"
+}
+.boxlabel a:hover .stroke {
+  animation-name: strike;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.stroke {
+  border-bottom: 2px solid;
+  position: absolute;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+}
+
+@keyframes strike {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+#wildposts .boxlabel a:hover {
+  background: var(--accent-wp-lt);
+}
+#makersshack .boxlabel a:hover {
+  background: var(--accent-maker-lt);
+}
+#enroute .boxlabel a:hover {
+  background: var(--accent-enroute-lt);
 }
 /* .boxlabel > span::after {
   content: " \00B7 ";
@@ -298,7 +327,7 @@ a:visited {
   content: "\00A9  2023 Jillian Luo";
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1024px) {
   #header {
     padding: 1.5rem var(--padding-m);
   }
@@ -369,39 +398,13 @@ a:visited {
     color: var(--grey500);
   }
 
-  #projects {
-    margin-top: 0;
-    flex-wrap: wrap;
-    height: auto;
-  }
   .box {
-    width: 50%;
+    gap: 2rem;
+  }
+  .boxlabel {
+    width: 60%;
   }
   .coverimg {
-    width: 100%;
-    height: auto;
-    max-height: 100vh;
-  }
-  
-  .boxlabel {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    /*border: 1rem solid #acacac; */
-    background: rgba(0,0,0,0.5);
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-   .box:hover .boxlabel {
-    opacity: 1;
-    transition: opacity 0.5s;
-  }
-  .box:hover .coverimg {
-    width: 100%;
-    height: auto;
-    max-height: 100vh;
-  }
-  .boxlabel > div {
-    width: 80%;
+    width: 25%;
   }
 }
