@@ -106,11 +106,36 @@ a:visited {
 .tabs.current a {
   color: var(--grey700);
 }
+#social {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+}
+#social a {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#social i {
+  font-size: 1.6rem;
+  color: var(--grey600);
+  transition: 0.5s;
+}
+#social a:hover {
+  transition: 0.5s;
+  background: var(--grey100);
+}
 
-/* hide dabble tab */
-/* #navigation span:nth-child(2) {
+#linkedin:hover i {
+  color: #0e76a8;
+}
+
+#navigation {
   display: none;
-} */
+}
 /* hide about tab */
 #navigation span:nth-child(2) {
   display: none;
@@ -227,36 +252,30 @@ a:visited {
 }
 
 .box {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+
 }
 .coverimg {
+  display: none;
   object-fit: cover;
   width: 33%;
   box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.9);
 }
-.boxlabel {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  gap: 0.5rem;
-  justify-content: center;
-  align-items: flex-start;
+.boxlabel a {
   box-sizing: border-box;
+  color: var(--grey900);
+  font-size: 1.5rem;
+  position: relative;
+  transition: 0.5s;
+}
+.boxlabel a > span {
+  margin-right: 1rem;
 }
 .box:hover {
     z-index: 1;
 }
-.box:hover .boxlabel {
-    opacity: 1;
-    transition: opacity 0.5s;
-}
 
 .boxlabel .projecttitle {
   font-weight: 700;
-  font-size: 1.4rem;
   color: var(--grey900);
 }
 .boxlabel .description {
@@ -270,13 +289,7 @@ a:visited {
   background: var(--grey900);
   color: var(--grey100);
 }
-.boxlabel a {
-  margin-top: 1rem;
-  color: var(--grey900);
-  font-weight: 700;
-  position: relative;
-  transition: 0.5s;
-}
+
 .boxlabel a::after {
   content: "\21E2"
 }
@@ -348,6 +361,12 @@ a:visited {
   #navigation {
     display: none;
   }
+  #social {
+    display: none;
+  }
+  #projects {
+    gap: 4rem;
+  }
 
   /*Hamburger menu, hidden*/
   #menu {
@@ -396,15 +415,5 @@ a:visited {
   }
   .submenu p a:hover {
     color: var(--grey500);
-  }
-
-  .box {
-    gap: 2rem;
-  }
-  .boxlabel {
-    width: 60%;
-  }
-  .coverimg {
-    width: 25%;
   }
 }
