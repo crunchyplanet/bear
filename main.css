@@ -85,6 +85,16 @@ a:visited {
   text-decoration: none;
 }
 
+#navigation {
+  display: none;
+}
+/* hide about tab */
+#navigation span:nth-child(2) {
+  display: none;
+}
+.submenu span:nth-child(2) {
+  display: none;
+}
 /* 
 #navigation a:link {  
     color: var(--grey400);
@@ -131,17 +141,6 @@ a:visited {
 
 #linkedin:hover i {
   color: #0e76a8;
-}
-
-#navigation {
-  display: none;
-}
-/* hide about tab */
-#navigation span:nth-child(2) {
-  display: none;
-}
-.submenu span:nth-child(2) {
-  display: none;
 }
 
 /* intro section - hidden*/
@@ -218,36 +217,12 @@ a:visited {
   text-decoration: underline;
 }
 
-/*filters*/
-/* #filters {
-  width: 75%;
-  color: var(--grey300);
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 2rem;
-  font-size: 1.1rem;
-  letter-spacing: 0.1rem;
-}
-.filter {
-  display: inline-block;
-  cursor: pointer;
-  margin-right: 2rem;
-}
-.filter:hover {
-  color: var(--grey500);
-}
-.active.filter {
-  color: var(--grey900);
-  padding: 0.2rem 0.7rem;
-  border-bottom: 2px solid var(--grey500);
-} */
-
 /*projects*/
 #projects {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 2rem var(--padding-m);
-  gap: 6rem;
+  gap: 3rem;
   /* flex-wrap: wrap; */
 }
 
@@ -255,10 +230,21 @@ a:visited {
 
 }
 .coverimg {
-  display: none;
   object-fit: cover;
-  width: 33%;
+  width: 100%;
   box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.9);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition: top 0.5s, left 0.5s;
+}
+.coverimg:hover {
+  box-shadow: none;
+  top: 8px;
+  left: 8px;
+}
+.boxlabel {
+  display: none;
 }
 .boxlabel a {
   box-sizing: border-box;
@@ -365,7 +351,8 @@ a:visited {
     display: none;
   }
   #projects {
-    gap: 4rem;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   /*Hamburger menu, hidden*/
