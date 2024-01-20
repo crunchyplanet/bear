@@ -174,10 +174,21 @@ body {
 
 .subheading {
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--grey900);
   display: inline-block;
   margin-bottom: 1rem !important;
+  padding: 0 0.5rem;
+  border-bottom: 2px var(--grey600) solid
+}
+.wp .subheading {
+  color: var(--accent-wp-lt);
+}
+.maker .subheading {
+  color: var(--accent-maker-lt);
+}
+.enroute .subheading {
+  color: var(--accent-enroute-lt);
 }
 /* .subheading::before {
   content: ": ";
