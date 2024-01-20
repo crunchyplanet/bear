@@ -179,16 +179,15 @@ body {
   display: inline-block;
   margin-bottom: 1rem !important;
   padding: 0 0.2rem;
-  border-bottom: 2px var(--grey600) solid
 }
 .wp .subheading {
-  background: var(--accent-wp-lt);
+  border-bottom: 2px var(--accent-wp-lt) solid;
 }
 .maker .subheading {
-  background: var(--accent-maker-lt);
+  border-bottom: 2px var(--accent-maker-lt) solid;
 }
 .enroute .subheading {
-  background: var(--accent-enroute-lt);
+  border-bottom: 2px var(--accent-enroute-lt) solid;
 }
 /* .subheading::before {
   content: ": ";
