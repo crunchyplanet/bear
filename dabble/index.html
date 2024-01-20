@@ -21,7 +21,7 @@
       name="description"
       content="Creative coding projects."
     />
-    <meta name="author" content="Jillian Jinghan Luo" />
+    <meta name="author" content="Jillian Luo" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../main.css" />
@@ -52,14 +52,14 @@
       </div>
     </div>
     <div id="header">
-      <a href="/"><img id="logo" src="../mainassets/logo.png" /></a>
-      <div id="headtext">
-        <h1 id="name"><a href="/">Jillian Luo</a></h1>
-      </div>
+      <a id="homelink" href="/">
+        <img id="logo" src="../mainassets/logo.png" />
+        <h1 id="name">Jillian Luo</h1>
+      </a>
       <div id="navigation">
         <span class="tabs"><a href="../">WORK</a></span>
-        <span class="tabs current"><a href=".">DABBLE</a></span>
-        <span class="tabs"><a href="../about/">ABOUT</a></span>
+        <span class="tabs"><a href="../dabble/">DABBLE</a></span>
+        <span class="tabs current"><a href=".">ABOUT</a></span>
       </div>
     </div>
     <div id="categories">
@@ -67,40 +67,16 @@
       <span class="ctgr" data-cat="ph">Photography</span>
       <span class="ctgr" data-cat="il">Illustrations</span>
     </div>
-    <!-- <div id="dabbleintro">
-      Exploring motion and interactivity with <b>creative coding</b>.
-    </div> -->
-
     <!-- creative coding -->
     <div id="cc" class="content">
       <div class="itemplus">
         <img class="thumbnail" src="creativecoding/x.gif" />
         <div class="labelcontainer">
-          <span>Title</span>
-          <span class="social" id="github"
-            ><a
-              href=""
-              target="_blank"
-            >
-              <i class="fa fa-github" aria-hidden="true"></i></a
-          ></span>
-          <span class="social" id="vimeo"
-            ><a href="" target="_blank">
-              <i class="fa fa-vimeo" aria-hidden="true"></i></a
-          ></span>
         </div>
       </div>
       <div class="itemplus">
         <img class="thumbnail" src="creativecoding/x.gif" />
         <div class="labelcontainer">
-          <span>Title</span
-          ><span class="social" id="codepen"
-            ><a
-              href=""
-              target="_blank"
-            >
-            <i class="fab fa-codepen"></i></a
-          ></span>
         </div>
       </div>
     </div>
@@ -108,92 +84,48 @@
     <!-- photography -->
     <div id="ph" class="content gridcontainer">
       <div class="item">
-        <img class="thumbnail" src="photography/duck.jpg" />
+        <img class="thumbnail" src="photography/01.jpg" />
       </div>
       <div class="item">
-        <img class="thumbnail" src="photography/bridge.jpg" />
+        <img class="thumbnail" src="photography/02.jpg" />
       </div>
       <div class="item">
-        <img class="thumbnail" src="photography/nightbeach.jpg" />
+        <img class="thumbnail" src="photography/03.jpg" />
       </div>
       <div class="item">
-        <img class="thumbnail" src="photography/ocean.jpg" />
+        <img class="thumbnail" src="photography/04.jpg" />
       </div>
       <div class="item">
-        <img class="thumbnail" src="photography/bubble.jpg" />
+        <img class="thumbnail" src="photography/05.jpg" />
       </div>
       <div class="item">
-        <img class="thumbnail" src="photography/cat.jpg" />
-      </div>
-      <div class="item">
-        <img class="thumbnail" src="photography/peachblossoms.jpg" />
-      </div>
-      <div class="item">
-        <img class="thumbnail" src="photography/building.JPG" />
-      </div>
-      <div class="item">
-        <img class="thumbnail" src="photography/huanglong.JPG" />
-      </div>
-      <div class="item">
-        <img class="thumbnail" src="photography/bougainvillea.jpeg" />
-      </div>
-      <div class="item">
-        <img class="thumbnail" src="photography/hike.jpg" />
-      </div>
-
-      <div class="item">
-        <img class="thumbnail" src="photography/alley.jpg" />
-      </div>
-      <div class="item">
-        <img class="thumbnail" src="photography/bostonivy.JPG" />
+        <img class="thumbnail" src="photography/06.jpg" />
       </div>
     </div>
 
     <!-- illustrations -->
     <div id="il" class="content gridcontainer">
       <div class="item">
-        <img class="thumbnail" src="illustrations/north.JPG" />
-      </div>
-
-      <div class="item">
-        <img class="thumbnail" src="illustrations/duckdelivery.jpg" />
+        <img class="thumbnail" src="illustrations/01.jpg" />
       </div>
       <div class="item">
-        <img class="thumbnail" src="illustrations/rat.jpg" />
+        <img class="thumbnail" src="illustrations/02.jpg" />
       </div>
       <div class="item">
-        <img class="thumbnail" src="illustrations/bird.jpg" />
+        <img class="thumbnail" src="illustrations/03.jpg" />
       </div>
       <div class="item">
-        <img class="thumbnail" src="illustrations/sail.jpg" />
+        <img class="thumbnail" src="illustrations/04.jpg" />
       </div>
       <div class="item">
-        <img class="thumbnail" src="illustrations/house.JPG" />
-      </div>
-      <div class="item">
-        <img class="thumbnail" src="illustrations/stars.jpg" />
-      </div>
-      <div class="item">
-        <img class="thumbnail" src="illustrations/float.jpg" />
-      </div>
-      <div class="item">
-        <img class="thumbnail" src="illustrations/coast.png" />
-      </div>
-      <div class="item">
-        <img class="thumbnail" src="illustrations/train.jpg" />
-      </div>
-      <div class="item">
-        <img class="thumbnail" src="illustrations/hotairballoon.jpg" />
-      </div>
-      <div class="item">
-        <img class="thumbnail" src="illustrations/succulent.jpg" />
+        <img class="thumbnail" src="illustrations/05.jpg" />
       </div>
     </div>
 
     <!-- <div class="modal">
       <span class="closebtn">&times;</span>
       <div class="modal-content">
-        <img src="photography/duck.jpg" />
+        <img src="photography/01.jpg" />
         <p></p>
       </div>
     </div>

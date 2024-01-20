@@ -25,9 +25,11 @@ body {
   margin-bottom: 3rem;
   text-align: center;
 }
+#categories, .content {
+  padding: 0 var(--padding-m);
+}
 
 .gridcontainer {
-  width: 100%;
   /* display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(12, 1fr);
