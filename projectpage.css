@@ -178,16 +178,8 @@ body {
   color: var(--grey900);
   display: inline-block;
   margin-bottom: 1rem !important;
+  border-bottom: 2px var(--grey600) solid;
   padding: 0 0.2rem;
-}
-.wp .subheading {
-  border-bottom: 2px var(--accent-wp-lt) solid;
-}
-.maker .subheading {
-  border-bottom: 2px var(--accent-maker-lt) solid;
-}
-.enroute .subheading {
-  border-bottom: 2px var(--accent-enroute-lt) solid;
 }
 /* .subheading::before {
   content: ": ";
