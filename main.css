@@ -85,10 +85,11 @@ a:visited {
   text-decoration: none;
 }
 
+/* hide navigation altogether */
 #navigation {
   display: none;
 }
-/* hide about tab */
+/* hide second tab */
 #navigation span:nth-child(2) {
   display: none;
 }
