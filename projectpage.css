@@ -182,13 +182,13 @@ body {
   border-bottom: 2px var(--grey600) solid
 }
 .wp .subheading {
-  color: var(--accent-wp-lt);
+  background: var(--accent-wp-lt);
 }
 .maker .subheading {
-  color: var(--accent-maker-lt);
+  background: var(--accent-maker-lt);
 }
 .enroute .subheading {
-  color: var(--accent-enroute-lt);
+  background: var(--accent-enroute-lt);
 }
 /* .subheading::before {
   content: ": ";
