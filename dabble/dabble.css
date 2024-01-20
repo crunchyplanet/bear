@@ -26,6 +26,7 @@ body {
   text-align: center;
 }
 #categories, .content {
+  display: none;
   padding: 0 var(--padding-m);
 }
 
@@ -43,11 +44,11 @@ body {
 }
 
 #cc {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; */
+  display: none;
 }
-
 #ph, #il {
   display: none;
 }
