@@ -67,7 +67,8 @@ body {
 }
 #logo {
   width: 54px;
-  display: inline-block;
+  /* display: inline-block; */
+  display: none;
 }
 #name {
   font-family: 'Carter One', sans-serif;
