@@ -99,6 +99,7 @@ body {
   gap: 1rem;
   margin: 4rem 0;
   /* letter-spacing: 0.1rem; */
+  display: none;
 }
 #pagenav a:link {
   color: var(--grey600);
